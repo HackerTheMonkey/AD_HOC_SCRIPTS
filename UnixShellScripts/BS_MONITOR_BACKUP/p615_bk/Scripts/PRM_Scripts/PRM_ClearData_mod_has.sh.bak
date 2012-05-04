@@ -1,0 +1,275 @@
+#*************************************************************
+# This Program is used to clean the PRM Database for July 2006
+# 
+#*************************************************************
+. ~/.profile
+
+
+sqlplus -s prm/mmprm@boss <<IDD
+
+set serveroutput on size 1000000
+                                                                        
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	quit;
+IDD
+
+sqlplus -s sendsms/sendsms123xx@sendsms<<END1
+	var sms_id number;
+	var error varchar2(100);
+	exec send_single_sms('PRM','9647701103622','The IDD table has been deleted',0,1,5000,:sms_id,:error);
+	quit;
+END1	
+	
+	
+	
+	
+	
+	
+	
+sqlplus -s prm/mmprm@boss <<ROAMING
+set serveroutput on size 1000000
+
+	delete from  bill_s_roaming  where to_char( date_s,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	quit;
+ROAMING
+sqlplus -s sendsms/sendsms123xx@sendsms<<END2
+	var sms_id number;
+	var error varchar2(100);
+	exec send_single_sms('PRM','9647701103622','The roaming table has been deleted',0,1,5000,:sms_id,:error);
+	quit;
+END2	
+
+
+
+
+
+
+
+sqlplus -s prm/mmprm@boss <<SPCP
+set serveroutput on size 1000000
+
+	delete from  bill_s_spcp where billingcycle_code='200607' and rownum<1000000;				
+	commit;
+	quit;
+SPCP
+
+sqlplus -s sendsms/sendsms123xx@sendsms<<END3
+	var sms_id number;
+	var error varchar2(100);
+	exec send_single_sms('PRM','9647701103622','The spcp table has been deleted',0,1,5000,:sms_id,:error);
+	quit;
+END3		
+	
+	
+	
+	
+	
+	
+	
+	
+sqlplus -s prm/mmprm@boss <<INTER
+set serveroutput on size 1000000
+
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+		delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200607' and rownum<1000000;
+	commit;
+	quit;
+INTER
+
+sqlplus -s sendsms/sendsms123xx@sendsms<<END4
+	var sms_id number;
+	var error varchar2(100);
+	exec send_single_sms('PRM','9647701103622','The interconnect table has been deleted',0,1,5000,:sms_id,:error);
+	quit;
+END4

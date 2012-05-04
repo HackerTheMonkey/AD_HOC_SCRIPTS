@@ -1,0 +1,7 @@
+owner=bossejb
+procs="WebLogic java"
+check_proc WebServer "$procs" $owner
+
+owner=mdsejb
+procs="WebLogic java"
+check_proc WebServer "$procs" $owner

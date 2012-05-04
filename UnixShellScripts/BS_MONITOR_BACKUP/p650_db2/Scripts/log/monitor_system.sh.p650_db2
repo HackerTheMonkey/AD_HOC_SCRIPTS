@@ -1,0 +1,37 @@
+***** Checking System Health of p650_db2 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.01
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking oracle's DB processes
+OK: oracle's boss2 tnslsnr are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  240001 A   oracle 40284     1   0  60 20 1315d3 136096 711d2a6c   Apr 24      -  6:13 ora_lck0_boss2 
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+

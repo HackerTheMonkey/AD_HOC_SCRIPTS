@@ -1,0 +1,54 @@
+***** Checking System Health of training-1 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+---> Alert: /cdrs file system usage = 85%
+---> Alert: /cdrs/oradata2 file system usage = 97%
+
+Checking system Load
+Ok: Current system load is 0.49
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking oracle's DB processes
+OK: oracle's bosstest is running
+
+Checking bossejb's Web processes
+OK: bossejb's WebLogic java are running
+
+Checking bossweb's Web processes
+OK: bossweb's WebLogic java are running
+
+Checking mdsejb's Web processes
+OK: mdsejb's WebLogic java are running
+
+Checking mdsweb's Web processes
+OK: mdsweb's WebLogic java are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  242001 A  bossweb 224764  31782   1  60 20 1e0afe 287464        *   Apr 16      - 28:29 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bosswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A  bossejb 225570 225264   1  60 20 30e63 305540        *   Apr 16      - 113:37 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bossejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A  bossejb 229400 230162   0  60 20 130f13 101472        *   Apr 16      -  8:26 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=orderserver -Dweblogic.management.username= -Dweblogic.management.password= -Dweblogic.management.server=http://localhost:7001 -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A   mdsweb 231708 231440   0  60 20 f0f4f 190980        *   Apr 16      -  6:00 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A   mdsejb 233004 224510   0  60 20 c11cc 141564        *   Apr 16      -  3:15 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdsejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+
+Checking swap space
+OK: Swap space usage is 32%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+---> Alert: Kernel-open file usage 92% exceeded 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+

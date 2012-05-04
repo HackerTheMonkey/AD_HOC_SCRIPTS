@@ -1,0 +1,39 @@
+Set Serveroutput On;
+Clear Screen;
+Set Feedback Off;
+Declare
+       Cursor bill_data_cur Is
+              Select * From tmp_spcp_apr t  Order By t.service_name;              
+       Cursor accu_data_cur is
+              Select * From bs_spcp_accu_rp s  Order By s.service_name;              
+       bill_data_rec bill_data_cur%Rowtype;
+       accu_data_rec accu_data_cur%Rowtype;    
+       c1 Number;
+       c2 Number;    
+       I Number;      
+Begin
+     dbms_output.enable(Null);
+     Select Count(*) Into c1 From tmp_spcp_apr;
+     Select Count(*) Into c2 From bs_spcp_accu_rp;
+     If c1 = c2 Then
+     dbms_output.put_line('the two tables are equal in terms of no of records ');
+     dbms_output.put_line('now starting data analysis...');
+     dbms_output.put_line('-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-');
+     dbms_output.put_line('Please wait...');
+     dbms_output.put_line('-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-');
+     -- Open both of the cursors to compare data
+     Open bill_data_cur;
+     Open accu_data_cur;
+          For I In 1..c1
+          Loop
+              Fetch bill_data_cur Into bill_data_rec;
+              Fetch accu_data_cur Into accu_data_rec;
+              If bill_data_rec.sp_share <> accu_data_rec.sp_share Then
+                 dbms_output.put_line('SP Share for '|| bill_data_rec.service_name || ' is '||bill_data_rec.sp_share||' in bill table while it is '|| accu_data_rec.sp_share || ' in accumulation table');
+              End If;              
+          End Loop;
+     Close accu_data_cur;
+     Close bill_data_cur;
+     End If;
+End;
+/

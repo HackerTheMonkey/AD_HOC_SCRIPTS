@@ -1,0 +1,541 @@
+***** Checking System Health of p615_bk *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+---> Alert: /usr file system usage = 84%
+---> Alert: /oradata file system usage = 90%
+
+Checking system Load
+Ok: Current system load is 0.67
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking root's TSM processes
+OK: root's tsm is running
+
+Checking oracle's DB processes
+OK: oracle's orabak is running
+
+Checking zombie processes
+---> Alert: Zombie processes running
+    root  3934 32434   4                  0:00 <defunct>
+    root 30044 32434   0                  0:00 <defunct>
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  242001 A   mdsejb 30882 63964   0  60 20 1c32b 108848        * 17:35:59      -  1:00 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdsejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A  bossejb 33144 63154   0  60 20 21bf5 223844        * 17:19:46      - 14:14 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bossejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A   mdsweb 47256 45836   0  60 20 1c14b 144192        * 17:30:42      -  1:20 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A  bossweb 78464 33938   0  60 20 fbe2 217752        * 17:18:19      -  1:38 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bosswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+
+Checking swap space
+OK: Swap space usage is 15%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+---> Alert: Kernel-open file usage 93% exceeded 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+Checking Network Connectivity
+OK: all NE's are reachable
+
+Checking ftp connection
+OK: all ftp connections are ok
+
+3004-300 You entered an invalid login name or password.
+***** Checking System Health of p650_db2 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.01
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking oracle's DB processes
+OK: oracle's boss2 tnslsnr are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  240001 A   oracle 40284     1   0  60 20 1315d3 136096 711d2a6c   Apr 24      -  6:13 ora_lck0_boss2 
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+***** Checking System Health of P570_DB1 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.11
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking oracle's DB processes
+OK: oracle's boss1 tnslsnr are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+OK: Each process uses less than 100000 page of memory
+
+Checking swap space
+OK: Swap space usage is 4%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+---> Alert: Kernel-open file usage 98% exceeded 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+***** Checking System Health of P570_DB2 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.08
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking oracle's DB processes
+OK: oracle's boss2 tnslsnr are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+OK: Each process uses less than 100000 page of memory
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+---> Alert: Kernel-open file usage 98% exceeded 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+***** Checking System Health of P570_APP1 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.03
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking rating's Rating processes
+OK: rating's billingcycleproc chargingproc custload inf_bb sep are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  240001 A   rating 225794      1   0  68 24 15927d400 160776 f10001003b9d0830   Apr 24      -  2:07 inf_bb 1022 1 0 0 1022 
+  240001 A   rating 107404      1   0  68 24 109258400 160880 f10001003bd53eb0   Apr 24      -  3:58 inf_bb 1001 1 0 0 1001 
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+***** Checking System Health of P570_APP2 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+---> Alert: Current system load is  1.12
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking billing's Billing processes
+OK: billing's cmdmgr synccdr synctopup are running
+
+Checking prm's PRM processes
+OK: prm's boss_report prmsep roam sep are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  240001 A      prm 188916      1   0  60 20 efaa1400 389880 f100010035bf40b0 08:13:14  pts/1  0:11 /bossapp2/prm/bin/roam 1000 1 0 0 
+  240001 A      prm 311944      1   0  60 20 19b51b400 389884 f10001201b4de8b0 08:13:14  pts/1  0:03 /bossapp2/prm/bin/roam 1 1 0 0 
+  240001 A      prm 308042      1  97 108 20 1142bc400 119920          08:13:14  pts/1 140:21 /bossapp2/prm/bin/sep -n 2 
+
+Checking swap space
+OK: Swap space usage is 6%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+***** Checking System Health of P550_WEB *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.01
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking bossweb's WebServer processes
+OK: bossweb's WebLogic java are running
+
+Checking mdsweb's WebServer processes
+OK: mdsweb's WebLogic java are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  242001 A  bossweb 139298 233648   0  60 20 f567c400 220652        * 08:09:38      -  2:59 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bosswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+***** Checking System Health of P550_EJB *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.03
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking bossejb's WebServer processes
+OK: bossejb's WebLogic java are running
+
+Checking mdsejb's WebServer processes
+OK: mdsejb's WebLogic java are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  242001 A  bossejb 245818 184376   0  60 20 43f4c400 227684        * 08:12:32      -  3:14 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bossejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A   mdsejb 147938 196726   0  60 20 739ca400 103688        * 08:15:31      -  0:29 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdsejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+***** Checking System Health of p630_app1 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+---> Alert: /usr file system usage = 81%
+---> Alert: /bossapp1 file system usage = 87%
+
+Checking system Load
+---> Alert: Current system load is  4.46
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking medcdr's CDR processes
+OK: medcdr's Run_Proc_ cls_proc knl_proc om_proc are running
+
+Checking medcdr's CDR processes
+OK: 26 medcdr's co_proc is running
+
+Checking medcdr's Pretreatment processes
+OK: 17 medcdr's pretreat is running
+
+Checking medcdr's ASN processes
+OK: medcdr's java is running
+
+Checking medser's Med-Ser processes
+OK: medser's java is running
+
+Checking the CDRs process status
+---> Alert: Unbacked/Unprocessed CDRs for COL_G6_BASRAH
+
+Checking zombie processes
+---> Alert: Zombie processes running
+    root 23370 51814   0                  0:00 <defunct>
+    root 42634 51814   4                  0:00 <defunct>
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  240001 A   medcdr 33282     1   1  60 20 34601 473528        * 17:09:11      - 24:11 pretreat 16 
+  242001 A   medcdr 35758 46446   0  68 24 c8c55 126628        * 08:36:37      -  7:35 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9KUKdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CS_CDR_203.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  240001 A   medcdr 36654     1   2  60 20 7d50e 478460        * 17:05:11      - 113:09 pretreat 5 
+  242001 A   medcdr 45144 45638   0  68 24 f4f5f 119272        * 08:36:37      -  0:11 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ./CGdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/WCDMA.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CDRF_2GCDR_Org.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  242001 A   medser 48304 74986   2  60 20 3ba8b 179180        *   Apr 15      - 465:47 java -Xms128m -Xmx384m -classpath ./lib/log4j-1.2.8.jar:./lib/commons-collections-3.1.jar:./lib/ojdbc14.jar:./lib/mediation.jar:./lib/BossLib.jar:./lib/BossUILib.jar:./lib/IcsLib.jar:./lib/ProductInt.jar:./lib/InvLib.jar:./lib/EJBModule.jar:./lib/MailIndb.jar:./lib/MailMgr.jar:./lib/SysmgrEJBModule.jar:./lib/SysmgrLib.jar:./lib/weblogic.jar:./lib/webservices.jar:./lib/ARLib.jar:./lib/medibean.jar:./config com.huawei.oss.mdsback.engine.MDSEngine 
+  242001 A   medcdr 53144 77674   0  68 24 a8419 126740        * 08:34:37      - 16:13 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9MOSdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CS_CDR_203.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  240001 A   medcdr 66748     1   8  60 20 b2373 319888        * 17:05:31      - 66:23 pretreat 6 
+  240001 A   medcdr 68468     1   0  60 20 5952a 175916        * 17:06:51      - 41:52 pretreat 10 
+  240001 A   medcdr 69608     1   1  60 20 3124d 138096        * 17:06:31      - 11:48 pretreat 9 
+  240001 A   medcdr 70368     1   1  60 20 80076 219844        * 17:06:11      - 46:26 pretreat 8 
+  240001 A   medcdr 72038     1   5  60 20 a803c 213224        * 17:08:11      - 42:22 pretreat 14 
+  242001 A   medcdr 72386 59798   0  68 24 dbcb0 123300        * 08:34:57      -  0:28 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ./CGdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/WCDMA.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CDRF_2GCDR_Org.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  240001 A   medcdr 73240     1   1  60 20 2b56d 174124        * 17:07:31      - 16:17 pretreat 12 
+  240001 A   medcdr 73772     1   0  60 20 4f8a9 127684        * 17:05:51      - 11:10 pretreat 7 
+  242001 A   medcdr 75688 54640   0  68 24 41e6f 152048        * 08:33:57      - 38:30 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9SULdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CS_CDR_203.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  240001 A   medcdr 78260     1   4  60 20 4402c 270912        * 17:03:51      - 58:59 pretreat 1 
+  240001 A   medcdr 78886     1   0  60 20 a85fb 111472        * 17:04:11      - 10:22 pretreat 2 
+  242001 A   medcdr 79338 54286   0  68 24 2446d 299784        * 08:34:17      - 34:57 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9BAGdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CS_CDR_203.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+
+Checking swap space
+OK: Swap space usage is 16%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+---> Alert: Kernel-open file usage 85% exceeded 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+***** Checking System Health of p630_app2 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.02
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+OK: Each process uses less than 100000 page of memory
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+***** Checking System Health of training-1 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+---> Alert: /cdrs file system usage = 85%
+---> Alert: /cdrs/oradata2 file system usage = 97%
+
+Checking system Load
+Ok: Current system load is 0.49
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking oracle's DB processes
+OK: oracle's bosstest is running
+
+Checking bossejb's Web processes
+OK: bossejb's WebLogic java are running
+
+Checking bossweb's Web processes
+OK: bossweb's WebLogic java are running
+
+Checking mdsejb's Web processes
+OK: mdsejb's WebLogic java are running
+
+Checking mdsweb's Web processes
+OK: mdsweb's WebLogic java are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  242001 A  bossweb 224764  31782   1  60 20 1e0afe 287464        *   Apr 16      - 28:29 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bosswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A  bossejb 225570 225264   1  60 20 30e63 305540        *   Apr 16      - 113:37 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bossejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A  bossejb 229400 230162   0  60 20 130f13 101472        *   Apr 16      -  8:26 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=orderserver -Dweblogic.management.username= -Dweblogic.management.password= -Dweblogic.management.server=http://localhost:7001 -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A   mdsweb 231708 231440   0  60 20 f0f4f 190980        *   Apr 16      -  6:00 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A   mdsejb 233004 224510   0  60 20 c11cc 141564        *   Apr 16      -  3:15 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdsejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+
+Checking swap space
+OK: Swap space usage is 32%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+---> Alert: Kernel-open file usage 92% exceeded 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+***** Checking System Health of training-2 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+---> Alert: /bossapp1 file system usage = 90%
+
+Checking system Load
+---> Alert: Current system load is  2.86
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking medser's DB processes
+OK: medser's startmds java are running
+
+Checking zombie processes
+---> Alert: Zombie processes running
+    root 41950     1   0                  0:00 <defunct>
+    root 50130     1   0                  0:00 <defunct>
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  240001 A   medcdr  7312     1  87  60 20 1bafbb 117460        *   Apr 25      - 68:26 pretreat 12 
+  240001 A   medcdr 28656     1   0  60 20 18b0b8 242736        *   Apr 25      - 502:11 pretreat 10 
+  240001 A      prm 30806     1   0  60 20 16ca56 389676 37021f18   Apr 23      -  0:19 /bossapp1/prm/bin/roam 1000 1 0 0 
+  242001 A   medcdr 32314 46922   0  68 24 1ac85a 303340        *   Apr 25      - 372:28 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9BAGdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CS_CDR_203.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  242001 A   medcdr 32744 33842   0  68 24 cc84c 121720        *   Apr 25      -  0:11 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9MOSdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CS_CDR_203.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  242001 A   medcdr 33232 34800   0  68 24 16c8b6 123560        *   Apr 25      -  0:12 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9SULdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CS_CDR_203.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  240001 A   medcdr 40780     1   0  60 20 ac52a 320160        *   Apr 25      - 411:16 pretreat 14 
+  240001 A      prm 48524     1   0  60 20 dca4d 389684 3854a6d8   Apr 23      -  0:10 /bossapp1/prm/bin/roam 1 1 0 0 
+   40001 A  billing 49548     1 120 120 20 70607 1851548            Apr 16      - 12432:37 synctopup 
+   40001 A  billing 51604     1   0  60 20 d05cd 874928 385639d8   Apr 16      - 734:02 synccdr -t 01 
+  240001 A   medcdr 53106     1  98  60 20 6c766 279772        *   Apr 25      - 65:08 pretreat 6 
+  242001 A   medser 53670 52650   0  60 20 170537 175716        *   Apr 16      - 120:08 java -Xms128m -Xmx384m -classpath ./lib/log4j-1.2.8.jar:./lib/commons-collections-3.1.jar:./lib/ojdbc14.jar:./lib/mediation.jar:./lib/BossLib.jar:./lib/BossUILib.jar:./lib/IcsLib.jar:./lib/ProductInt.jar:./lib/InvLib.jar:./lib/EJBModule.jar:./lib/MailIndb.jar:./lib/MailMgr.jar:./lib/SysmgrEJBModule.jar:./lib/SysmgrLib.jar:./lib/weblogic.jar:./lib/webservices.jar:./lib/ARLib.jar:./lib/medibean.jar:./config com.huawei.oss.mdsback.engine.MDSEngine 
+
+Checking swap space
+OK: Swap space usage is 2%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+

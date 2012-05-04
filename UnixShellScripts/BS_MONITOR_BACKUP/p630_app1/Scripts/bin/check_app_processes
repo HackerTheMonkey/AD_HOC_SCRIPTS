@@ -1,0 +1,62 @@
+check_cdrs ()
+{
+    . ~/.profile
+    cd /bossapp1/medcdr/OutData/back
+    cond1="original"
+    cond2="ASN"
+    currentDate=`date +"%Y%m%d"`
+    fileDate1=`date +"%d%m%Y"`
+    fileDate2=`date +"%Y%m%d"`
+    echo "Checking the CDRs process status"
+    for dir in `ls -l|grep "^d"|awk '{print $9}'|grep -v merge|grep -v COL_Prm|grep -v ERB|grep -v COL_G6_SUL|grep -v COL_G9IO_KIR|grep -v COL_RAPIN|grep -v "^\."`
+    do
+	cd $dir
+	for folder in `ls -l|grep "^d"|awk '{print $9}'`
+	do
+	    if ( test $folder = $cond1 ) then
+		cd $folder
+		#echo "now we are in ${PWD}"
+	    elif ( test $folder = $cond2 ) then
+		cd $folder
+		#echo "now we are in ${PWD}"
+	    fi
+	    ls -l $currentDate > /dev/null 2>&1
+	    cmdStatus_1=$(echo $?)
+	    ls -l $currentDate/*$fileDate1* > /dev/null 2>&1
+	    cmdStatus_2=$(echo $?)
+	    ls -l $currentDate/*$fileDate2* > /dev/null 2>&1
+	    cmdStatus_3=$(echo $?)
+	    if (test $cmdStatus_1 -ne 0) then
+		echo "---> Alert: Unbacked/Unprocessed CDRs for ${dir}"|tee -a $emerg_file
+	    elif [ $cmdStatus_2 -eq 0 -o $cmdStatus_3 -eq 0 ];then
+		echo "OK" > /dev/null
+	    else
+		[ $dir != "COL_TAPIN" -a $dir != "COL_TAPIN_GSM" -a $dir != "COL_Rating" ] &&  echo "---> Alert: Unbacked/Unprocessed CDRs for ${dir}"|tee -a $emerg_file
+	    fi
+	done
+	cd ../..
+    done
+    echo
+}
+
+owner=medcdr
+procs="Run_Proc_ cls_proc knl_proc om_proc"
+check_proc CDR "$procs" $owner
+
+owner=medcdr
+procs="co_proc"
+check_proc CDR "$procs" $owner 26
+
+owner=medcdr
+procs="pretreat"
+check_proc Pretreatment "$procs" $owner 17
+
+owner=medcdr
+procs="java"
+check_proc ASN "$procs" $owner
+
+owner=medser
+procs="java"
+check_proc Med-Ser "$procs" $owner
+
+check_cdrs

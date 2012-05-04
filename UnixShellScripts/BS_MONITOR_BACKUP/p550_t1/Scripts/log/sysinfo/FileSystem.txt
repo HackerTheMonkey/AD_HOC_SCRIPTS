@@ -1,0 +1,1829 @@
+################################################################################
+
+Date : Mon Apr 16 10:28:37 MEST 2007
+
+training-1# df -m
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        1024.00    833.60   19%     2255     1% /
+/dev/hd2        2560.00   1353.61   48%    28658     5% /usr
+/dev/hd9var     1024.00    967.61    6%      634     1% /var
+/dev/hd3        1024.00    866.20   16%      696     1% /tmp
+/dev/fwdump      384.00    371.91    4%       17     1% /var/adm/ras/platform
+/dev/hd1        5120.00   2961.02   43%    39037     3% /home
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt   10240.00   3569.90   66%    84134     4% /opt
+/dev/lv00      51200.00  14288.82   73%       38     1% /oradata
+/dev/lv01     204800.00  30804.50   85%      194     1% /cdrs
+/dev/oralv01   20480.00   1052.42   95%       20     1% /cdrs/oradata2
+################################################################################
+
+Date : Mon Apr 16 10:28:37 MEST 2007
+
+training-1# cat /etc/filesystems
+* @(#)filesystems @(#)29	1.22  src/bos/etc/filesystems/filesystems, cmdfs, bos530 9/8/00 13:57:45
+* IBM_PROLOG_BEGIN_TAG 
+* This is an automatically generated prolog. 
+*  
+* bos530 src/bos/etc/filesystems/filesystems 1.22 
+*  
+* Licensed Materials - Property of IBM 
+*  
+* (C) COPYRIGHT International Business Machines Corp. 1985,1993 
+* All Rights Reserved 
+*  
+* US Government Users Restricted Rights - Use, duplication or 
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+*  
+* IBM_PROLOG_END_TAG 
+*
+* COMPONENT_NAME: CMDFS
+* 
+* FUNCTIONS: none 
+*
+* ORIGINS: 27 
+*
+* (C) COPYRIGHT International Business Machines Corp. 1985, 1993
+* All Rights Reserved
+* Licensed Materials - Property of IBM
+*
+* US Government Users Restricted Rights - Use, duplication or
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+*
+*
+*
+* This version of /etc/filesystems assumes that only the root file system
+* is created and ready.  As new file systems are added, change the check,
+* mount, free, log, vol and vfs entries for the appropriate stanza.
+*
+
+/:
+	dev       = /dev/hd4
+	vol       = "root"
+	mount     = automatic
+	check     = false
+	free      = true
+	vfs	  = jfs
+	log	  = /dev/hd8
+	type	  = bootfs
+
+/home:
+	dev       = /dev/hd1
+	vol       = "/home"
+	mount     = true
+	check     = true
+	free      = false
+	vfs	  = jfs
+	log	  = /dev/hd8
+
+/usr:
+	dev       = /dev/hd2
+	vol       = "/usr"
+	mount     = automatic
+	check     = false
+	free      = false
+	vfs	  = jfs
+	log	  = /dev/hd8
+	type	  = bootfs
+
+/var:
+	dev       = /dev/hd9var
+	vol       = "/var"
+	mount     = automatic
+	check     = false
+	free      = false
+	vfs	  = jfs
+	log	  = /dev/hd8
+	type	  = bootfs
+
+/tmp:
+	dev       = /dev/hd3
+	vol       = "/tmp"
+	mount     = automatic
+	check     = false
+	free      = false
+	vfs	  = jfs
+	log	  = /dev/hd8
+
+/proc:
+	dev	  = /proc
+	vol	  = "/proc"
+	mount	  = true
+	check	  = false
+	free	  = false
+	vfs	  = procfs
+
+/opt:
+	dev       = /dev/hd10opt
+	vol       = "/opt"
+	mount     = true
+	check     = true
+	free      = false
+	vfs       = jfs
+	log       = /dev/hd8
+
+
+/tellin/scu:
+	dev		= /dev/lvscu
+	vfs		= jfs
+	log		= /dev/hd8
+	mount		= true
+	options		= rw
+	account		= false
+
+/tellin/datasync:
+	dev		= /dev/lvdatasync
+	vfs		= jfs
+	log		= /dev/hd8
+	mount		= true
+	options		= rw
+	account		= false
+
+/tellinshare/sms:
+	dev		= /dev/lvsms
+	vfs		= jfs
+	log		= /dev/hd8
+	mount		= true
+	options		= rw
+	account		= false
+
+/var/adm/ras/platform:
+	dev		= /dev/fwdump
+	vfs		= jfs
+	log		= /dev/hd8
+	mount		= false
+	account		= false
+
+/oradata:
+	dev		= /dev/lv00
+	vfs		= jfs
+	log		= /dev/hd8
+	mount		= true
+	options		= rw
+	account		= false
+
+/cdrs:
+	dev		= /dev/lv01
+	vfs		= jfs
+	log		= /dev/loglv01
+	mount		= false
+	options		= rw
+	account		= false
+
+/cdrs/oradata2:
+	dev		= /dev/oralv01
+	vfs		= jfs2
+	log		= /dev/oralv_log
+	mount		= false
+	options		= rw
+	account		= false
+################################################################################
+
+Date : Mon Apr 16 10:28:37 MEST 2007
+
+training-1# lsvg
+rootvg
+cdrvg
+################################################################################
+
+Date : Mon Apr 16 10:28:37 MEST 2007
+
+training-1: Logical Volumes on VGs
+cdrvg:
+LV NAME             TYPE       LPs   PPs   PVs  LV STATE      MOUNT POINT
+loglv01             jfslog     1     1     1    open/syncd    N/A
+loglv00             jfslog     8     8     1    closed/syncd  N/A
+lv01                jfs        800   800   1    open/syncd    /cdrs
+swaplv              paging     24    24    1    open/syncd    N/A
+oralv01             jfs2       80    80    1    open/syncd    /cdrs/oradata2
+oralv_log           jfs2log    8     8     1    open/syncd    N/A
+rootvg:
+LV NAME             TYPE       LPs   PPs   PVs  LV STATE      MOUNT POINT
+hd5                 boot       1     2     2    closed/syncd  N/A
+hd6                 paging     8     16    2    open/syncd    N/A
+hd8                 jfslog     1     2     2    open/syncd    N/A
+hd4                 jfs        8     16    2    open/syncd    /
+hd2                 jfs        20    40    2    open/syncd    /usr
+hd9var              jfs        8     16    2    open/syncd    /var
+hd3                 jfs        8     16    2    open/syncd    /tmp
+hd1                 jfs        40    80    2    open/syncd    /home
+hd10opt             jfs        80    160   2    open/syncd    /opt
+lg_dumplv           sysdump    16    16    1    open/syncd    N/A
+lv00                jfs        400   400   1    open/syncd    /oradata
+fwdump              jfs        3     3     1    open/syncd    /var/adm/ras/platform
+################################################################################
+
+Date : Mon Apr 16 10:28:38 MEST 2007
+
+training-1: Physical Volumes on VGs
+cdrvg:
+PV_NAME           PV STATE          TOTAL PPs   FREE PPs    FREE DISTRIBUTION
+hdisk2            active            1357        524         240..00..00..12..272
+hdisk5            active            814         726         163..75..162..163..163
+rootvg:
+PV_NAME           PV STATE          TOTAL PPs   FREE PPs    FREE DISTRIBUTION
+hdisk1            active            546         15          00..00..00..00..15
+hdisk0            active            546         310         109..00..00..92..109
+################################################################################
+
+Date : Mon Apr 16 10:28:38 MEST 2007
+
+training-1: Logical Volumes
+fwdump:/var/adm/ras/platform
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0127 hdisk1            
+0002  0128 hdisk1            
+0003  0129 hdisk1            
+hd1:/home
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0259 hdisk0            0259 hdisk1            
+0002  0260 hdisk0            0260 hdisk1            
+0003  0148 hdisk0            0127 hdisk0            
+0004  0149 hdisk0            0128 hdisk0            
+0005  0150 hdisk0            0129 hdisk0            
+0006  0151 hdisk0            0130 hdisk0            
+0007  0152 hdisk0            0131 hdisk0            
+0008  0153 hdisk0            0132 hdisk0            
+0009  0154 hdisk0            0133 hdisk0            
+0010  0155 hdisk0            0134 hdisk0            
+0011  0156 hdisk0            0135 hdisk0            
+0012  0157 hdisk0            0136 hdisk0            
+0013  0158 hdisk0            0137 hdisk0            
+0014  0159 hdisk0            0138 hdisk0            
+0015  0160 hdisk0            0139 hdisk0            
+0016  0161 hdisk0            0140 hdisk0            
+0017  0162 hdisk0            0141 hdisk0            
+0018  0163 hdisk0            0142 hdisk0            
+0019  0164 hdisk0            0143 hdisk0            
+0020  0165 hdisk0            0144 hdisk0            
+0021  0166 hdisk0            0145 hdisk0            
+0022  0167 hdisk0            0146 hdisk0            
+0023  0168 hdisk0            0147 hdisk0            
+0024  0169 hdisk0            0329 hdisk0            
+0025  0170 hdisk0            0330 hdisk0            
+0026  0171 hdisk0            0331 hdisk0            
+0027  0172 hdisk0            0332 hdisk0            
+0028  0173 hdisk0            0333 hdisk0            
+0029  0174 hdisk0            0334 hdisk0            
+0030  0175 hdisk0            0335 hdisk0            
+0031  0176 hdisk0            0336 hdisk0            
+0032  0177 hdisk0            0337 hdisk0            
+0033  0178 hdisk0            0338 hdisk0            
+0034  0179 hdisk0            0339 hdisk0            
+0035  0180 hdisk0            0340 hdisk0            
+0036  0181 hdisk0            0341 hdisk0            
+0037  0182 hdisk0            0342 hdisk0            
+0038  0183 hdisk0            0343 hdisk0            
+0039  0184 hdisk0            0344 hdisk0            
+0040  0185 hdisk0            0345 hdisk0            
+hd10opt:/opt
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0261 hdisk0            0261 hdisk1            
+0002  0284 hdisk0            0268 hdisk1            
+0003  0285 hdisk0            0269 hdisk1            
+0004  0286 hdisk0            0270 hdisk1            
+0005  0287 hdisk0            0271 hdisk1            
+0006  0288 hdisk0            0272 hdisk1            
+0007  0289 hdisk0            0273 hdisk1            
+0008  0290 hdisk0            0274 hdisk1            
+0009  0291 hdisk0            0275 hdisk1            
+0010  0292 hdisk0            0276 hdisk1            
+0011  0293 hdisk0            0277 hdisk1            
+0012  0294 hdisk0            0278 hdisk1            
+0013  0295 hdisk0            0279 hdisk1            
+0014  0296 hdisk0            0280 hdisk1            
+0015  0297 hdisk0            0281 hdisk1            
+0016  0298 hdisk0            0282 hdisk1            
+0017  0299 hdisk0            0283 hdisk1            
+0018  0300 hdisk0            0284 hdisk1            
+0019  0301 hdisk0            0285 hdisk1            
+0020  0302 hdisk0            0286 hdisk1            
+0021  0303 hdisk0            0287 hdisk1            
+0022  0304 hdisk0            0288 hdisk1            
+0023  0305 hdisk0            0289 hdisk1            
+0024  0306 hdisk0            0290 hdisk1            
+0025  0307 hdisk0            0291 hdisk1            
+0026  0308 hdisk0            0292 hdisk1            
+0027  0309 hdisk0            0293 hdisk1            
+0028  0310 hdisk0            0294 hdisk1            
+0029  0311 hdisk0            0295 hdisk1            
+0030  0312 hdisk0            0296 hdisk1            
+0031  0313 hdisk0            0297 hdisk1            
+0032  0314 hdisk0            0298 hdisk1            
+0033  0315 hdisk0            0299 hdisk1            
+0034  0316 hdisk0            0300 hdisk1            
+0035  0317 hdisk0            0301 hdisk1            
+0036  0318 hdisk0            0302 hdisk1            
+0037  0319 hdisk0            0303 hdisk1            
+0038  0320 hdisk0            0304 hdisk1            
+0039  0321 hdisk0            0305 hdisk1            
+0040  0322 hdisk0            0306 hdisk1            
+0041  0323 hdisk0            0307 hdisk1            
+0042  0324 hdisk0            0308 hdisk1            
+0043  0325 hdisk0            0309 hdisk1            
+0044  0326 hdisk0            0310 hdisk1            
+0045  0327 hdisk0            0311 hdisk1            
+0046  0328 hdisk0            0312 hdisk1            
+0047  0186 hdisk0            0313 hdisk1            
+0048  0187 hdisk0            0314 hdisk1            
+0049  0188 hdisk0            0315 hdisk1            
+0050  0189 hdisk0            0316 hdisk1            
+0051  0190 hdisk0            0317 hdisk1            
+0052  0191 hdisk0            0318 hdisk1            
+0053  0192 hdisk0            0319 hdisk1            
+0054  0193 hdisk0            0320 hdisk1            
+0055  0194 hdisk0            0321 hdisk1            
+0056  0195 hdisk0            0322 hdisk1            
+0057  0196 hdisk0            0323 hdisk1            
+0058  0197 hdisk0            0324 hdisk1            
+0059  0198 hdisk0            0325 hdisk1            
+0060  0199 hdisk0            0326 hdisk1            
+0061  0200 hdisk0            0327 hdisk1            
+0062  0201 hdisk0            0328 hdisk1            
+0063  0202 hdisk0            0111 hdisk1            
+0064  0203 hdisk0            0112 hdisk1            
+0065  0204 hdisk0            0113 hdisk1            
+0066  0205 hdisk0            0114 hdisk1            
+0067  0206 hdisk0            0115 hdisk1            
+0068  0207 hdisk0            0116 hdisk1            
+0069  0208 hdisk0            0117 hdisk1            
+0070  0209 hdisk0            0118 hdisk1            
+0071  0210 hdisk0            0119 hdisk1            
+0072  0211 hdisk0            0120 hdisk1            
+0073  0212 hdisk0            0121 hdisk1            
+0074  0213 hdisk0            0122 hdisk1            
+0075  0214 hdisk0            0123 hdisk1            
+0076  0215 hdisk0            0124 hdisk1            
+0077  0216 hdisk0            0125 hdisk1            
+0078  0217 hdisk0            0126 hdisk1            
+0079  0218 hdisk0            0218 hdisk1            
+0080  0219 hdisk0            0219 hdisk1            
+hd2:/usr
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0231 hdisk0            0231 hdisk1            
+0002  0232 hdisk0            0232 hdisk1            
+0003  0233 hdisk0            0233 hdisk1            
+0004  0234 hdisk0            0234 hdisk1            
+0005  0235 hdisk0            0235 hdisk1            
+0006  0236 hdisk0            0236 hdisk1            
+0007  0237 hdisk0            0237 hdisk1            
+0008  0238 hdisk0            0238 hdisk1            
+0009  0239 hdisk0            0239 hdisk1            
+0010  0240 hdisk0            0240 hdisk1            
+0011  0241 hdisk0            0241 hdisk1            
+0012  0242 hdisk0            0242 hdisk1            
+0013  0243 hdisk0            0243 hdisk1            
+0014  0244 hdisk0            0244 hdisk1            
+0015  0245 hdisk0            0245 hdisk1            
+0016  0246 hdisk0            0246 hdisk1            
+0017  0247 hdisk0            0247 hdisk1            
+0018  0248 hdisk0            0248 hdisk1            
+0019  0249 hdisk0            0249 hdisk1            
+0020  0250 hdisk0            0250 hdisk1            
+hd3:/tmp
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0255 hdisk0            0255 hdisk1            
+0002  0256 hdisk0            0256 hdisk1            
+0003  0257 hdisk0            0257 hdisk1            
+0004  0258 hdisk0            0258 hdisk1            
+0005  0268 hdisk0            0272 hdisk0            
+0006  0269 hdisk0            0273 hdisk0            
+0007  0270 hdisk0            0274 hdisk0            
+0008  0271 hdisk0            0275 hdisk0            
+hd4:/
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0229 hdisk0            0229 hdisk1            
+0002  0230 hdisk0            0230 hdisk1            
+0003  0262 hdisk0            0262 hdisk1            
+0004  0263 hdisk0            0263 hdisk1            
+0005  0264 hdisk0            0264 hdisk1            
+0006  0265 hdisk0            0265 hdisk1            
+0007  0266 hdisk0            0266 hdisk1            
+0008  0267 hdisk0            0267 hdisk1            
+hd5:N/A
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0001 hdisk0            0001 hdisk1            
+hd6:N/A
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0220 hdisk0            0220 hdisk1            
+0002  0221 hdisk0            0221 hdisk1            
+0003  0222 hdisk0            0222 hdisk1            
+0004  0223 hdisk0            0223 hdisk1            
+0005  0224 hdisk0            0224 hdisk1            
+0006  0225 hdisk0            0225 hdisk1            
+0007  0226 hdisk0            0226 hdisk1            
+0008  0227 hdisk0            0227 hdisk1            
+hd8:N/A
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0228 hdisk0            0228 hdisk1            
+hd9var:/var
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0251 hdisk0            0251 hdisk1            
+0002  0252 hdisk0            0252 hdisk1            
+0003  0253 hdisk0            0253 hdisk1            
+0004  0254 hdisk0            0254 hdisk1            
+0005  0276 hdisk0            0280 hdisk0            
+0006  0277 hdisk0            0281 hdisk0            
+0007  0278 hdisk0            0282 hdisk0            
+0008  0279 hdisk0            0283 hdisk0            
+lg_dumplv:N/A
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0111 hdisk0            
+0002  0112 hdisk0            
+0003  0113 hdisk0            
+0004  0114 hdisk0            
+0005  0115 hdisk0            
+0006  0116 hdisk0            
+0007  0117 hdisk0            
+0008  0118 hdisk0            
+0009  0119 hdisk0            
+0010  0120 hdisk0            
+0011  0121 hdisk0            
+0012  0122 hdisk0            
+0013  0123 hdisk0            
+0014  0124 hdisk0            
+0015  0125 hdisk0            
+0016  0126 hdisk0            
+loglv00:N/A
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0265 hdisk2            
+0002  0266 hdisk2            
+0003  0267 hdisk2            
+0004  0268 hdisk2            
+0005  0269 hdisk2            
+0006  0270 hdisk2            
+0007  0271 hdisk2            
+0008  0272 hdisk2            
+loglv01:N/A
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0273 hdisk2            
+lv00:/oradata
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0130 hdisk1            
+0002  0131 hdisk1            
+0003  0132 hdisk1            
+0004  0133 hdisk1            
+0005  0134 hdisk1            
+0006  0135 hdisk1            
+0007  0136 hdisk1            
+0008  0137 hdisk1            
+0009  0138 hdisk1            
+0010  0139 hdisk1            
+0011  0140 hdisk1            
+0012  0141 hdisk1            
+0013  0142 hdisk1            
+0014  0143 hdisk1            
+0015  0144 hdisk1            
+0016  0145 hdisk1            
+0017  0146 hdisk1            
+0018  0147 hdisk1            
+0019  0148 hdisk1            
+0020  0149 hdisk1            
+0021  0150 hdisk1            
+0022  0151 hdisk1            
+0023  0152 hdisk1            
+0024  0153 hdisk1            
+0025  0154 hdisk1            
+0026  0155 hdisk1            
+0027  0156 hdisk1            
+0028  0157 hdisk1            
+0029  0158 hdisk1            
+0030  0159 hdisk1            
+0031  0160 hdisk1            
+0032  0161 hdisk1            
+0033  0162 hdisk1            
+0034  0163 hdisk1            
+0035  0164 hdisk1            
+0036  0165 hdisk1            
+0037  0166 hdisk1            
+0038  0167 hdisk1            
+0039  0168 hdisk1            
+0040  0169 hdisk1            
+0041  0170 hdisk1            
+0042  0171 hdisk1            
+0043  0172 hdisk1            
+0044  0173 hdisk1            
+0045  0174 hdisk1            
+0046  0175 hdisk1            
+0047  0176 hdisk1            
+0048  0177 hdisk1            
+0049  0178 hdisk1            
+0050  0179 hdisk1            
+0051  0180 hdisk1            
+0052  0181 hdisk1            
+0053  0182 hdisk1            
+0054  0183 hdisk1            
+0055  0184 hdisk1            
+0056  0185 hdisk1            
+0057  0186 hdisk1            
+0058  0187 hdisk1            
+0059  0188 hdisk1            
+0060  0189 hdisk1            
+0061  0190 hdisk1            
+0062  0191 hdisk1            
+0063  0192 hdisk1            
+0064  0193 hdisk1            
+0065  0194 hdisk1            
+0066  0195 hdisk1            
+0067  0196 hdisk1            
+0068  0197 hdisk1            
+0069  0198 hdisk1            
+0070  0199 hdisk1            
+0071  0200 hdisk1            
+0072  0201 hdisk1            
+0073  0202 hdisk1            
+0074  0203 hdisk1            
+0075  0204 hdisk1            
+0076  0205 hdisk1            
+0077  0206 hdisk1            
+0078  0207 hdisk1            
+0079  0208 hdisk1            
+0080  0209 hdisk1            
+0081  0210 hdisk1            
+0082  0211 hdisk1            
+0083  0212 hdisk1            
+0084  0213 hdisk1            
+0085  0214 hdisk1            
+0086  0215 hdisk1            
+0087  0216 hdisk1            
+0088  0217 hdisk1            
+0089  0002 hdisk1            
+0090  0003 hdisk1            
+0091  0004 hdisk1            
+0092  0005 hdisk1            
+0093  0006 hdisk1            
+0094  0007 hdisk1            
+0095  0008 hdisk1            
+0096  0009 hdisk1            
+0097  0010 hdisk1            
+0098  0011 hdisk1            
+0099  0012 hdisk1            
+0100  0013 hdisk1            
+0101  0014 hdisk1            
+0102  0015 hdisk1            
+0103  0016 hdisk1            
+0104  0017 hdisk1            
+0105  0018 hdisk1            
+0106  0019 hdisk1            
+0107  0020 hdisk1            
+0108  0021 hdisk1            
+0109  0022 hdisk1            
+0110  0023 hdisk1            
+0111  0024 hdisk1            
+0112  0025 hdisk1            
+0113  0026 hdisk1            
+0114  0027 hdisk1            
+0115  0028 hdisk1            
+0116  0029 hdisk1            
+0117  0030 hdisk1            
+0118  0031 hdisk1            
+0119  0032 hdisk1            
+0120  0033 hdisk1            
+0121  0034 hdisk1            
+0122  0035 hdisk1            
+0123  0036 hdisk1            
+0124  0037 hdisk1            
+0125  0038 hdisk1            
+0126  0039 hdisk1            
+0127  0040 hdisk1            
+0128  0041 hdisk1            
+0129  0042 hdisk1            
+0130  0043 hdisk1            
+0131  0044 hdisk1            
+0132  0045 hdisk1            
+0133  0046 hdisk1            
+0134  0047 hdisk1            
+0135  0048 hdisk1            
+0136  0049 hdisk1            
+0137  0050 hdisk1            
+0138  0051 hdisk1            
+0139  0052 hdisk1            
+0140  0053 hdisk1            
+0141  0054 hdisk1            
+0142  0055 hdisk1            
+0143  0056 hdisk1            
+0144  0057 hdisk1            
+0145  0058 hdisk1            
+0146  0059 hdisk1            
+0147  0060 hdisk1            
+0148  0061 hdisk1            
+0149  0062 hdisk1            
+0150  0063 hdisk1            
+0151  0064 hdisk1            
+0152  0065 hdisk1            
+0153  0066 hdisk1            
+0154  0067 hdisk1            
+0155  0068 hdisk1            
+0156  0069 hdisk1            
+0157  0070 hdisk1            
+0158  0071 hdisk1            
+0159  0072 hdisk1            
+0160  0073 hdisk1            
+0161  0074 hdisk1            
+0162  0075 hdisk1            
+0163  0076 hdisk1            
+0164  0077 hdisk1            
+0165  0078 hdisk1            
+0166  0079 hdisk1            
+0167  0080 hdisk1            
+0168  0081 hdisk1            
+0169  0082 hdisk1            
+0170  0083 hdisk1            
+0171  0084 hdisk1            
+0172  0085 hdisk1            
+0173  0086 hdisk1            
+0174  0087 hdisk1            
+0175  0088 hdisk1            
+0176  0089 hdisk1            
+0177  0090 hdisk1            
+0178  0091 hdisk1            
+0179  0092 hdisk1            
+0180  0093 hdisk1            
+0181  0094 hdisk1            
+0182  0095 hdisk1            
+0183  0096 hdisk1            
+0184  0097 hdisk1            
+0185  0098 hdisk1            
+0186  0099 hdisk1            
+0187  0100 hdisk1            
+0188  0101 hdisk1            
+0189  0102 hdisk1            
+0190  0103 hdisk1            
+0191  0104 hdisk1            
+0192  0105 hdisk1            
+0193  0106 hdisk1            
+0194  0107 hdisk1            
+0195  0108 hdisk1            
+0196  0109 hdisk1            
+0197  0110 hdisk1            
+0198  0329 hdisk1            
+0199  0330 hdisk1            
+0200  0331 hdisk1            
+0201  0332 hdisk1            
+0202  0333 hdisk1            
+0203  0334 hdisk1            
+0204  0335 hdisk1            
+0205  0336 hdisk1            
+0206  0337 hdisk1            
+0207  0338 hdisk1            
+0208  0339 hdisk1            
+0209  0340 hdisk1            
+0210  0341 hdisk1            
+0211  0342 hdisk1            
+0212  0343 hdisk1            
+0213  0344 hdisk1            
+0214  0345 hdisk1            
+0215  0346 hdisk1            
+0216  0347 hdisk1            
+0217  0348 hdisk1            
+0218  0349 hdisk1            
+0219  0350 hdisk1            
+0220  0351 hdisk1            
+0221  0352 hdisk1            
+0222  0353 hdisk1            
+0223  0354 hdisk1            
+0224  0355 hdisk1            
+0225  0356 hdisk1            
+0226  0357 hdisk1            
+0227  0358 hdisk1            
+0228  0359 hdisk1            
+0229  0360 hdisk1            
+0230  0361 hdisk1            
+0231  0362 hdisk1            
+0232  0363 hdisk1            
+0233  0364 hdisk1            
+0234  0365 hdisk1            
+0235  0366 hdisk1            
+0236  0367 hdisk1            
+0237  0368 hdisk1            
+0238  0369 hdisk1            
+0239  0370 hdisk1            
+0240  0371 hdisk1            
+0241  0372 hdisk1            
+0242  0373 hdisk1            
+0243  0374 hdisk1            
+0244  0375 hdisk1            
+0245  0376 hdisk1            
+0246  0377 hdisk1            
+0247  0378 hdisk1            
+0248  0379 hdisk1            
+0249  0380 hdisk1            
+0250  0381 hdisk1            
+0251  0382 hdisk1            
+0252  0383 hdisk1            
+0253  0384 hdisk1            
+0254  0385 hdisk1            
+0255  0386 hdisk1            
+0256  0387 hdisk1            
+0257  0388 hdisk1            
+0258  0389 hdisk1            
+0259  0390 hdisk1            
+0260  0391 hdisk1            
+0261  0392 hdisk1            
+0262  0393 hdisk1            
+0263  0394 hdisk1            
+0264  0395 hdisk1            
+0265  0396 hdisk1            
+0266  0397 hdisk1            
+0267  0398 hdisk1            
+0268  0399 hdisk1            
+0269  0400 hdisk1            
+0270  0401 hdisk1            
+0271  0402 hdisk1            
+0272  0403 hdisk1            
+0273  0404 hdisk1            
+0274  0405 hdisk1            
+0275  0406 hdisk1            
+0276  0407 hdisk1            
+0277  0408 hdisk1            
+0278  0409 hdisk1            
+0279  0410 hdisk1            
+0280  0411 hdisk1            
+0281  0412 hdisk1            
+0282  0413 hdisk1            
+0283  0414 hdisk1            
+0284  0415 hdisk1            
+0285  0416 hdisk1            
+0286  0417 hdisk1            
+0287  0418 hdisk1            
+0288  0419 hdisk1            
+0289  0420 hdisk1            
+0290  0421 hdisk1            
+0291  0422 hdisk1            
+0292  0423 hdisk1            
+0293  0424 hdisk1            
+0294  0425 hdisk1            
+0295  0426 hdisk1            
+0296  0427 hdisk1            
+0297  0428 hdisk1            
+0298  0429 hdisk1            
+0299  0430 hdisk1            
+0300  0431 hdisk1            
+0301  0432 hdisk1            
+0302  0433 hdisk1            
+0303  0434 hdisk1            
+0304  0435 hdisk1            
+0305  0436 hdisk1            
+0306  0437 hdisk1            
+0307  0438 hdisk1            
+0308  0439 hdisk1            
+0309  0440 hdisk1            
+0310  0441 hdisk1            
+0311  0442 hdisk1            
+0312  0443 hdisk1            
+0313  0444 hdisk1            
+0314  0445 hdisk1            
+0315  0446 hdisk1            
+0316  0447 hdisk1            
+0317  0448 hdisk1            
+0318  0449 hdisk1            
+0319  0450 hdisk1            
+0320  0451 hdisk1            
+0321  0452 hdisk1            
+0322  0453 hdisk1            
+0323  0454 hdisk1            
+0324  0455 hdisk1            
+0325  0456 hdisk1            
+0326  0457 hdisk1            
+0327  0458 hdisk1            
+0328  0459 hdisk1            
+0329  0460 hdisk1            
+0330  0461 hdisk1            
+0331  0462 hdisk1            
+0332  0463 hdisk1            
+0333  0464 hdisk1            
+0334  0465 hdisk1            
+0335  0466 hdisk1            
+0336  0467 hdisk1            
+0337  0468 hdisk1            
+0338  0469 hdisk1            
+0339  0470 hdisk1            
+0340  0471 hdisk1            
+0341  0472 hdisk1            
+0342  0473 hdisk1            
+0343  0474 hdisk1            
+0344  0475 hdisk1            
+0345  0476 hdisk1            
+0346  0477 hdisk1            
+0347  0478 hdisk1            
+0348  0479 hdisk1            
+0349  0480 hdisk1            
+0350  0481 hdisk1            
+0351  0482 hdisk1            
+0352  0483 hdisk1            
+0353  0484 hdisk1            
+0354  0485 hdisk1            
+0355  0486 hdisk1            
+0356  0487 hdisk1            
+0357  0488 hdisk1            
+0358  0489 hdisk1            
+0359  0490 hdisk1            
+0360  0491 hdisk1            
+0361  0492 hdisk1            
+0362  0493 hdisk1            
+0363  0494 hdisk1            
+0364  0495 hdisk1            
+0365  0496 hdisk1            
+0366  0497 hdisk1            
+0367  0498 hdisk1            
+0368  0499 hdisk1            
+0369  0500 hdisk1            
+0370  0501 hdisk1            
+0371  0502 hdisk1            
+0372  0503 hdisk1            
+0373  0504 hdisk1            
+0374  0505 hdisk1            
+0375  0506 hdisk1            
+0376  0507 hdisk1            
+0377  0508 hdisk1            
+0378  0509 hdisk1            
+0379  0510 hdisk1            
+0380  0511 hdisk1            
+0381  0512 hdisk1            
+0382  0513 hdisk1            
+0383  0514 hdisk1            
+0384  0515 hdisk1            
+0385  0516 hdisk1            
+0386  0517 hdisk1            
+0387  0518 hdisk1            
+0388  0519 hdisk1            
+0389  0520 hdisk1            
+0390  0521 hdisk1            
+0391  0522 hdisk1            
+0392  0523 hdisk1            
+0393  0524 hdisk1            
+0394  0525 hdisk1            
+0395  0526 hdisk1            
+0396  0527 hdisk1            
+0397  0528 hdisk1            
+0398  0529 hdisk1            
+0399  0530 hdisk1            
+0400  0531 hdisk1            
+lv01:/cdrs
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0274 hdisk2            
+0002  0275 hdisk2            
+0003  0276 hdisk2            
+0004  0277 hdisk2            
+0005  0278 hdisk2            
+0006  0279 hdisk2            
+0007  0280 hdisk2            
+0008  0281 hdisk2            
+0009  0282 hdisk2            
+0010  0283 hdisk2            
+0011  0284 hdisk2            
+0012  0285 hdisk2            
+0013  0286 hdisk2            
+0014  0287 hdisk2            
+0015  0288 hdisk2            
+0016  0289 hdisk2            
+0017  0290 hdisk2            
+0018  0291 hdisk2            
+0019  0292 hdisk2            
+0020  0293 hdisk2            
+0021  0294 hdisk2            
+0022  0295 hdisk2            
+0023  0296 hdisk2            
+0024  0297 hdisk2            
+0025  0298 hdisk2            
+0026  0299 hdisk2            
+0027  0300 hdisk2            
+0028  0301 hdisk2            
+0029  0302 hdisk2            
+0030  0303 hdisk2            
+0031  0304 hdisk2            
+0032  0305 hdisk2            
+0033  0306 hdisk2            
+0034  0307 hdisk2            
+0035  0308 hdisk2            
+0036  0309 hdisk2            
+0037  0310 hdisk2            
+0038  0311 hdisk2            
+0039  0312 hdisk2            
+0040  0313 hdisk2            
+0041  0314 hdisk2            
+0042  0315 hdisk2            
+0043  0316 hdisk2            
+0044  0317 hdisk2            
+0045  0318 hdisk2            
+0046  0319 hdisk2            
+0047  0320 hdisk2            
+0048  0321 hdisk2            
+0049  0322 hdisk2            
+0050  0323 hdisk2            
+0051  0324 hdisk2            
+0052  0325 hdisk2            
+0053  0326 hdisk2            
+0054  0327 hdisk2            
+0055  0328 hdisk2            
+0056  0329 hdisk2            
+0057  0330 hdisk2            
+0058  0331 hdisk2            
+0059  0332 hdisk2            
+0060  0333 hdisk2            
+0061  0334 hdisk2            
+0062  0335 hdisk2            
+0063  0336 hdisk2            
+0064  0337 hdisk2            
+0065  0338 hdisk2            
+0066  0339 hdisk2            
+0067  0340 hdisk2            
+0068  0341 hdisk2            
+0069  0342 hdisk2            
+0070  0343 hdisk2            
+0071  0344 hdisk2            
+0072  0345 hdisk2            
+0073  0346 hdisk2            
+0074  0347 hdisk2            
+0075  0348 hdisk2            
+0076  0349 hdisk2            
+0077  0350 hdisk2            
+0078  0351 hdisk2            
+0079  0352 hdisk2            
+0080  0353 hdisk2            
+0081  0354 hdisk2            
+0082  0355 hdisk2            
+0083  0356 hdisk2            
+0084  0357 hdisk2            
+0085  0358 hdisk2            
+0086  0359 hdisk2            
+0087  0360 hdisk2            
+0088  0361 hdisk2            
+0089  0362 hdisk2            
+0090  0363 hdisk2            
+0091  0364 hdisk2            
+0092  0365 hdisk2            
+0093  0366 hdisk2            
+0094  0367 hdisk2            
+0095  0368 hdisk2            
+0096  0369 hdisk2            
+0097  0370 hdisk2            
+0098  0371 hdisk2            
+0099  0372 hdisk2            
+0100  0373 hdisk2            
+0101  0374 hdisk2            
+0102  0375 hdisk2            
+0103  0376 hdisk2            
+0104  0377 hdisk2            
+0105  0378 hdisk2            
+0106  0379 hdisk2            
+0107  0380 hdisk2            
+0108  0381 hdisk2            
+0109  0382 hdisk2            
+0110  0383 hdisk2            
+0111  0384 hdisk2            
+0112  0385 hdisk2            
+0113  0386 hdisk2            
+0114  0387 hdisk2            
+0115  0388 hdisk2            
+0116  0389 hdisk2            
+0117  0390 hdisk2            
+0118  0391 hdisk2            
+0119  0392 hdisk2            
+0120  0393 hdisk2            
+0121  0394 hdisk2            
+0122  0395 hdisk2            
+0123  0396 hdisk2            
+0124  0397 hdisk2            
+0125  0398 hdisk2            
+0126  0399 hdisk2            
+0127  0400 hdisk2            
+0128  0401 hdisk2            
+0129  0402 hdisk2            
+0130  0403 hdisk2            
+0131  0404 hdisk2            
+0132  0405 hdisk2            
+0133  0406 hdisk2            
+0134  0407 hdisk2            
+0135  0408 hdisk2            
+0136  0409 hdisk2            
+0137  0410 hdisk2            
+0138  0411 hdisk2            
+0139  0412 hdisk2            
+0140  0413 hdisk2            
+0141  0414 hdisk2            
+0142  0415 hdisk2            
+0143  0416 hdisk2            
+0144  0417 hdisk2            
+0145  0418 hdisk2            
+0146  0419 hdisk2            
+0147  0420 hdisk2            
+0148  0421 hdisk2            
+0149  0422 hdisk2            
+0150  0423 hdisk2            
+0151  0424 hdisk2            
+0152  0425 hdisk2            
+0153  0426 hdisk2            
+0154  0427 hdisk2            
+0155  0428 hdisk2            
+0156  0429 hdisk2            
+0157  0430 hdisk2            
+0158  0431 hdisk2            
+0159  0432 hdisk2            
+0160  0433 hdisk2            
+0161  0434 hdisk2            
+0162  0435 hdisk2            
+0163  0436 hdisk2            
+0164  0437 hdisk2            
+0165  0438 hdisk2            
+0166  0439 hdisk2            
+0167  0440 hdisk2            
+0168  0441 hdisk2            
+0169  0442 hdisk2            
+0170  0443 hdisk2            
+0171  0444 hdisk2            
+0172  0445 hdisk2            
+0173  0446 hdisk2            
+0174  0447 hdisk2            
+0175  0448 hdisk2            
+0176  0449 hdisk2            
+0177  0450 hdisk2            
+0178  0451 hdisk2            
+0179  0452 hdisk2            
+0180  0453 hdisk2            
+0181  0454 hdisk2            
+0182  0455 hdisk2            
+0183  0456 hdisk2            
+0184  0457 hdisk2            
+0185  0458 hdisk2            
+0186  0459 hdisk2            
+0187  0460 hdisk2            
+0188  0461 hdisk2            
+0189  0462 hdisk2            
+0190  0463 hdisk2            
+0191  0464 hdisk2            
+0192  0465 hdisk2            
+0193  0466 hdisk2            
+0194  0467 hdisk2            
+0195  0468 hdisk2            
+0196  0469 hdisk2            
+0197  0470 hdisk2            
+0198  0471 hdisk2            
+0199  0472 hdisk2            
+0200  0473 hdisk2            
+0201  0474 hdisk2            
+0202  0475 hdisk2            
+0203  0476 hdisk2            
+0204  0477 hdisk2            
+0205  0478 hdisk2            
+0206  0479 hdisk2            
+0207  0480 hdisk2            
+0208  0481 hdisk2            
+0209  0482 hdisk2            
+0210  0483 hdisk2            
+0211  0484 hdisk2            
+0212  0485 hdisk2            
+0213  0486 hdisk2            
+0214  0487 hdisk2            
+0215  0488 hdisk2            
+0216  0489 hdisk2            
+0217  0490 hdisk2            
+0218  0491 hdisk2            
+0219  0492 hdisk2            
+0220  0493 hdisk2            
+0221  0494 hdisk2            
+0222  0495 hdisk2            
+0223  0496 hdisk2            
+0224  0497 hdisk2            
+0225  0498 hdisk2            
+0226  0499 hdisk2            
+0227  0500 hdisk2            
+0228  0501 hdisk2            
+0229  0502 hdisk2            
+0230  0503 hdisk2            
+0231  0504 hdisk2            
+0232  0505 hdisk2            
+0233  0506 hdisk2            
+0234  0507 hdisk2            
+0235  0508 hdisk2            
+0236  0509 hdisk2            
+0237  0510 hdisk2            
+0238  0511 hdisk2            
+0239  0512 hdisk2            
+0240  0513 hdisk2            
+0241  0514 hdisk2            
+0242  0515 hdisk2            
+0243  0516 hdisk2            
+0244  0517 hdisk2            
+0245  0518 hdisk2            
+0246  0519 hdisk2            
+0247  0520 hdisk2            
+0248  0521 hdisk2            
+0249  0522 hdisk2            
+0250  0523 hdisk2            
+0251  0524 hdisk2            
+0252  0525 hdisk2            
+0253  0526 hdisk2            
+0254  0527 hdisk2            
+0255  0528 hdisk2            
+0256  0529 hdisk2            
+0257  0530 hdisk2            
+0258  0531 hdisk2            
+0259  0532 hdisk2            
+0260  0533 hdisk2            
+0261  0534 hdisk2            
+0262  0535 hdisk2            
+0263  0536 hdisk2            
+0264  0537 hdisk2            
+0265  0538 hdisk2            
+0266  0539 hdisk2            
+0267  0540 hdisk2            
+0268  0541 hdisk2            
+0269  0542 hdisk2            
+0270  0543 hdisk2            
+0271  0544 hdisk2            
+0272  0545 hdisk2            
+0273  0546 hdisk2            
+0274  0547 hdisk2            
+0275  0548 hdisk2            
+0276  0549 hdisk2            
+0277  0550 hdisk2            
+0278  0551 hdisk2            
+0279  0552 hdisk2            
+0280  0553 hdisk2            
+0281  0554 hdisk2            
+0282  0555 hdisk2            
+0283  0556 hdisk2            
+0284  0557 hdisk2            
+0285  0558 hdisk2            
+0286  0559 hdisk2            
+0287  0560 hdisk2            
+0288  0561 hdisk2            
+0289  0562 hdisk2            
+0290  0563 hdisk2            
+0291  0564 hdisk2            
+0292  0565 hdisk2            
+0293  0566 hdisk2            
+0294  0567 hdisk2            
+0295  0568 hdisk2            
+0296  0569 hdisk2            
+0297  0570 hdisk2            
+0298  0571 hdisk2            
+0299  0572 hdisk2            
+0300  0573 hdisk2            
+0301  0574 hdisk2            
+0302  0575 hdisk2            
+0303  0576 hdisk2            
+0304  0577 hdisk2            
+0305  0578 hdisk2            
+0306  0579 hdisk2            
+0307  0580 hdisk2            
+0308  0581 hdisk2            
+0309  0582 hdisk2            
+0310  0583 hdisk2            
+0311  0584 hdisk2            
+0312  0585 hdisk2            
+0313  0586 hdisk2            
+0314  0587 hdisk2            
+0315  0588 hdisk2            
+0316  0589 hdisk2            
+0317  0590 hdisk2            
+0318  0591 hdisk2            
+0319  0592 hdisk2            
+0320  0593 hdisk2            
+0321  0594 hdisk2            
+0322  0595 hdisk2            
+0323  0596 hdisk2            
+0324  0597 hdisk2            
+0325  0598 hdisk2            
+0326  0599 hdisk2            
+0327  0600 hdisk2            
+0328  0601 hdisk2            
+0329  0602 hdisk2            
+0330  0603 hdisk2            
+0331  0604 hdisk2            
+0332  0605 hdisk2            
+0333  0606 hdisk2            
+0334  0607 hdisk2            
+0335  0608 hdisk2            
+0336  0609 hdisk2            
+0337  0610 hdisk2            
+0338  0611 hdisk2            
+0339  0612 hdisk2            
+0340  0613 hdisk2            
+0341  0614 hdisk2            
+0342  0615 hdisk2            
+0343  0616 hdisk2            
+0344  0617 hdisk2            
+0345  0618 hdisk2            
+0346  0619 hdisk2            
+0347  0620 hdisk2            
+0348  0621 hdisk2            
+0349  0622 hdisk2            
+0350  0623 hdisk2            
+0351  0624 hdisk2            
+0352  0625 hdisk2            
+0353  0626 hdisk2            
+0354  0627 hdisk2            
+0355  0628 hdisk2            
+0356  0629 hdisk2            
+0357  0630 hdisk2            
+0358  0631 hdisk2            
+0359  0632 hdisk2            
+0360  0633 hdisk2            
+0361  0634 hdisk2            
+0362  0635 hdisk2            
+0363  0636 hdisk2            
+0364  0637 hdisk2            
+0365  0638 hdisk2            
+0366  0639 hdisk2            
+0367  0640 hdisk2            
+0368  0641 hdisk2            
+0369  0642 hdisk2            
+0370  0643 hdisk2            
+0371  0644 hdisk2            
+0372  0645 hdisk2            
+0373  0646 hdisk2            
+0374  0647 hdisk2            
+0375  0648 hdisk2            
+0376  0649 hdisk2            
+0377  0650 hdisk2            
+0378  0651 hdisk2            
+0379  0652 hdisk2            
+0380  0653 hdisk2            
+0381  0654 hdisk2            
+0382  0655 hdisk2            
+0383  0656 hdisk2            
+0384  0657 hdisk2            
+0385  0658 hdisk2            
+0386  0659 hdisk2            
+0387  0660 hdisk2            
+0388  0661 hdisk2            
+0389  0662 hdisk2            
+0390  0663 hdisk2            
+0391  0664 hdisk2            
+0392  0665 hdisk2            
+0393  0666 hdisk2            
+0394  0667 hdisk2            
+0395  0668 hdisk2            
+0396  0669 hdisk2            
+0397  0670 hdisk2            
+0398  0671 hdisk2            
+0399  0672 hdisk2            
+0400  0673 hdisk2            
+0401  0674 hdisk2            
+0402  0675 hdisk2            
+0403  0676 hdisk2            
+0404  0677 hdisk2            
+0405  0678 hdisk2            
+0406  0679 hdisk2            
+0407  0680 hdisk2            
+0408  0681 hdisk2            
+0409  0682 hdisk2            
+0410  0683 hdisk2            
+0411  0684 hdisk2            
+0412  0685 hdisk2            
+0413  0686 hdisk2            
+0414  0687 hdisk2            
+0415  0688 hdisk2            
+0416  0689 hdisk2            
+0417  0690 hdisk2            
+0418  0691 hdisk2            
+0419  0692 hdisk2            
+0420  0693 hdisk2            
+0421  0694 hdisk2            
+0422  0695 hdisk2            
+0423  0696 hdisk2            
+0424  0697 hdisk2            
+0425  0698 hdisk2            
+0426  0699 hdisk2            
+0427  0700 hdisk2            
+0428  0701 hdisk2            
+0429  0702 hdisk2            
+0430  0703 hdisk2            
+0431  0704 hdisk2            
+0432  0705 hdisk2            
+0433  0706 hdisk2            
+0434  0707 hdisk2            
+0435  0708 hdisk2            
+0436  0709 hdisk2            
+0437  0710 hdisk2            
+0438  0711 hdisk2            
+0439  0712 hdisk2            
+0440  0713 hdisk2            
+0441  0714 hdisk2            
+0442  0715 hdisk2            
+0443  0716 hdisk2            
+0444  0717 hdisk2            
+0445  0718 hdisk2            
+0446  0719 hdisk2            
+0447  0720 hdisk2            
+0448  0721 hdisk2            
+0449  0722 hdisk2            
+0450  0723 hdisk2            
+0451  0724 hdisk2            
+0452  0725 hdisk2            
+0453  0726 hdisk2            
+0454  0727 hdisk2            
+0455  0728 hdisk2            
+0456  0729 hdisk2            
+0457  0730 hdisk2            
+0458  0731 hdisk2            
+0459  0732 hdisk2            
+0460  0733 hdisk2            
+0461  0734 hdisk2            
+0462  0735 hdisk2            
+0463  0736 hdisk2            
+0464  0737 hdisk2            
+0465  0738 hdisk2            
+0466  0739 hdisk2            
+0467  0740 hdisk2            
+0468  0741 hdisk2            
+0469  0742 hdisk2            
+0470  0743 hdisk2            
+0471  0744 hdisk2            
+0472  0745 hdisk2            
+0473  0746 hdisk2            
+0474  0747 hdisk2            
+0475  0748 hdisk2            
+0476  0749 hdisk2            
+0477  0750 hdisk2            
+0478  0751 hdisk2            
+0479  0752 hdisk2            
+0480  0753 hdisk2            
+0481  0754 hdisk2            
+0482  0755 hdisk2            
+0483  0756 hdisk2            
+0484  0757 hdisk2            
+0485  0758 hdisk2            
+0486  0759 hdisk2            
+0487  0760 hdisk2            
+0488  0761 hdisk2            
+0489  0762 hdisk2            
+0490  0763 hdisk2            
+0491  0764 hdisk2            
+0492  0765 hdisk2            
+0493  0766 hdisk2            
+0494  0767 hdisk2            
+0495  0768 hdisk2            
+0496  0769 hdisk2            
+0497  0770 hdisk2            
+0498  0771 hdisk2            
+0499  0772 hdisk2            
+0500  0773 hdisk2            
+0501  0774 hdisk2            
+0502  0775 hdisk2            
+0503  0776 hdisk2            
+0504  0777 hdisk2            
+0505  0778 hdisk2            
+0506  0779 hdisk2            
+0507  0780 hdisk2            
+0508  0781 hdisk2            
+0509  0782 hdisk2            
+0510  0783 hdisk2            
+0511  0784 hdisk2            
+0512  0785 hdisk2            
+0513  0786 hdisk2            
+0514  0787 hdisk2            
+0515  0788 hdisk2            
+0516  0789 hdisk2            
+0517  0790 hdisk2            
+0518  0791 hdisk2            
+0519  0792 hdisk2            
+0520  0793 hdisk2            
+0521  0794 hdisk2            
+0522  0795 hdisk2            
+0523  0796 hdisk2            
+0524  0797 hdisk2            
+0525  0798 hdisk2            
+0526  0799 hdisk2            
+0527  0800 hdisk2            
+0528  0801 hdisk2            
+0529  0802 hdisk2            
+0530  0803 hdisk2            
+0531  0804 hdisk2            
+0532  0805 hdisk2            
+0533  0806 hdisk2            
+0534  0807 hdisk2            
+0535  0808 hdisk2            
+0536  0809 hdisk2            
+0537  0810 hdisk2            
+0538  0811 hdisk2            
+0539  0812 hdisk2            
+0540  0813 hdisk2            
+0541  0814 hdisk2            
+0542  0815 hdisk2            
+0543  0816 hdisk2            
+0544  0817 hdisk2            
+0545  0818 hdisk2            
+0546  0819 hdisk2            
+0547  0820 hdisk2            
+0548  0821 hdisk2            
+0549  0822 hdisk2            
+0550  0823 hdisk2            
+0551  0824 hdisk2            
+0552  0825 hdisk2            
+0553  0826 hdisk2            
+0554  0827 hdisk2            
+0555  0828 hdisk2            
+0556  0829 hdisk2            
+0557  0830 hdisk2            
+0558  0831 hdisk2            
+0559  0832 hdisk2            
+0560  0833 hdisk2            
+0561  0834 hdisk2            
+0562  0835 hdisk2            
+0563  0836 hdisk2            
+0564  0837 hdisk2            
+0565  0838 hdisk2            
+0566  0839 hdisk2            
+0567  0840 hdisk2            
+0568  0841 hdisk2            
+0569  0842 hdisk2            
+0570  0843 hdisk2            
+0571  0844 hdisk2            
+0572  0845 hdisk2            
+0573  0846 hdisk2            
+0574  0847 hdisk2            
+0575  0848 hdisk2            
+0576  0849 hdisk2            
+0577  0850 hdisk2            
+0578  0851 hdisk2            
+0579  0852 hdisk2            
+0580  0853 hdisk2            
+0581  0854 hdisk2            
+0582  0855 hdisk2            
+0583  0856 hdisk2            
+0584  0857 hdisk2            
+0585  0858 hdisk2            
+0586  0859 hdisk2            
+0587  0860 hdisk2            
+0588  0861 hdisk2            
+0589  0862 hdisk2            
+0590  0863 hdisk2            
+0591  0864 hdisk2            
+0592  0865 hdisk2            
+0593  0866 hdisk2            
+0594  0867 hdisk2            
+0595  0868 hdisk2            
+0596  0869 hdisk2            
+0597  0870 hdisk2            
+0598  0871 hdisk2            
+0599  0872 hdisk2            
+0600  0873 hdisk2            
+0601  0874 hdisk2            
+0602  0875 hdisk2            
+0603  0876 hdisk2            
+0604  0877 hdisk2            
+0605  0878 hdisk2            
+0606  0879 hdisk2            
+0607  0880 hdisk2            
+0608  0881 hdisk2            
+0609  0882 hdisk2            
+0610  0883 hdisk2            
+0611  0884 hdisk2            
+0612  0885 hdisk2            
+0613  0886 hdisk2            
+0614  0887 hdisk2            
+0615  0888 hdisk2            
+0616  0889 hdisk2            
+0617  0890 hdisk2            
+0618  0891 hdisk2            
+0619  0892 hdisk2            
+0620  0893 hdisk2            
+0621  0894 hdisk2            
+0622  0895 hdisk2            
+0623  0896 hdisk2            
+0624  0897 hdisk2            
+0625  0898 hdisk2            
+0626  0899 hdisk2            
+0627  0900 hdisk2            
+0628  0901 hdisk2            
+0629  0902 hdisk2            
+0630  0903 hdisk2            
+0631  0904 hdisk2            
+0632  0905 hdisk2            
+0633  0906 hdisk2            
+0634  0907 hdisk2            
+0635  0908 hdisk2            
+0636  0909 hdisk2            
+0637  0910 hdisk2            
+0638  0911 hdisk2            
+0639  0912 hdisk2            
+0640  0913 hdisk2            
+0641  0914 hdisk2            
+0642  0915 hdisk2            
+0643  0916 hdisk2            
+0644  0917 hdisk2            
+0645  0918 hdisk2            
+0646  0919 hdisk2            
+0647  0920 hdisk2            
+0648  0921 hdisk2            
+0649  0922 hdisk2            
+0650  0923 hdisk2            
+0651  0924 hdisk2            
+0652  0925 hdisk2            
+0653  0926 hdisk2            
+0654  0927 hdisk2            
+0655  0928 hdisk2            
+0656  0929 hdisk2            
+0657  0930 hdisk2            
+0658  0931 hdisk2            
+0659  0932 hdisk2            
+0660  0933 hdisk2            
+0661  0934 hdisk2            
+0662  0935 hdisk2            
+0663  0936 hdisk2            
+0664  0937 hdisk2            
+0665  0938 hdisk2            
+0666  0939 hdisk2            
+0667  0940 hdisk2            
+0668  0941 hdisk2            
+0669  0942 hdisk2            
+0670  0943 hdisk2            
+0671  0944 hdisk2            
+0672  0945 hdisk2            
+0673  0946 hdisk2            
+0674  0947 hdisk2            
+0675  0948 hdisk2            
+0676  0949 hdisk2            
+0677  0950 hdisk2            
+0678  0951 hdisk2            
+0679  0952 hdisk2            
+0680  0953 hdisk2            
+0681  0954 hdisk2            
+0682  0955 hdisk2            
+0683  0956 hdisk2            
+0684  0957 hdisk2            
+0685  0958 hdisk2            
+0686  0959 hdisk2            
+0687  0960 hdisk2            
+0688  0961 hdisk2            
+0689  0962 hdisk2            
+0690  0963 hdisk2            
+0691  0964 hdisk2            
+0692  0965 hdisk2            
+0693  0966 hdisk2            
+0694  0967 hdisk2            
+0695  0968 hdisk2            
+0696  0969 hdisk2            
+0697  0970 hdisk2            
+0698  0971 hdisk2            
+0699  0972 hdisk2            
+0700  0973 hdisk2            
+0701  0974 hdisk2            
+0702  0975 hdisk2            
+0703  0976 hdisk2            
+0704  0977 hdisk2            
+0705  0978 hdisk2            
+0706  0979 hdisk2            
+0707  0980 hdisk2            
+0708  0981 hdisk2            
+0709  0982 hdisk2            
+0710  0983 hdisk2            
+0711  0984 hdisk2            
+0712  0985 hdisk2            
+0713  0986 hdisk2            
+0714  0987 hdisk2            
+0715  0988 hdisk2            
+0716  0989 hdisk2            
+0717  0990 hdisk2            
+0718  0991 hdisk2            
+0719  0992 hdisk2            
+0720  0993 hdisk2            
+0721  0994 hdisk2            
+0722  0995 hdisk2            
+0723  0996 hdisk2            
+0724  0997 hdisk2            
+0725  0998 hdisk2            
+0726  0999 hdisk2            
+0727  1000 hdisk2            
+0728  1001 hdisk2            
+0729  1002 hdisk2            
+0730  1003 hdisk2            
+0731  1004 hdisk2            
+0732  1005 hdisk2            
+0733  1006 hdisk2            
+0734  1007 hdisk2            
+0735  1008 hdisk2            
+0736  1009 hdisk2            
+0737  1010 hdisk2            
+0738  1011 hdisk2            
+0739  1012 hdisk2            
+0740  1013 hdisk2            
+0741  1014 hdisk2            
+0742  1015 hdisk2            
+0743  1016 hdisk2            
+0744  1017 hdisk2            
+0745  1018 hdisk2            
+0746  1019 hdisk2            
+0747  1020 hdisk2            
+0748  1021 hdisk2            
+0749  1022 hdisk2            
+0750  1023 hdisk2            
+0751  1024 hdisk2            
+0752  1025 hdisk2            
+0753  1026 hdisk2            
+0754  1027 hdisk2            
+0755  1028 hdisk2            
+0756  1029 hdisk2            
+0757  1030 hdisk2            
+0758  1031 hdisk2            
+0759  1032 hdisk2            
+0760  1033 hdisk2            
+0761  1034 hdisk2            
+0762  1035 hdisk2            
+0763  1036 hdisk2            
+0764  1037 hdisk2            
+0765  1038 hdisk2            
+0766  1039 hdisk2            
+0767  1040 hdisk2            
+0768  1041 hdisk2            
+0769  1042 hdisk2            
+0770  1043 hdisk2            
+0771  1044 hdisk2            
+0772  1045 hdisk2            
+0773  1046 hdisk2            
+0774  1047 hdisk2            
+0775  1048 hdisk2            
+0776  1049 hdisk2            
+0777  1050 hdisk2            
+0778  1051 hdisk2            
+0779  1052 hdisk2            
+0780  1053 hdisk2            
+0781  1054 hdisk2            
+0782  1055 hdisk2            
+0783  1056 hdisk2            
+0784  1057 hdisk2            
+0785  1058 hdisk2            
+0786  1059 hdisk2            
+0787  1060 hdisk2            
+0788  1061 hdisk2            
+0789  1062 hdisk2            
+0790  1063 hdisk2            
+0791  1064 hdisk2            
+0792  1065 hdisk2            
+0793  1066 hdisk2            
+0794  1067 hdisk2            
+0795  1068 hdisk2            
+0796  1069 hdisk2            
+0797  1070 hdisk2            
+0798  1071 hdisk2            
+0799  1072 hdisk2            
+0800  1073 hdisk2            
+oralv01:/cdrs/oradata2
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0164 hdisk5            
+0002  0165 hdisk5            
+0003  0166 hdisk5            
+0004  0167 hdisk5            
+0005  0168 hdisk5            
+0006  0169 hdisk5            
+0007  0170 hdisk5            
+0008  0171 hdisk5            
+0009  0172 hdisk5            
+0010  0173 hdisk5            
+0011  0174 hdisk5            
+0012  0175 hdisk5            
+0013  0176 hdisk5            
+0014  0177 hdisk5            
+0015  0178 hdisk5            
+0016  0179 hdisk5            
+0017  0180 hdisk5            
+0018  0181 hdisk5            
+0019  0182 hdisk5            
+0020  0183 hdisk5            
+0021  0184 hdisk5            
+0022  0185 hdisk5            
+0023  0186 hdisk5            
+0024  0187 hdisk5            
+0025  0188 hdisk5            
+0026  0189 hdisk5            
+0027  0190 hdisk5            
+0028  0191 hdisk5            
+0029  0192 hdisk5            
+0030  0193 hdisk5            
+0031  0194 hdisk5            
+0032  0195 hdisk5            
+0033  0196 hdisk5            
+0034  0197 hdisk5            
+0035  0198 hdisk5            
+0036  0199 hdisk5            
+0037  0200 hdisk5            
+0038  0201 hdisk5            
+0039  0202 hdisk5            
+0040  0203 hdisk5            
+0041  0204 hdisk5            
+0042  0205 hdisk5            
+0043  0206 hdisk5            
+0044  0207 hdisk5            
+0045  0208 hdisk5            
+0046  0209 hdisk5            
+0047  0210 hdisk5            
+0048  0211 hdisk5            
+0049  0212 hdisk5            
+0050  0213 hdisk5            
+0051  0214 hdisk5            
+0052  0215 hdisk5            
+0053  0216 hdisk5            
+0054  0217 hdisk5            
+0055  0218 hdisk5            
+0056  0219 hdisk5            
+0057  0220 hdisk5            
+0058  0221 hdisk5            
+0059  0222 hdisk5            
+0060  0223 hdisk5            
+0061  0224 hdisk5            
+0062  0225 hdisk5            
+0063  0226 hdisk5            
+0064  0227 hdisk5            
+0065  0228 hdisk5            
+0066  0229 hdisk5            
+0067  0230 hdisk5            
+0068  0231 hdisk5            
+0069  0232 hdisk5            
+0070  0233 hdisk5            
+0071  0234 hdisk5            
+0072  0235 hdisk5            
+0073  0236 hdisk5            
+0074  0237 hdisk5            
+0075  0238 hdisk5            
+0076  0239 hdisk5            
+0077  0240 hdisk5            
+0078  0241 hdisk5            
+0079  0242 hdisk5            
+0080  0243 hdisk5            
+oralv_log:N/A
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0244 hdisk5            
+0002  0245 hdisk5            
+0003  0246 hdisk5            
+0004  0247 hdisk5            
+0005  0248 hdisk5            
+0006  0249 hdisk5            
+0007  0250 hdisk5            
+0008  0251 hdisk5            
+swaplv:N/A
+LP    PP1  PV1               PP2  PV2               PP3  PV3
+0001  0241 hdisk2            
+0002  0242 hdisk2            
+0003  0243 hdisk2            
+0004  0244 hdisk2            
+0005  0245 hdisk2            
+0006  0246 hdisk2            
+0007  0247 hdisk2            
+0008  0248 hdisk2            
+0009  0249 hdisk2            
+0010  0250 hdisk2            
+0011  0251 hdisk2            
+0012  0252 hdisk2            
+0013  0253 hdisk2            
+0014  0254 hdisk2            
+0015  0255 hdisk2            
+0016  0256 hdisk2            
+0017  0257 hdisk2            
+0018  0258 hdisk2            
+0019  0259 hdisk2            
+0020  0260 hdisk2            
+0021  0261 hdisk2            
+0022  0262 hdisk2            
+0023  0263 hdisk2            
+0024  0264 hdisk2            
+################################################################################
+
+Date : Mon Apr 16 10:28:51 MEST 2007
+
+training-1# lspv
+hdisk0          00cc35ac0237b48e                    rootvg          active
+hdisk1          00cf0a3cfc6db605                    rootvg          active
+hdisk2          00cc390cd75ee818                    cdrvg           active
+hdisk5          00cc390c1d374c57                    cdrvg           active
+################################################################################
+
+Date : Mon Apr 16 10:28:51 MEST 2007
+
+training-1: Physical Volumes
+hdisk0:
+LV NAME               LPs   PPs   DISTRIBUTION          MOUNT POINT
+lg_dumplv             16    16    16..00..00..00..00    N/A
+hd5                   1     1     01..00..00..00..00    N/A
+hd6                   8     8     08..00..00..00..00    N/A
+hd8                   1     1     01..00..00..00..00    N/A
+hd4                   8     8     08..00..00..00..00    /
+hd2                   20    20    20..00..00..00..00    /usr
+hd9var                12    12    12..00..00..00..00    /var
+hd3                   12    12    12..00..00..00..00    /tmp
+hd1                   78    78    78..00..00..00..00    /home
+hd10opt               80    80    80..00..00..00..00    /opt
+hdisk1:
+LV NAME               LPs   PPs   DISTRIBUTION          MOUNT POINT
+fwdump                3     3     03..00..00..00..00    /var/adm/ras/platform
+lv00                  400   400   110..109..109..72..00 /oradata
+hd5                   1     1     01..00..00..00..00    N/A
+hd6                   8     8     08..00..00..00..00    N/A
+hd8                   1     1     01..00..00..00..00    N/A
+hd4                   8     8     08..00..00..00..00    /
+hd2                   20    20    20..00..00..00..00    /usr
+hd9var                4     4     04..00..00..00..00    /var
+hd3                   4     4     04..00..00..00..00    /tmp
+hd1                   2     2     02..00..00..00..00    /home
+hd10opt               80    80    80..00..00..00..00    /opt
+hdisk2:
+LV NAME               LPs   PPs   DISTRIBUTION          MOUNT POINT
+swaplv                23    24    24..00..00..00..00    N/A
+loglv01               1     1     01..00..00..00..00    N/A
+loglv00               8     8     08..00..00..00..00    N/A
+lv01                  800   800   272..271..257..00..00 /cdrs
+hdisk5:
+LV NAME               LPs   PPs   DISTRIBUTION          MOUNT POINT
+oralv01               80    80    80..00..00..00..00    /cdrs/oradata2
+oralv_log             8     8     08..00..00..00..00    N/A

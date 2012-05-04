@@ -1,0 +1,10 @@
+>uploaded_files.txt
+for x in source
+do
+		./getCDR 192.168.117.105 ${x}>filelist1.txt
+		cat filelist1.txt|grep -v $(cat uploaded_files.txt)>filelist2.txt
+		for filename in `cat filelist2.txt`
+		do
+				./uploadCDR 192.168.117.105 $x $filename
+		done
+done

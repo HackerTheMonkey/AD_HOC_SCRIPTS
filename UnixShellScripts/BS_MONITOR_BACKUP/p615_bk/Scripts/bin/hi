@@ -1,0 +1,22 @@
+if [ -z "$DISPLAY" ]; then
+    echo "\$DISPLAY not defined."
+    exit 1
+fi
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <server>"
+    exit 2
+fi
+
+file=/Scripts/etc/servers.txt
+
+entry=$(grep -v "^#" $file | grep "$1")
+num=$(echo "$entry" | wc -l)
+if [ -z "$entry" -o $num -ne 1 ]; then
+    echo "$1: umbiguous"
+    exit 3
+fi
+
+echo $entry | read host IP junk
+#/usr/dt/bin/dtterm -title "$host ($IP)" -sb -e telnet $IP &
+/usr/dt/bin/dtterm -title "$host ($IP)" -sb -e rlogin $IP &

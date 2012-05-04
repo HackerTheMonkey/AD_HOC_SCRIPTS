@@ -1,0 +1,42 @@
+***** Checking System Health of P570_APP2 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+---> Alert: Current system load is  1.12
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking billing's Billing processes
+OK: billing's cmdmgr synccdr synctopup are running
+
+Checking prm's PRM processes
+OK: prm's boss_report prmsep roam sep are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  240001 A      prm 188916      1   0  60 20 efaa1400 389880 f100010035bf40b0 08:13:14  pts/1  0:11 /bossapp2/prm/bin/roam 1000 1 0 0 
+  240001 A      prm 311944      1   0  60 20 19b51b400 389884 f10001201b4de8b0 08:13:14  pts/1  0:03 /bossapp2/prm/bin/roam 1 1 0 0 
+  240001 A      prm 308042      1  97 108 20 1142bc400 119920          08:13:14  pts/1 140:21 /bossapp2/prm/bin/sep -n 2 
+
+Checking swap space
+OK: Swap space usage is 6%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+

@@ -1,0 +1,7 @@
+owner=bossweb
+procs="WebLogic java"
+check_proc WebServer "$procs" $owner
+
+owner=mdsweb
+procs="WebLogic java"
+check_proc WebServer "$procs" $owner

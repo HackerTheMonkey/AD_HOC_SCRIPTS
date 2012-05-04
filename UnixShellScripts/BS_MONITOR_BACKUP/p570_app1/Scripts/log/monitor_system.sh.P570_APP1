@@ -1,0 +1,38 @@
+***** Checking System Health of P570_APP1 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.03
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking rating's Rating processes
+OK: rating's billingcycleproc chargingproc custload inf_bb sep are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  240001 A   rating 225794      1   0  68 24 15927d400 160776 f10001003b9d0830   Apr 24      -  2:07 inf_bb 1022 1 0 0 1022 
+  240001 A   rating 107404      1   0  68 24 109258400 160880 f10001003bd53eb0   Apr 24      -  3:58 inf_bb 1001 1 0 0 1001 
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+

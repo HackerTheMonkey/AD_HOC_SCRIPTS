@@ -1,0 +1,1620 @@
+################################################################################
+
+Date : Mon Apr 16 10:28:52 MEST 2007
+
+training-1# lslpp -l
+  Fileset                      Level  State      Description         
+  ----------------------------------------------------------------------------
+Path: /usr/lib/objrepos
+  Java14.sdk                 1.4.2.3  COMMITTED  Java SDK 32-bit
+  Tivoli_Management_Agent.client.rte
+                             3.7.1.0  COMMITTED  Management Framework Endpoint
+                                                 Runtime"
+  X11.Dt.ToolTalk            5.3.0.0  COMMITTED  AIX CDE ToolTalk Support 
+  X11.Dt.bitmaps             5.3.0.0  COMMITTED  AIX CDE Bitmaps 
+  X11.Dt.helpmin             5.3.0.0  COMMITTED  AIX CDE Minimum Help Files 
+  X11.Dt.helprun             5.3.0.0  COMMITTED  AIX CDE Runtime Help 
+  X11.Dt.lib                5.3.0.20  COMMITTED  AIX CDE Runtime Libraries
+  X11.Dt.rte                5.3.0.20  COMMITTED  AIX Common Desktop Environment
+                                                 (CDE) 1.0
+  X11.adt.bitmaps            5.3.0.0  COMMITTED  AIXwindows Application
+                                                 Development Toolkit Bitmap
+                                                 Files
+  X11.adt.imake              5.3.0.0  COMMITTED  AIXwindows Application
+                                                 Development Toolkit imake
+  X11.adt.include            5.3.0.0  COMMITTED  AIXwindows Application
+                                                 Development Toolkit Include
+                                                 Files
+  X11.adt.lib                5.3.0.0  COMMITTED  AIXwindows Application
+                                                 Development Toolkit Libraries
+  X11.apps.aixterm           5.3.0.0  COMMITTED  AIXwindows aixterm Application
+  X11.apps.clients           5.3.0.0  COMMITTED  AIXwindows Client Applications
+  X11.apps.config            5.3.0.0  COMMITTED  AIXwindows Configuration
+                                                 Applications
+  X11.apps.custom            5.3.0.0  COMMITTED  AIXwindows Customizing Tool
+  X11.apps.msmit             5.3.0.0  COMMITTED  AIXwindows msmit Application
+  X11.apps.rte               5.3.0.0  COMMITTED  AIXwindows Runtime
+                                                 Configuration Applications
+  X11.apps.util              5.3.0.0  COMMITTED  AIXwindows Utility
+                                                 Applications
+  X11.apps.xdm               5.3.0.0  COMMITTED  AIXwindows xdm Application
+  X11.apps.xterm             5.3.0.0  COMMITTED  AIXwindows xterm Application
+  X11.base.common            5.3.0.0  COMMITTED  AIXwindows Runtime Common
+                                                 Directories 
+  X11.base.lib              5.3.0.10  COMMITTED  AIXwindows Runtime Libraries 
+  X11.base.rte              5.3.0.10  COMMITTED  AIXwindows Runtime Environment
+  X11.base.smt              5.3.0.10  COMMITTED  AIXwindows Runtime Shared
+                                                 Memory Transport 
+  X11.base.xpconfig          5.3.0.0  COMMITTED  Xprint Configuration Files 
+  X11.fnt.coreX              5.3.0.0  COMMITTED  AIXwindows X Consortium Fonts 
+  X11.fnt.defaultFonts       5.3.0.0  COMMITTED  AIXwindows Default Fonts 
+  X11.fnt.iso1               5.3.0.0  COMMITTED  AIXwindows Latin 1 Fonts 
+  X11.fnt.iso_T1             5.3.0.0  COMMITTED  AIXwindows Latin Type1 Fonts 
+  X11.loc.en_US.Dt.rte       5.3.0.0  COMMITTED  CDE Locale Configuration -
+                                                 U.S. English
+  X11.loc.en_US.base.lib     5.3.0.0  COMMITTED  AIXwindows Client Locale
+                                                 Config - U.S. English
+  X11.loc.en_US.base.rte     5.3.0.0  COMMITTED  AIXwindows Locale
+                                                 Configuration - U.S. English
+  X11.motif.lib             5.3.0.20  COMMITTED  AIXwindows Motif Libraries
+  X11.motif.mwm             5.3.0.20  COMMITTED  AIXwindows Motif Window
+                                                 Manager
+  X11.msg.en_US.Dt.helpmin   5.3.0.0  COMMITTED  AIX CDE Minimum Help Files -
+                                                 U.S. English
+  X11.msg.en_US.Dt.rte       5.3.0.0  COMMITTED  AIX CDE Messages - U.S.
+                                                 English
+  X11.msg.en_US.adt.imake    5.3.0.0  COMMITTED  AIXwindows imake Messages -
+                                                 U.S. English
+  X11.msg.en_US.apps.aixterm
+                             5.3.0.0  COMMITTED  AIXwindows aixterm Messages -
+                                                 U.S. English
+  X11.msg.en_US.apps.clients
+                             5.3.0.0  COMMITTED  AIXwindows Client Apps Msgs -
+                                                 U.S. English
+  X11.msg.en_US.apps.config  5.3.0.0  COMMITTED  AIXwindows Config Apps Msgs -
+                                                 U.S. English
+  X11.msg.en_US.apps.custom  5.3.0.0  COMMITTED  AIXwindows Custom Tool Msgs -
+                                                 U.S. English
+  X11.msg.en_US.apps.rte     5.3.0.0  COMMITTED  AIXwindows Runtime Config Msgs
+                                                 - U.S. English
+  X11.msg.en_US.apps.xdm     5.3.0.0  COMMITTED  AIXwindows xdm Messages - U.S.
+                                                 English
+  X11.msg.en_US.base.common  5.3.0.0  COMMITTED  AIXwindows Common Messages -
+                                                 U.S. English
+  X11.msg.en_US.base.rte     5.3.0.0  COMMITTED  AIXwindows Runtime Env. Msgs -
+                                                 U.S. English
+  X11.msg.en_US.motif.lib    5.3.0.0  COMMITTED  AIXwindows Motif Lib. Msgs -
+                                                 U.S. English
+  X11.msg.en_US.motif.mwm    5.3.0.0  COMMITTED  AIX Motif Window Mgr Msgs -
+                                                 U.S. English
+  X11.msg.en_US.vsm.rte      5.3.0.0  COMMITTED  Visual Sys Mgmt. Helps & Msgs
+                                                 - U.S. English
+  X11.samples.apps.clients  5.3.0.10  COMMITTED  AIXwindows Sample X Consortium
+                                                 Clients Binary/Source 
+  X11.samples.common         5.3.0.0  COMMITTED  AIXwindows Imakefile Structure
+                                                 for Samples 
+  X11.samples.lib.Core       5.3.0.0  COMMITTED  AIXwindows Sample X Consortium
+                                                 Core Libraries Binary/Source 
+  X11.vsm.lib                5.3.0.0  COMMITTED  Visual System Managment
+                                                 Library
+  bos.64bit                 5.3.0.30  COMMITTED  Base Operating System 64 bit
+                                                 Runtime
+  bos.acct                  5.3.0.30  COMMITTED  Accounting Services
+  bos.adt.base              5.3.0.10  COMMITTED  Base Application Development
+                                                 Toolkit 
+  bos.adt.debug             5.3.0.10  COMMITTED  Base Application Development
+                                                 Debuggers 
+  bos.adt.graphics           5.3.0.0  COMMITTED  Base Application Development
+                                                 Graphics Include Files 
+  bos.adt.include           5.3.0.30  COMMITTED  Base Application Development
+                                                 Include Files
+  bos.adt.insttools          5.3.0.0  COMMITTED  Tool to Create installp
+                                                 Packages 
+  bos.adt.lib               5.3.0.20  COMMITTED  Base Application Development
+                                                 Libraries
+  bos.adt.libm              5.3.0.10  COMMITTED  Base Application Development
+                                                 Math Library 
+  bos.adt.prof              5.3.0.30  COMMITTED  Base Profiling Support
+  bos.adt.prt_tools          5.3.0.0  COMMITTED  Printer Support Development
+                                                 Toolkit 
+  bos.adt.samples           5.3.0.10  COMMITTED  Base Operating System Samples 
+  bos.adt.sccs              5.3.0.10  COMMITTED  SCCS Application Development
+                                                 Toolkit 
+  bos.adt.syscalls          5.3.0.30  COMMITTED  System Calls Application
+                                                 Development Toolkit
+  bos.adt.utils             5.3.0.10  COMMITTED  Base Application Development
+                                                 Utilities - lex and yacc 
+  bos.alt_disk_install.boot_images
+                            5.3.0.30  COMMITTED  Alternate Disk Installation
+                                                 Disk Boot Images
+  bos.alt_disk_install.rte  5.3.0.30  COMMITTED  Alternate Disk Installation
+                                                 Runtime
+  bos.cdmount                5.3.0.0  COMMITTED  CD/DVD Automount Facility
+  bos.diag.com              5.3.0.20  COMMITTED  Common Hardware Diagnostics
+  bos.diag.rte              5.3.0.20  COMMITTED  Hardware Diagnostics
+  bos.diag.util             5.3.0.20  COMMITTED  Hardware Diagnostics Utilities
+  bos.help.msg.en_US.com    5.3.0.10  COMMITTED  WebSM/SMIT Context Helps -
+                                                 U.S. English 
+  bos.help.msg.en_US.smit   5.3.0.30  COMMITTED  SMIT Context Helps - U.S.
+                                                 English 
+  bos.iconv.com             5.3.0.10  COMMITTED  Common Language to Language
+                                                 Converters 
+  bos.iconv.ucs.com          5.3.0.0  COMMITTED  Unicode Base Converters for
+                                                 AIX Code Sets/Fonts 
+  bos.loc.iso.en_US          5.3.0.0  COMMITTED  Base System Locale ISO Code
+                                                 Set - U.S. English
+  bos.mh                    5.3.0.10  COMMITTED  Mail Handler 
+  bos.mp                    5.3.0.33  COMMITTED  Base Operating System
+                                                 Multiprocessor Runtime
+  bos.mp64                  5.3.0.33  COMMITTED  Base Operating System 64-bit
+                                                 Multiprocessor Runtime
+  bos.msg.en_US.alt_disk_install.rte
+                             5.3.0.0  COMMITTED  Alternate Disk Install Msgs -
+                                                 U.S. English
+  bos.msg.en_US.diag.rte     5.3.0.0  COMMITTED  Hardware Diagnostics Messages
+                                                 - U.S. English
+  bos.msg.en_US.mp           5.3.0.0  COMMITTED  Base Operating System MP Msgs
+                                                 - U.S. English
+  bos.msg.en_US.net.ipsec    5.3.0.0  COMMITTED  IP Security Messages - U.S.
+                                                 English
+  bos.msg.en_US.net.tcp.client
+                             5.3.0.0  COMMITTED  TCP/IP Messages - U.S. English
+  bos.msg.en_US.rte          5.3.0.0  COMMITTED  Base OS Runtime Messages -
+                                                 U.S. English
+  bos.msg.en_US.txt.tfs      5.3.0.0  COMMITTED  Text Formatting Services Msgs
+                                                 - U.S. English
+  bos.net.ate                5.3.0.0  COMMITTED  Asynchronous Terminal Emulator
+  bos.net.ewlm.rte          5.3.0.30  COMMITTED  netWLM
+  bos.net.ipsec.keymgt      5.3.0.20  COMMITTED  IP Security Key Management
+  bos.net.ipsec.rte         5.3.0.20  COMMITTED  IP Security
+  bos.net.ipsec.websm       5.3.0.10  COMMITTED  IP Security WebSM 
+  bos.net.mobip6.rte        5.3.0.10  COMMITTED  IPv6 Mobility 
+  bos.net.ncs                5.3.0.0  COMMITTED  Network Computing System 1.5.1
+  bos.net.nfs.adt           5.3.0.30  COMMITTED  Network File System
+                                                 Development Toolkit
+  bos.net.nfs.cachefs       5.3.0.30  COMMITTED  CacheFS File System
+  bos.net.nfs.client        5.3.0.30  COMMITTED  Network File System Client
+  bos.net.nfs.server        5.3.0.10  COMMITTED  Network File System Server 
+  bos.net.nis.client        5.3.0.10  COMMITTED  Network Information Service
+                                                 Client 
+  bos.net.nis.server        5.3.0.10  COMMITTED  Network Information Service
+                                                 Server 
+  bos.net.nisplus           5.3.0.10  COMMITTED  Network Information Services
+                                                 Plus (NIS+) 
+  bos.net.ppp               5.3.0.10  COMMITTED  Async Point to Point Protocol 
+  bos.net.sctp              5.3.0.10  COMMITTED  Stream Control Transmission
+                                                 Protocol 
+  bos.net.snapp              5.3.0.0  COMMITTED  System Networking Analysis and
+                                                 Performance Pilot 
+  bos.net.tcp.adt            5.3.0.0  COMMITTED  TCP/IP Application Toolkit 
+  bos.net.tcp.client        5.3.0.30  COMMITTED  TCP/IP Client Support
+  bos.net.tcp.server        5.3.0.30  COMMITTED  TCP/IP Server
+  bos.net.tcp.smit          5.3.0.10  COMMITTED  TCP/IP SMIT Support 
+  bos.net.uucp               5.3.0.0  COMMITTED  Unix to Unix Copy Program 
+  bos.perf.diag_tool        5.3.0.30  COMMITTED  Performance Diagnostic Tool
+  bos.perf.gtools.perfwb     5.3.0.0  COMMITTED  Performance Workbench 
+  bos.perf.gtools.procmon   5.3.0.30  COMMITTED  Procmon plugin for Performance
+                                                 Workbench 
+  bos.perf.libperfstat      5.3.0.30  COMMITTED  Performance Statistics Library
+                                                 Interface
+  bos.perf.perfstat         5.3.0.30  COMMITTED  Performance Statistics
+                                                 Interface
+  bos.perf.proctools        5.3.0.20  COMMITTED  Proc Filesystem Tools
+  bos.perf.tools            5.3.0.31  COMMITTED  Base Performance Tools
+  bos.perf.tune             5.3.0.30  COMMITTED  Performance Tuning Support
+  bos.pmapi.events          5.3.0.30  COMMITTED  Performance Monitor API Event
+                                                 Codes
+  bos.pmapi.lib             5.3.0.30  COMMITTED  Performance Monitor API
+                                                 Library
+  bos.pmapi.pmsvcs          5.3.0.30  COMMITTED  Performance Monitor API Kernel
+                                                 Extension
+  bos.pmapi.samples          5.3.0.0  COMMITTED  Performance Monitor API
+                                                 Samples 
+  bos.pmapi.tools           5.3.0.30  COMMITTED  Performance Monitor API Tools
+  bos.rte                   5.3.0.10  COMMITTED  Base Operating System Runtime
+  bos.rte.Dt                 5.3.0.0  COMMITTED  Desktop Integrator
+  bos.rte.ILS               5.3.0.10  COMMITTED  International Language Support
+  bos.rte.SRC               5.3.0.20  COMMITTED  System Resource Controller
+  bos.rte.X11                5.3.0.0  COMMITTED  AIXwindows Device Support
+  bos.rte.aio               5.3.0.20  COMMITTED  Asynchronous I/O Extension
+  bos.rte.archive           5.3.0.20  COMMITTED  Archive Commands
+  bos.rte.bind_cmds         5.3.0.30  COMMITTED  Binder and Loader Commands
+  bos.rte.boot              5.3.0.30  COMMITTED  Boot Commands
+  bos.rte.bosinst           5.3.0.30  COMMITTED  Base OS Install Commands
+  bos.rte.commands          5.3.0.10  COMMITTED  Commands
+  bos.rte.compare            5.3.0.0  COMMITTED  File Compare Commands
+  bos.rte.console            5.3.0.0  COMMITTED  Console
+  bos.rte.control           5.3.0.30  COMMITTED  System Control Commands
+  bos.rte.cron              5.3.0.10  COMMITTED  Batch Operations
+  bos.rte.date               5.3.0.0  COMMITTED  Date Control Commands
+  bos.rte.devices           5.3.0.20  COMMITTED  Base Device Drivers
+  bos.rte.devices_msg       5.3.0.10  COMMITTED  Device Driver Messages
+  bos.rte.diag              5.3.0.10  COMMITTED  Diagnostics
+  bos.rte.edit              5.3.0.20  COMMITTED  Editors
+  bos.rte.filesystem        5.3.0.31  COMMITTED  Filesystem Administration
+  bos.rte.iconv             5.3.0.10  COMMITTED  Language Converters
+  bos.rte.ifor_ls            5.3.0.0  COMMITTED  iFOR/LS Libraries
+  bos.rte.im                 5.3.0.0  COMMITTED  Input Methods
+  bos.rte.install           5.3.0.30  COMMITTED  LPP Install Commands
+  bos.rte.jfscomp            5.3.0.0  COMMITTED  JFS Compression
+  bos.rte.libc              5.3.0.30  COMMITTED  libc Library
+  bos.rte.libcfg            5.3.0.10  COMMITTED  libcfg Library
+  bos.rte.libcur            5.3.0.10  COMMITTED  libcurses Library
+  bos.rte.libdbm             5.3.0.0  COMMITTED  libdbm Library
+  bos.rte.libnetsvc          5.3.0.0  COMMITTED  Network Services Libraries
+  bos.rte.libpthreads       5.3.0.30  COMMITTED  libpthreads Library
+  bos.rte.libqb              5.3.0.0  COMMITTED  libqb Library
+  bos.rte.libs               5.3.0.0  COMMITTED  libs Library
+  bos.rte.loc                5.3.0.0  COMMITTED  Base Locale Support
+  bos.rte.lvm               5.3.0.21  COMMITTED  Logical Volume Manager
+  bos.rte.man               5.3.0.10  COMMITTED  Man Commands
+  bos.rte.methods           5.3.0.30  COMMITTED  Device Config Methods
+  bos.rte.misc_cmds          5.3.0.0  COMMITTED  Miscellaneous Commands
+  bos.rte.net               5.3.0.10  COMMITTED  Network
+  bos.rte.odm               5.3.0.30  COMMITTED  Object Data Manager
+  bos.rte.printers          5.3.0.20  COMMITTED  Front End Printer Support
+  bos.rte.security          5.3.0.30  COMMITTED  Base Security Function
+  bos.rte.serv_aid          5.3.0.30  COMMITTED  Error Log Service Aids
+  bos.rte.shell             5.3.0.30  COMMITTED  Shells (bsh, ksh, csh)
+  bos.rte.streams            5.3.0.0  COMMITTED  Streams Libraries
+  bos.rte.tty               5.3.0.31  COMMITTED  Base TTY Support and Commands
+  bos.suma                  5.3.0.10  COMMITTED  Service Update Management
+                                                 Assistant (SUMA) 
+  bos.sysmgt.loginlic        5.3.0.0  COMMITTED  License Management 
+  bos.sysmgt.nim.client     5.3.0.30  COMMITTED  Network Install Manager -
+                                                 Client Tools
+  bos.sysmgt.nim.master     5.3.0.30  COMMITTED  Network Install Manager -
+                                                 Master Tools 
+  bos.sysmgt.nim.spot       5.3.0.30  COMMITTED  Network Install Manager - SPOT
+  bos.sysmgt.quota          5.3.0.20  COMMITTED  Filesystem Quota Commands
+  bos.sysmgt.serv_aid       5.3.0.30  COMMITTED  Software Error Logging and
+                                                 Dump Service Aids
+  bos.sysmgt.smit           5.3.0.10  COMMITTED  System Management Interface
+                                                 Tool (SMIT) 
+  bos.sysmgt.sysbr          5.3.0.30  COMMITTED  System Backup and BOS Install
+                                                 Utilities
+  bos.sysmgt.trace          5.3.0.30  COMMITTED  Software Trace Service Aids
+  bos.terminfo.rte           5.3.0.0  COMMITTED  Run-time Environment for AIX
+                                                 Terminals
+  bos.txt.spell             5.3.0.10  COMMITTED  Writer's Tools Commands 
+  bos.txt.tfs               5.3.0.10  COMMITTED  Text Formatting Services
+                                                 Commands 
+  cluster.adt.es.client.include
+                             5.2.0.3  COMMITTED  ES Client Include Files
+  cluster.adt.es.client.samples.clinfo
+                             5.2.0.3  COMMITTED  ES Client CLINFO Samples
+  cluster.adt.es.client.samples.clstat
+                             5.2.0.3  COMMITTED  ES Client Clstat Samples
+  cluster.adt.es.client.samples.libcl
+                             5.2.0.1  COMMITTED  ES Client LIBCL Samples
+  cluster.adt.es.java.demo.monitor
+                             5.2.0.0  COMMITTED  ES Web Based Monitor Demo
+  cluster.es.client.lib      5.2.0.4  COMMITTED  ES Client Libraries
+  cluster.es.client.rte      5.2.0.4  COMMITTED  ES Client Runtime
+  cluster.es.client.utils    5.2.0.3  COMMITTED  ES Client Utilities
+  cluster.es.client.wsm      5.2.0.2  COMMITTED  Web based Smit
+  cluster.es.clvm.rte        5.2.0.0  COMMITTED  ES for AIX Concurrent Access
+  cluster.es.cspoc.cmds      5.2.0.3  COMMITTED  ES CSPOC Commands
+  cluster.es.cspoc.dsh       5.2.0.2  COMMITTED  ES CSPOC dsh
+  cluster.es.cspoc.rte       5.2.0.3  COMMITTED  ES CSPOC Runtime Commands
+  cluster.es.server.cfgast   5.2.0.1  COMMITTED  ES Two-Node Configuration
+                                                 Assistant
+  cluster.es.server.diag     5.2.0.4  COMMITTED  ES Server Diags
+  cluster.es.server.events   5.2.0.3  COMMITTED  ES Server Events
+  cluster.es.server.rte      5.2.0.5  COMMITTED  ES Base Server Runtime
+                                      EFIXLOCKED
+  cluster.es.server.testtool
+                             5.2.0.1  COMMITTED  ES Cluster Test Tool
+  cluster.es.server.utils    5.2.0.4  COMMITTED  ES Server Utilities
+  cluster.license            5.2.0.0  COMMITTED  HACMP Electronic License
+  cluster.msg.en_US.cspoc    5.2.0.0  COMMITTED  HACMP CSPOC Messages - U.S.
+                                                 English
+  cluster.msg.en_US.es.client
+                             5.2.0.0  COMMITTED  ES Client Messages - U.S.
+                                                 English
+  cluster.msg.en_US.es.server
+                             5.2.0.0  COMMITTED  ES Recovery Driver Messages -
+                                                 U.S. English
+  csm.client                 1.4.1.0  COMMITTED  Cluster Systems Management
+                                                 Client
+  csm.core                   1.4.1.0  COMMITTED  Cluster Systems Management
+                                                 Core
+  csm.diagnostics            1.4.1.0  COMMITTED  Cluster Systems Management
+                                                 Probe Manager / Diagnostics
+  csm.dsh                    1.4.1.0  COMMITTED  Cluster Systems Management Dsh
+  csm.msg.EN_US.core         1.4.0.0  COMMITTED  CSM Core Func Msgs - U.S.
+                                                 English (UTF)
+  csm.msg.en_US.core         1.4.0.0  COMMITTED  CSM Core Func Msgs - U.S.
+                                                 English
+  devices.artic960.diag      5.3.0.0  COMMITTED  IBM ARTIC960 Adapter
+                                                 Diagnostics 
+  devices.artic960.rte      5.3.0.10  COMMITTED  IBM ARTIC960 Runtime Support 
+  devices.artic960.ucode     5.3.0.0  COMMITTED  IBM ARTIC960 Adapter Software 
+  devices.chrp.base.ServiceRM
+                             1.3.0.0  COMMITTED  RSCT Service Resource Manager
+  devices.chrp.base.diag    5.3.0.20  COMMITTED  RISC CHRP Base System Device
+                                                 Diagnostics
+  devices.chrp.base.rte     5.3.0.31  COMMITTED  RISC PC Base System Device
+                                                 Software (CHRP)
+  devices.chrp.pci.rte      5.3.0.20  COMMITTED  PCI Bus Software (CHRP)
+  devices.chrp.vdevice.rte  5.3.0.10  COMMITTED  Virtual I/O Bus Support 
+  devices.chrp_lpar.base.ras
+                             5.3.0.0  COMMITTED  CHRP LPAR RAS Support
+  devices.common.IBM.async.diag
+                             5.3.0.0  COMMITTED  Common Serial Adapter
+                                                 Diagnostics
+  devices.common.IBM.atm.rte
+                            5.3.0.10  COMMITTED  Common ATM Software 
+  devices.common.IBM.cx.rte  5.3.0.0  COMMITTED  CX Common Adapter Software
+  devices.common.IBM.disk.rte
+                             5.3.0.0  COMMITTED  Common IBM Disk Software
+  devices.common.IBM.ethernet.rte
+                            5.3.0.20  COMMITTED  Common Ethernet Software
+  devices.common.IBM.fc.hba-api
+                            5.3.0.10  COMMITTED  Common HBA API Library 
+  devices.common.IBM.fc.rte
+                            5.3.0.10  COMMITTED  Common IBM FC Software 
+  devices.common.IBM.fda.diag
+                            5.3.0.10  COMMITTED  Common Diskette Adapter and
+                                                 Device Diagnostics 
+  devices.common.IBM.fda.rte
+                             5.3.0.0  COMMITTED  Common Diskette Device
+                                                 Software 
+  devices.common.IBM.fddi.rte
+                            5.3.0.10  COMMITTED  Common FDDI Software 
+  devices.common.IBM.hdlc.rte
+                            5.3.0.10  COMMITTED  Common HDLC Software 
+  devices.common.IBM.hdlc.sdlc
+                             5.3.0.0  COMMITTED  SDLC COMIO Device Driver
+                                                 Emulation 
+  devices.common.IBM.ide.rte
+                            5.3.0.10  COMMITTED  Common IDE I/O Controller
+                                                 Software 
+  devices.common.IBM.iscsi.rte
+                            5.3.0.10  COMMITTED  Common iSCSI Files 
+  devices.common.IBM.ktm_std.diag
+                             5.3.0.0  COMMITTED  Common Keyboard, Mouse, and
+                                                 Tablet Device Diagnostics
+  devices.common.IBM.ktm_std.rte
+                             5.3.0.0  COMMITTED  Common Keyboard, Tablet, and
+                                                 Mouse Software
+  devices.common.IBM.mpio.rte
+                            5.3.0.20  COMMITTED  MPIO Disk Path Control Module
+  devices.common.IBM.ppa.diag
+                             5.3.0.0  COMMITTED  Common Parallel Printer
+                                                 Adapter Diagnostics
+  devices.common.IBM.ppa.rte
+                             5.3.0.0  COMMITTED  Common Parallel Printer
+                                                 Adapter Software
+  devices.common.IBM.scsi.rte
+                            5.3.0.20  COMMITTED  Common SCSI I/O Controller
+                                                 Software
+  devices.common.IBM.son.diag
+                             5.3.0.0  COMMITTED  GXT Common Graphics Adapter
+                                                 Diagnostics I
+  devices.common.IBM.ssa.diag
+                             5.3.0.0  COMMITTED  SSA Common Adapter Diagnostics
+  devices.common.IBM.ssa.rte
+                            5.3.0.10  COMMITTED  Common SSA Adapter Software 
+  devices.common.IBM.tokenring.rte
+                            5.3.0.10  COMMITTED  Common Token Ring Software 
+  devices.common.IBM.usb.diag
+                             5.3.0.0  COMMITTED  Common USB Adapter Diagnostics
+  devices.common.IBM.usb.rte
+                            5.3.0.20  COMMITTED  USB System Software
+  devices.common.base.diag  5.3.0.10  COMMITTED  Common Base System Diagnostics
+  devices.common.rspcbase.rte
+                            5.3.0.20  COMMITTED  RISC PC Common Base System
+                                                 Device Software
+  devices.fcp.disk.array.diag
+                             5.3.0.0  COMMITTED  Fibre Channel RAID Device
+                                                 Diagnostics 
+  devices.fcp.disk.array.rte
+                            5.3.0.20  COMMITTED  FC SCSI RAIDiant Array Device
+                                                 Support Software
+  devices.fcp.disk.rte      5.3.0.20  COMMITTED  FC SCSI CD-ROM, Disk,
+                                                 Read/Write Optical Device
+                                                 Software
+  devices.fcp.tape.rte      5.3.0.20  COMMITTED  FC SCSI Tape Device Software
+  devices.graphics.com      5.3.0.10  COMMITTED  Graphics Adapter Common
+                                                 Software 
+  devices.graphics.voo       5.3.0.0  COMMITTED  Graphics Adapter VOO and
+                                                 Stereo Software 
+  devices.ide.cdrom.diag    5.3.0.10  COMMITTED  IDE CDROM, Cdrom Device
+                                                 Diagnostics 
+  devices.ide.cdrom.rte     5.3.0.20  COMMITTED  IDE CDROM Device Software
+  devices.ide.disk.diag      5.3.0.0  COMMITTED  IDE Disk Device Diagnostics 
+  devices.ide.disk.rte      5.3.0.20  COMMITTED  IDE Disk Device Software
+  devices.isa_sio.IBM0017.diag
+                             5.3.0.0  COMMITTED  Audio Device Diagnostics
+  devices.isa_sio.IBM0017.rte
+                             5.3.0.0  COMMITTED  Audio Device
+  devices.isa_sio.IBM0019.diag
+                             5.3.0.0  COMMITTED  ISA Tablet Software (IBM0019)
+                                                 Diagnostics
+  devices.isa_sio.IBM0019.rte
+                             5.3.0.0  COMMITTED  ISA Tablet Software (IBM0019)
+  devices.isa_sio.chrp.8042.diag
+                             5.3.0.0  COMMITTED  ISA Keyboard & Mouse
+                                                 Diagnostics (CHRP)
+  devices.isa_sio.chrp.8042.rte
+                             5.3.0.0  COMMITTED  ISA Keyboard & Mouse Software
+                                                 (CHRP)
+  devices.isa_sio.chrp.ecp.diag
+                             5.3.0.0  COMMITTED  CHRP IEEE 1284 Parallel Port
+                                                 Adapter Diagnostics 
+  devices.isa_sio.chrp.ecp.rte
+                            5.3.0.10  COMMITTED  CHRP IEEE1284 Parallel Port
+                                                 Adapter Software 
+  devices.isa_sio.pnpPNP.400.diag
+                             5.3.0.0  COMMITTED  Standard Parallel Adapter
+                                                 Diagnostic (pnpPNP,400)
+                                                 Software
+  devices.isa_sio.pnpPNP.400.rte
+                             5.3.0.0  COMMITTED  RISC PC Standard Parallel Port
+                                                 Adapter Software (pnpPNP,400)
+  devices.isa_sio.pnpPNP.501.diag
+                             5.3.0.0  COMMITTED  CHRP Serial Adapter
+                                                 Diagnostics (pnpPNP.501)
+  devices.isa_sio.pnpPNP.501.rte
+                             5.3.0.0  COMMITTED  CHRP Serial Adapter Software
+                                                 (pnpPNP.501)
+  devices.isa_sio.pnpPNP.700.diag
+                             5.3.0.0  COMMITTED  CHRP Diskette Adapter
+                                                 Diagnostic Software
+                                                 (pnpPNP.700)
+  devices.isa_sio.pnpPNP.700.rte
+                             5.3.0.0  COMMITTED  CHRP Diskette Adapter Software
+                                                 (pnpPNP.700)
+  devices.iscsi.disk.rte    5.3.0.20  COMMITTED  iSCSI Disk Software
+  devices.iscsi.tape.rte    5.3.0.20  COMMITTED  iSCSI Tape Software
+  devices.iscsi_sw.rte      5.3.0.20  COMMITTED  iSCSI Software Device Driver
+  devices.msg.en_US.base.com
+                             5.3.0.0  COMMITTED  Base Sys Device Software Msg -
+                                                 U.S. English
+  devices.msg.en_US.diag.rte
+                             5.3.0.0  COMMITTED  Device Diagnostics Messages -
+                                                 U.S. English
+  devices.msg.en_US.rspc.base.com
+                             5.3.0.0  COMMITTED  RISC PC Software Messages -
+                                                 U.S. English
+  devices.msg.en_US.sys.mca.rte
+                             5.3.0.0  COMMITTED  Micro Channel Bus Software Msg
+                                                 - U.S. English
+  devices.pci.00100100.com  5.3.0.10  COMMITTED  Common Symbios PCI SCSI I/O
+                                                 Controller Software 
+  devices.pci.00100300.diag
+                            5.3.0.10  COMMITTED  PCI 16-bit SCSI I/O Controller
+                                                 Diagnostics 
+  devices.pci.00100300.rte   5.3.0.0  COMMITTED  PCI 16-bit SCSI I/O Controller
+                                                 Software 
+  devices.pci.00100b00.diag  5.3.0.0  COMMITTED  SYM53C896 Dual Channel PCI-2
+                                                 Ultra2 SCSI Adapter
+                                                 Diagnostics
+  devices.pci.00100b00.rte   5.3.0.0  COMMITTED  SYM53C896 Dual Channel PCI
+                                                 SCSI I/O Controller
+  devices.pci.00100c00.diag  5.3.0.0  COMMITTED  SYM53C895 LVD PCI SCSI I/O
+                                                 Controller Diagnostics
+  devices.pci.00100c00.rte   5.3.0.0  COMMITTED  SYM53C895 PCI SCSI I/O
+                                                 Controller Software
+  devices.pci.00100f00.diag  5.3.0.0  COMMITTED  SYM53C8xxA PCI SCSI I/O
+                                                 Controller Diagnostics 
+  devices.pci.00100f00.rte  5.3.0.10  COMMITTED  SYM53C8xxA PCI SCSI I/O
+                                                 Controller Software 
+  devices.pci.00102100.diag  5.3.0.0  COMMITTED  SYM53C1010 Dual Channel PCI
+                                                 Ultra3 SCSI Adapter
+                                                 Diagnostics
+  devices.pci.00102100.rte   5.3.0.0  COMMITTED  SYM53C1010 PCI Ultra-3 SCSI
+                                                 I/O Controller Software
+  devices.pci.13100560.diag  5.3.0.0  COMMITTED  PCI Audio Adapter Diagnostics
+  devices.pci.13100560.rte   5.3.0.0  COMMITTED  PCI Audio Adapter (13100560)
+                                                 Runtime Software
+  devices.pci.14100401.diag
+                            5.3.0.10  COMMITTED  Gigabit Ethernet-SX PCI
+                                                 Adapter Diagnostics 
+  devices.pci.14100401.rte   5.3.0.0  COMMITTED  Gigabit Ethernet-SX PCI
+                                                 Adapter Software 
+  devices.pci.14101800.diag
+                            5.3.0.10  COMMITTED  PCI Tokenring Adapter
+                                                 Diagnostic 
+  devices.pci.14101800.rte   5.3.0.0  COMMITTED  IBM PCI Tokenring Adapter
+                                                 Software 
+  devices.pci.14101b02.X11  5.3.0.10  COMMITTED  AIXwindows GXT6500P Graphics
+                                                 Adapter Software 
+  devices.pci.14101b02.diag  5.3.0.0  COMMITTED  GXT6500P Graphics Adapter
+                                                 Diagnostics 
+  devices.pci.14101b02.rte  5.3.0.20  COMMITTED  GXT6500P Graphics Adapter
+                                                 Software
+  devices.pci.14101c02.X11  5.3.0.10  COMMITTED  AIXwindows GXT4500P Graphics
+                                                 Adapter Software 
+  devices.pci.14101c02.diag  5.3.0.0  COMMITTED  GXT4500P Graphics Adapter
+                                                 Diagnostics 
+  devices.pci.14101c02.rte  5.3.0.20  COMMITTED  GXT4500P Graphics Adapter
+                                                 Software
+  devices.pci.14102e00.diag
+                            5.3.0.10  COMMITTED  IBM PCI SCSI RAID Adapter
+                                                 Diagnostics Support 
+  devices.pci.14102e00.rte  5.3.0.20  COMMITTED  IBM PCI SCSI RAID Adapter
+                                                 Device Software Support
+  devices.pci.14103302.X11   5.3.0.0  COMMITTED  AIXwindows GXT135P Graphics
+                                                 Adapter Software 
+  devices.pci.14103302.diag
+                            5.3.0.20  COMMITTED  GXT135P Graphics Adapter
+                                                 Diagnostics
+  devices.pci.14103302.rte  5.3.0.10  COMMITTED  GXT135P Graphics Adapter
+                                                 Software 
+  devices.pci.14103600.rte   5.3.0.0  COMMITTED  IBM ARTIC960 PCI Device
+                                                 Runtime Support
+  devices.pci.14103c00.X11   5.3.0.0  COMMITTED  AIXwindows GXT250P/GXT255P
+                                                 Graphics Adapter Software
+  devices.pci.14103c00.com   5.3.0.0  COMMITTED  GXT250P/GXT255P Graphics
+                                                 Adapter Common Software
+  devices.pci.14103c00.diag  5.3.0.0  COMMITTED  GXT250P/GXT255P Graphics
+                                                 Adapter Diagnostics
+  devices.pci.14103c00.rte   5.3.0.0  COMMITTED  GXT250P/GXT255P Graphics
+                                                 Adapter Software
+  devices.pci.14103e00.diag
+                            5.3.0.10  COMMITTED  IBM PCI Tokenring Adapter
+                                                 (14103e00) Diagnostics 
+  devices.pci.14103e00.rte   5.3.0.0  COMMITTED  IBM PCI Token-Ring Adapter
+                                                 Software 
+  devices.pci.14104300.rte   5.3.0.0  COMMITTED  IBM ARTIC960 Device Runtime
+                                                 Support
+  devices.pci.14104500.diag  5.3.0.0  COMMITTED  SSA Adapter (14104500)
+                                                 Diagnostics
+  devices.pci.14104500.rte   5.3.0.0  COMMITTED  SSA Adapter (14104500)
+                                                 Software
+  devices.pci.14104e00.diag  5.3.0.0  COMMITTED  PCI ATM Adapter (14104e00)
+                                                 Diagnostics
+  devices.pci.14104e00.rte   5.3.0.0  COMMITTED  PCI ATM Adapter (14104e00)
+                                                 Software
+  devices.pci.14104f00.diag  5.3.0.0  COMMITTED  PCI ATM Adapter (14104f00)
+                                                 Diagnostics
+  devices.pci.14104f00.rte   5.3.0.0  COMMITTED  PCI ATM Adapter (14104f00)
+                                                 Software
+  devices.pci.14105000.diag  5.3.0.0  COMMITTED  PCI ATM Adapter (14105000)
+                                                 Diagnostics
+  devices.pci.14105000.rte   5.3.0.0  COMMITTED  PCI ATM Adapter (14105000)
+                                                 Software
+  devices.pci.14105300.diag  5.3.0.0  COMMITTED  IBM PCI ATM 25MBPS Adapter
+                                                 Diagnostics
+  devices.pci.14105300.rte   5.3.0.0  COMMITTED  IBM PCI ATM 25MBPS Adapter
+                                                 Software
+  devices.pci.14105400.X11   5.3.0.0  COMMITTED  AIXwindows GXT500P/GXT550P
+                                                 Graphics Adapter Software
+  devices.pci.14105400.diag
+                            5.3.0.20  COMMITTED  GXT500P/GXT550P Graphics
+                                                 Adapter Diagnostics
+  devices.pci.14105400.rte   5.3.0.0  COMMITTED  GXT500P/GXT550P Graphics
+                                                 Adapter Software
+  devices.pci.14105e00.X11   5.3.0.0  COMMITTED  AIXwindows GXT800P Graphics
+                                                 Adapter Software
+  devices.pci.14105e00.diag  5.3.0.0  COMMITTED  GXT800P Graphics Adapter
+                                                 Diagnostics
+  devices.pci.14105e00.rte   5.3.0.0  COMMITTED  GXT800P Graphics Adapter
+                                                 Software
+  devices.pci.14105e01.com  5.3.0.20  COMMITTED  622Mbps ATM PCI Adapter Common
+                                                 Software
+  devices.pci.14105e01.diag
+                            5.3.0.10  COMMITTED  622Mbps ATM PCI Adapter
+                                                 Diagnostics 
+  devices.pci.14105e01.rte   5.3.0.0  COMMITTED  622Mbps ATM PCI Adapter
+                                                 Software 
+  devices.pci.14106001.diag  5.3.0.0  COMMITTED  64bit/66MHz PCI ATM 155 MMF
+                                                 Adapter Diagnostics
+  devices.pci.14106001.rte   5.3.0.0  COMMITTED  64bit/66MHz PCI ATM 155 MMF
+                                                 Adapter Software
+  devices.pci.14106402.diag  5.3.0.0  COMMITTED  PCI-X Quad Channel U320 SCSI
+                                                 RAID Adapter Diagnostics 
+  devices.pci.14106402.rte   5.3.0.0  COMMITTED  PCI-X Quad Channel U320 SCSI
+                                                 RAID Adapter 
+  devices.pci.14106402.ucode
+                            5.3.0.10  COMMITTED  PCI-X Quad Channel U320 SCSI
+                                                 RAID Adapter Microcode 
+  devices.pci.14106602.diag
+                            5.3.0.20  COMMITTED  PCI-X Dual Channel SCSI
+                                                 Adapter Diagnostics
+  devices.pci.14106602.rte  5.3.0.10  COMMITTED  PCI-X Dual Channel SCSI
+                                                 Adapter Device Software 
+  devices.pci.14106602.ucode
+                             5.3.0.0  COMMITTED  PCI-X Dual Channel SCSI
+                                                 Adapter Microcode 
+  devices.pci.14106802.diag  5.3.0.0  COMMITTED  Gigabit Ethernet-SX PCI-X
+                                                 Adapter Diagnostics
+  devices.pci.14106802.rte   5.3.0.0  COMMITTED  Gigabit Ethernet-SX PCI-X
+                                                 Adapter Software
+  devices.pci.14106902.diag
+                            5.3.0.10  COMMITTED  10/100/1000 Base-TX PCI-X
+                                                 Adapter Diagnostics 
+  devices.pci.14106902.rte  5.3.0.10  COMMITTED  10/100/1000 Base-TX PCI-X
+                                                 Adapter Software 
+  devices.pci.14106e01.X11  5.3.0.10  COMMITTED  AIXwindows GXT4000P Graphics
+                                                 Adapter Software 
+  devices.pci.14106e01.diag  5.3.0.0  COMMITTED  GXT4000P Graphics Adapter
+                                                 Diagnostics 
+  devices.pci.14106e01.rte   5.3.0.0  COMMITTED  GXT4000P Graphics Adapter
+                                                 Software 
+  devices.pci.14107001.X11  5.3.0.10  COMMITTED  AIXwindows GXT6000P Graphics
+                                                 Adapter Software 
+  devices.pci.14107001.diag  5.3.0.0  COMMITTED  GXT6000P Graphics Adapter
+                                                 Diagnostics 
+  devices.pci.14107001.rte   5.3.0.0  COMMITTED  GXT6000P Graphics Adapter
+                                                 Software 
+  devices.pci.14107802.diag  5.3.0.0  COMMITTED  PCI-X Dual Channel Ultra320
+                                                 SCSI RAID Adapter Diagnostics 
+  devices.pci.14107802.rte  5.3.0.20  COMMITTED  PCI-X Dual Channel Ultra320
+                                                 SCSI RAID Adapter Software
+  devices.pci.14107802.ucode
+                             5.3.0.0  COMMITTED  PCI-X Dual Channel Ultra320
+                                                 SCSI RAID Adapter Microcode 
+  devices.pci.14107c00.com  5.3.0.10  COMMITTED  Common ATM Adapter Software 
+  devices.pci.14107c00.diag
+                            5.3.0.10  COMMITTED  PCI ATM Adapter (14107c00)
+                                                 Diagnostics 
+  devices.pci.14107c00.rte   5.3.0.0  COMMITTED  PCI ATM Adapter (14107c00)
+                                                 Software 
+  devices.pci.14107d01.X11  5.3.0.10  COMMITTED  AIXwindows GXT300P Graphics
+                                                 Adapter Software 
+  devices.pci.14107d01.diag  5.3.0.0  COMMITTED  GXT300P Graphics Adapter
+                                                 Diagnostics 
+  devices.pci.14107d01.rte   5.3.0.0  COMMITTED  GXT300P Graphics Adapter
+                                                 Software 
+  devices.pci.14108802.diag  5.3.0.0  COMMITTED  Gigabit-SX Ethernet PCI-X
+                                                 Adapter Diagnostics
+  devices.pci.14108802.rte   5.3.0.0  COMMITTED  2-Port Gigabit Ethernet-SX
+                                                 PCI-X Adapter Software
+  devices.pci.14108902.diag  5.3.0.0  COMMITTED  10/100/1000 Base-TX PCI-X
+                                                 Adapter Diagnostics
+  devices.pci.14108902.rte   5.3.0.0  COMMITTED  2-Port 10/100/1000 Base-TX
+                                                 PCI-X Adapter Software
+  devices.pci.14108c00.rte  5.3.0.10  COMMITTED  ARTIC960Hx 4-Port Selectable
+                                                 PCI Adapter Runtime Software 
+  devices.pci.14108e00.X11  5.3.0.10  COMMITTED  AIXwindows GXT3000P Graphics
+                                                 Adapter Software 
+  devices.pci.14108e00.diag  5.3.0.0  COMMITTED  GXT3000P Graphics Adapter
+                                                 Diagnostics 
+  devices.pci.14108e00.rte   5.3.0.0  COMMITTED  GXT3000P Graphics Adapter
+                                                 Software 
+  devices.pci.14109100.diag  5.3.0.0  COMMITTED  SSA Adapter (14109100)
+                                                 Diagnostics
+  devices.pci.14109100.rte   5.3.0.0  COMMITTED  SSA Adapter (14109100)
+                                                 Software
+  devices.pci.14109f00.diag  5.3.0.0  COMMITTED  IBM PCI 4758 Cryptographic
+                                                 Coprocessor Card Diagnostics
+  devices.pci.14109f00.rte   5.3.0.0  COMMITTED  IBM 4758 PCI Cryptographic
+                                                 Coprocessor
+  devices.pci.1410b800.X11  5.3.0.10  COMMITTED  AIXwindows GXT2000P Graphics
+                                                 Adapter Software 
+  devices.pci.1410b800.diag  5.3.0.0  COMMITTED  GXT2000P Graphics Adapter
+                                                 Diagnostics 
+  devices.pci.1410b800.rte   5.3.0.0  COMMITTED  GXT2000P Graphics Adapter
+                                                 Software 
+  devices.pci.1410ba02.diag  5.3.0.0  COMMITTED  10 Gigabit-SR Ethernet PCI-X
+                                                 Adapter Diagnostics 
+  devices.pci.1410ba02.rte  5.3.0.10  COMMITTED  10 Gigabit-SR Ethernet PCI-X
+                                                 Adapter Software 
+  devices.pci.1410bb02.diag
+                            5.3.0.10  COMMITTED  10 Gigabit-LR Ethernet PCI-X
+                                                 Adapter Diagnostics 
+  devices.pci.1410bb02.rte  5.3.0.10  COMMITTED  10 Gigabit-LR Ethernet PCI-X
+                                                 Adapter Software 
+  devices.pci.1410c101.diag  5.3.0.0  COMMITTED  64bit/66MHz PCI ATM 155 UTP
+                                                 Adapter Diagnostics
+  devices.pci.1410c101.rte   5.3.0.0  COMMITTED  64bit/66MHz PCI ATM 155 UTP
+                                                 Adapter Software
+  devices.pci.1410cf02.diag  5.3.0.0  COMMITTED  1000 Base-SX PCI-X iSCSI TOE
+                                                 Adapter Device Diagnostics 
+  devices.pci.1410cf02.rte   5.3.0.0  COMMITTED  1000 Base-SX PCI-X iSCSI TOE
+                                                 Adapter Device Software 
+  devices.pci.1410d002.com  5.3.0.20  COMMITTED  Common PCI iSCSI TOE Adapter
+                                                 Device Software
+  devices.pci.1410d002.diag
+                            5.3.0.20  COMMITTED  1000 Base-TX PCI-X iSCSI TOE
+                                                 Adapter Device Diagnostics
+  devices.pci.1410d002.rte   5.3.0.0  COMMITTED  1000 Base-TX PCI-X iSCSI TOE
+                                                 Adapter Device Software 
+  devices.pci.1410e601.diag
+                            5.3.0.10  COMMITTED  IBM Cryptographic Accelerator
+                                                 Diagnostics 
+  devices.pci.1410e601.rte   5.3.0.0  COMMITTED  IBM Crypto Accelerator Adapter
+                                                 Software 
+  devices.pci.1410ff01.diag
+                            5.3.0.10  COMMITTED  10/100 Mbps Ethernet PCI
+                                                 Adapter II Diagnostics 
+  devices.pci.1410ff01.rte  5.3.0.10  COMMITTED  10/100 Mbps Ethernet PCI
+                                                 Adapter II Software 
+  devices.pci.22100020.diag
+                            5.3.0.10  COMMITTED  PCI Ethernet Adapter
+                                                 Diagnostics 
+  devices.pci.22100020.rte   5.3.0.0  COMMITTED  IBM PCI Ethernet Adapter
+                                                 Software 
+  devices.pci.22106474.diag  5.3.0.0  COMMITTED  USB Host Controller (22106474)
+                                                 Diagnostics 
+  devices.pci.22106474.rte  5.3.0.10  COMMITTED  USB Host Controller (22106474)
+                                                 Software 
+  devices.pci.22106974.rte   5.3.0.0  COMMITTED  IDE Adapter Driver for AMD
+                                                 8111 Chip Software
+  devices.pci.23100020.diag
+                            5.3.0.10  COMMITTED  IBM PCI 10/100 Mb Ethernet
+                                                 Adapter (23100020) Diagnostics
+  devices.pci.23100020.rte  5.3.0.20  COMMITTED  IBM PCI 10/100 Ethernet
+                                                 Adapter Software
+  devices.pci.2b101a05.X11   5.3.0.0  COMMITTED  AIXwindows GXT120P Graphics
+                                                 Adapter Software
+  devices.pci.2b101a05.diag
+                            5.3.0.20  COMMITTED  GXT120P Graphics Adapter
+                                                 Diagnostics
+  devices.pci.2b101a05.rte   5.3.0.0  COMMITTED  GXT120P Graphics Adapter
+                                                 Software
+  devices.pci.2b102005.X11   5.3.0.0  COMMITTED  AIXwindows GXT130P Graphics
+                                                 Adapter Software
+  devices.pci.2b102005.diag
+                            5.3.0.20  COMMITTED  GXT130P Graphics Adapter
+                                                 Diagnostics
+  devices.pci.2b102005.rte   5.3.0.0  COMMITTED  GXT130P Graphics Adapter
+                                                 Software
+  devices.pci.33103500.diag  5.3.0.0  COMMITTED  USB Host Controller (33103500)
+                                                 Diagnostics 
+  devices.pci.33103500.rte  5.3.0.10  COMMITTED  USB Host Controller (33103500)
+                                                 Software 
+  devices.pci.3310e000.rte   5.3.0.0  COMMITTED  USB Enhanced Host Controller
+                                                 Adapter (3310e000) Software
+  devices.pci.331121b9.com   5.3.0.0  COMMITTED  IBM PCI 2-Port Multiprotocol
+                                                 Common Software 
+  devices.pci.331121b9.diag  5.3.0.0  COMMITTED  PCI 2-Port Multiprotocol
+                                                 Adapter (331121b9) Diagnostics
+  devices.pci.331121b9.rte  5.3.0.10  COMMITTED  IBM PCI 2-Port Multiprotocol
+                                                 Device Driver 
+  devices.pci.48110040.diagsa
+                             5.3.0.0  COMMITTED  SK-NET FDDI PCI Flash Update
+                                                 Utility
+  devices.pci.4f111100.asw   5.3.0.0  COMMITTED  PCI 8-Port Asynchronous
+                                                 Adapter Software 
+  devices.pci.4f111100.com  5.3.0.10  COMMITTED  Common PCI Asynchronous
+                                                 Adapter Software 
+  devices.pci.4f111100.diag  5.3.0.0  COMMITTED  RISC PC PCI Async 8 Port
+                                                 Adapter Diagnostics 
+  devices.pci.4f111100.rte   5.3.0.0  COMMITTED  PCI 8-Port Asynchronous
+                                                 Adapter Software 
+  devices.pci.4f111b00.asw   5.3.0.0  COMMITTED  PCI 128-Port Asynchronous
+                                                 Adapter Software
+  devices.pci.4f111b00.diag  5.3.0.0  COMMITTED  RISC PC PCI Async 128 Port
+                                                 Adapter Diagnostics
+  devices.pci.4f111b00.rte   5.3.0.0  COMMITTED  PCI 128-Port Asynchronous
+                                                 Adapter Software
+  devices.pci.4f11c800.diag  5.3.0.0  COMMITTED  2-port Asynchronous EIA-232
+                                                 PCI Adapter Diagnostics 
+  devices.pci.4f11c800.rte  5.3.0.20  COMMITTED  2-Port Asynchronous EIA-232
+                                                 PCI Adapter Software
+  devices.pci.5a107512.rte  5.3.0.10  COMMITTED  IDE Adapter Driver for Promise
+                                                 275 Chip Software 
+  devices.pci.77101223.com  5.3.0.20  COMMITTED  PCI FC Adapter (77101223)
+                                                 Common Software
+  devices.pci.77101223.diag  5.3.0.0  COMMITTED  PCI FC Adapter (77101223)
+                                                 Diagnostics 
+  devices.pci.77101223.rte  5.3.0.10  COMMITTED  PCI FC Adapter (77101223)
+                                                 Runtime Software 
+  devices.pci.86806019.rte   5.3.0.0  COMMITTED  IBM ARTIC960 RP/RXD Device
+                                                 Runtime Support
+  devices.pci.99172704.diag  5.3.0.0  COMMITTED  USB Host Controller (99172704)
+                                                 Diagnostics 
+  devices.pci.99172704.rte  5.3.0.10  COMMITTED  USB Host Controller (99172704)
+                                                 Software 
+  devices.pci.ad100501.rte  5.3.0.10  COMMITTED  IDE Adapter Driver for Winbond
+                                                 553F Chip Software 
+  devices.pci.c1110358.diag  5.3.0.0  COMMITTED  USB Open Host Controller
+                                                 Adapter Diagnostics 
+  devices.pci.c1110358.rte  5.3.0.10  COMMITTED  USB Host Controller (c1110358)
+                                                 Software 
+  devices.pci.df1000f7.com  5.3.0.21  COMMITTED  Common PCI FC Adapter Device
+                                                 Software
+  devices.pci.df1000f7.diag
+                            5.3.0.20  COMMITTED  PCI FC Adapter Device
+                                                 Diagnostics
+  devices.pci.df1000f7.rte   5.3.0.0  COMMITTED  PCI FC Adapter Device Software
+  devices.pci.df1000f9.diag  5.3.0.0  COMMITTED  64-bit PCI FC Adapter Device
+                                                 Diagnostics
+  devices.pci.df1000f9.rte   5.3.0.0  COMMITTED  64-bit PCI FC Adapter Device
+                                                 Software
+  devices.pci.df1000fa.diag  5.3.0.0  COMMITTED  FC PCI-X Adapter Device
+                                                 Diagnostics 
+  devices.pci.df1000fa.rte  5.3.0.10  COMMITTED  FC PCI-X Adapter Device
+                                                 Software 
+  devices.pci.df1080f9.diag  5.3.0.0  COMMITTED  PCI-X FC Adapter Device
+                                                 Diagnostics
+  devices.pci.df1080f9.rte   5.3.0.0  COMMITTED  PCI-X FC Adapter Device
+                                                 Software
+  devices.pci.e414a816.diag
+                            5.3.0.10  COMMITTED  Gigabit Ethernet Adapter
+                                                 Diagnostics 
+  devices.pci.e414a816.rte  5.3.0.10  COMMITTED  Gigabit Ethernet-SX Adapter
+                                                 Software 
+  devices.pci.ibmccm.rte     5.3.0.0  COMMITTED  Common Character Mode Graphics
+                                                 Adapter Software
+  devices.pci.isa.rte       5.3.0.10  COMMITTED  ISA Bus Bridge Software (CHRP)
+  devices.pci.pci.rte        5.3.0.0  COMMITTED  PCI Bus Bridge Software (CHRP)
+  devices.scsi.disk.diag.com
+                            5.3.0.10  COMMITTED  Common Disk Diagnostic Service
+                                                 Aid 
+  devices.scsi.disk.diag.rte
+                            5.3.0.10  COMMITTED  SCSI CD_ROM, Disk Device
+                                                 Diagnostics 
+  devices.scsi.disk.rspc     5.3.0.0  COMMITTED  RISC PC SCSI CD-ROM, Disk,
+                                                 Read/Write Optical Software 
+  devices.scsi.disk.rte     5.3.0.20  COMMITTED  SCSI CD-ROM, Disk, Read/Write
+                                                 Optical Device Software
+  devices.scsi.safte.diag    5.3.0.0  COMMITTED  SCSI Accessed Fault-Tolerant
+                                                 Enclosure Device Diagnostics
+  devices.scsi.safte.rte     5.3.0.0  COMMITTED  SCSI Accessed Fault-Tolerant
+                                                 Enclosure Device Software
+  devices.scsi.scarray.diag  5.3.0.0  COMMITTED  RAIDiant Array DA Device
+                                                 Diagnostics
+  devices.scsi.scarray.rte  5.3.0.20  COMMITTED  7135 RAIDiant Array DA Device
+                                                 Software Support
+  devices.scsi.ses.diag      5.3.0.0  COMMITTED  SCSI Enclosure Services Device
+                                                 Diagnostics 
+  devices.scsi.ses.rte      5.3.0.20  COMMITTED  SCSI Enclosure Device Software
+  devices.scsi.tape.diag     5.3.0.0  COMMITTED  SCSI Tape Device Diagnostics 
+  devices.scsi.tape.rspc     5.3.0.0  COMMITTED  RISC PC SCSI Tape Device
+                                                 Software 
+  devices.scsi.tape.rte     5.3.0.20  COMMITTED  SCSI Tape Device Software
+  devices.scsi.tm.rte       5.3.0.10  COMMITTED  SCSI Target Mode Software 
+  devices.serial.gio.X11    5.3.0.10  COMMITTED  AIXwindows Serial Graphics
+                                                 Input Adapter Software 
+  devices.serial.gio.diag    5.3.0.0  COMMITTED  Serial Graphics Input Adapter
+                                                 and Device Diagnostics 
+  devices.serial.gio.rte     5.3.0.0  COMMITTED  Serial Graphics Input Adapter
+                                                 Software 
+  devices.serial.sb1.X11    5.3.0.10  COMMITTED  AIXwindows 6094-030 Spaceball
+                                                 3-D Input Device Software 
+  devices.serial.tablet1.X11
+                            5.3.0.10  COMMITTED  AIXwindows Serial Tablet Input
+                                                 Device Software 
+  devices.ssa.IBM_raid.rte   5.3.0.0  COMMITTED  SSA Raid Manager Software
+  devices.ssa.disk.rte      5.3.0.10  COMMITTED  SSA DASD Software 
+  devices.ssa.tm.rte         5.3.0.0  COMMITTED  Target Mode SSA Support
+  devices.tty.rte            5.3.0.0  COMMITTED  TTY Device Driver Support
+                                                 Software
+  devices.usbif.030101.rte  5.3.0.10  COMMITTED  USB Keyboard Client Driver 
+  devices.usbif.030102.rte   5.3.0.0  COMMITTED  USB Mouse Client Driver
+  devices.usbif.08025002.diag
+                            5.3.0.10  COMMITTED  USB CD-ROM Diagnostics 
+  devices.usbif.08025002.rte
+                            5.3.0.10  COMMITTED  USB CD-ROM Client Driver 
+  devices.usbif.080400.diag  5.3.0.0  COMMITTED  USB Diskette Diagnostics 
+  devices.usbif.080400.rte  5.3.0.10  COMMITTED  USB Diskette Client Driver 
+  devices.vdevice.IBM.l-lan.rte
+                            5.3.0.20  COMMITTED  Virtual I/O Ethernet Software
+  devices.vdevice.IBM.v-scsi.rte
+                            5.3.0.20  COMMITTED  Virtual SCSI Client Support
+  devices.vdevice.hvterm-protocol.rte
+                             5.3.0.0  COMMITTED  Virtual Terminal Physical
+                                                 Support
+  devices.vdevice.hvterm1.rte
+                            5.3.0.10  COMMITTED  Virtual Terminal Devices 
+  eclipse2.rte               2.1.3.0  COMMITTED  Eclipse Integrated Tool
+                                                 Platform Runtime
+  ifor_ls.base.cli          5.3.0.10  COMMITTED  License Use Management Runtime
+                                                 Code 
+  ifor_ls.msg.en_US.base.cli
+                             5.3.0.0  COMMITTED  LUM Runtime Code Messages -
+                                                 U.S. English
+  infocenter.aix.EN_US.commands
+                            5.3.0.10  COMMITTED  AIX Command Documentation -
+                                                 U.S. English (UTF)
+  invscout.com               2.2.0.0  COMMITTED  Inventory Scout Microcode
+                                                 Catalog
+  invscout.ldb               2.2.0.2  COMMITTED  Inventory Scout Logic Database
+  invscout.msg.en_US.rte     2.1.0.1  COMMITTED  Inventory Scout Messages -
+                                                 U.S. English
+  invscout.rte               2.2.0.4  COMMITTED  Inventory Scout Runtime
+  perfagent.tools           5.3.0.30  COMMITTED  Local Performance Analysis &
+                                                 Control Commands
+  perl.libext               2.1.0.10  COMMITTED  Perl Library Extensions 
+  perl.rte                  5.8.2.10  COMMITTED  Perl Version 5 Runtime
+                                                 Environment 
+  printers.msg.en_US.rte     5.3.0.0  COMMITTED  Printer Backend Messages -
+                                                 U.S. English
+  printers.rte              5.3.0.20  COMMITTED  Printer Backend
+  rpm.rte                   3.0.5.36  COMMITTED  RPM Package Manager
+  rsct.basic.hacmp           2.4.3.0  COMMITTED  RSCT Basic Function (HACMP/ES
+                                                 Support)
+  rsct.basic.rte             2.4.3.0  COMMITTED  RSCT Basic Function
+  rsct.basic.sp              2.4.3.0  COMMITTED  RSCT Basic Function (PSSP
+                                                 Support)
+  rsct.clients.rte     99.99.999.999  COMMITTED  Supersede Entry - Not really
+                                                 installed
+  rsct.compat.basic.hacmp    2.4.3.0  COMMITTED  RSCT Event Management Basic
+                                                 Function (HACMP/ES Support)
+  rsct.compat.basic.rte      2.4.3.0  COMMITTED  RSCT Event Management Basic
+                                                 Function
+  rsct.compat.basic.sp       2.4.3.0  COMMITTED  RSCT Event Management Basic
+                                                 Function (PSSP Support)
+  rsct.compat.clients.hacmp  2.4.3.0  COMMITTED  RSCT Event Management Client
+                                                 Function (HACMP/ES Support)
+  rsct.compat.clients.rte    2.4.3.0  COMMITTED  RSCT Event Management Client
+                                                 Function
+  rsct.compat.clients.sp     2.4.3.0  COMMITTED  RSCT Event Management Client
+                                                 Function (PSSP Support)
+  rsct.core.auditrm          2.4.3.0  COMMITTED  RSCT Audit Log Resource
+                                                 Manager
+  rsct.core.errm             2.4.3.0  COMMITTED  RSCT Event Response Resource
+                                                 Manager
+  rsct.core.fsrm             2.4.3.0  COMMITTED  RSCT File System Resource
+                                                 Manager
+  rsct.core.gui              2.4.3.0  COMMITTED  RSCT Graphical User Interface
+  rsct.core.hostrm           2.4.3.0  COMMITTED  RSCT Host Resource Manager
+  rsct.core.lprm             2.4.3.0  COMMITTED  RSCT Least Privilege Resource
+                                                 Manager
+  rsct.core.rmc              2.4.3.0  COMMITTED  RSCT Resource Monitoring and
+                                                 Control
+  rsct.core.sec              2.4.3.0  COMMITTED  RSCT Security
+  rsct.core.sensorrm         2.4.3.0  COMMITTED  RSCT Sensor Resource Manager
+  rsct.core.sr               2.4.3.0  COMMITTED  RSCT Registry
+  rsct.core.utils            2.4.3.0  COMMITTED  RSCT Utilities
+  rsct.msg.EN_US.core.auditrm
+                             2.4.0.0  COMMITTED  RSCT Audit Log RM Msgs - U.S.
+                                                 English (UTF)
+  rsct.msg.EN_US.core.errm   2.4.0.0  COMMITTED  RSCT Event Response RM Msgs -
+                                                 U.S. English (UTF)
+  rsct.msg.EN_US.core.fsrm   2.4.0.0  COMMITTED  RSCT File System RM Msgs -
+                                                 U.S. English (UTF)
+  rsct.msg.EN_US.core.gui    2.4.0.0  COMMITTED  RSCT GUI Msgs - U.S. English
+                                                 (UTF)
+  rsct.msg.EN_US.core.hostrm
+                             2.4.0.0  COMMITTED  RSCT Host RM Msgs - U.S.
+                                                 English (UTF)
+  rsct.msg.EN_US.core.lprm   2.4.0.0  COMMITTED  RSCT LPRM Msgs - U.S. English
+                                                 (UTF)
+  rsct.msg.EN_US.core.rmc    2.4.0.0  COMMITTED  RSCT RMC Msgs - U.S. English
+                                                 (UTF)
+  rsct.msg.EN_US.core.sec    2.4.0.0  COMMITTED  RSCT Security Msgs - U.S.
+                                                 English (UTF)
+  rsct.msg.EN_US.core.sensorrm
+                             2.4.0.0  COMMITTED  RSCT Sensor RM Msgs - U.S.
+                                                 English (UTF)
+  rsct.msg.EN_US.core.sr     2.4.0.0  COMMITTED  RSCT Registry Msgs - U.S.
+                                                 English (UTF)
+  rsct.msg.EN_US.core.utils  2.4.0.0  COMMITTED  RSCT Utilities Msgs - U.S.
+                                                 English (UTF)
+  rsct.msg.en_US.basic.rte   2.4.0.0  COMMITTED  RSCT Basic Msgs - U.S. English
+  rsct.msg.en_US.core.auditrm
+                             2.4.0.0  COMMITTED  RSCT Audit Log RM Msgs - U.S.
+                                                 English
+  rsct.msg.en_US.core.errm   2.4.0.0  COMMITTED  RSCT Event Response RM Msgs -
+                                                 U.S. English
+  rsct.msg.en_US.core.fsrm   2.4.0.0  COMMITTED  RSCT File System RM Msgs -
+                                                 U.S. English
+  rsct.msg.en_US.core.gui    2.4.0.0  COMMITTED  RSCT GUI Msgs - U.S. English
+  rsct.msg.en_US.core.gui.com
+                             2.4.0.0  COMMITTED  RSCT GUI JAVA Msgs - U.S.
+                                                 English
+  rsct.msg.en_US.core.hostrm
+                             2.4.0.0  COMMITTED  RSCT Host RM Msgs - U.S.
+                                                 English
+  rsct.msg.en_US.core.lprm   2.4.0.0  COMMITTED  RSCT LPRM Msgs - U.S. English
+  rsct.msg.en_US.core.rmc    2.4.0.0  COMMITTED  RSCT RMC Msgs - U.S. English
+  rsct.msg.en_US.core.rmc.com
+                             2.4.0.0  COMMITTED  RSCT RMC JAVA Msgs - U.S.
+                                                 English
+  rsct.msg.en_US.core.sec    2.4.0.0  COMMITTED  RSCT Security Msgs - U.S.
+                                                 English
+  rsct.msg.en_US.core.sensorrm
+                             2.4.0.0  COMMITTED  RSCT Sensor RM Msgs - U.S.
+                                                 English
+  rsct.msg.en_US.core.sr     2.4.0.0  COMMITTED  RSCT Registry Msgs - U.S.
+                                                 English
+  rsct.msg.en_US.core.utils  2.4.0.0  COMMITTED  RSCT Utilities Msgs - U.S.
+                                                 English
+  sysmgt.help.en_US.websm    5.3.0.0  COMMITTED  WebSM Extended Helps - U.S.
+                                                 English
+  sysmgt.help.msg.en_US.websm
+                            5.3.0.30  COMMITTED  WebSM Context Helps - U.S.
+                                                 English 
+  sysmgt.msg.en_US.sguide.rte
+                             5.3.0.0  COMMITTED  TaskGuide Viewer Messages -
+                                                 U.S. English
+  sysmgt.msg.en_US.websm.apps
+                            5.3.0.10  COMMITTED  WebSM Client Apps. Messages -
+                                                 U.S. English 
+  sysmgt.sguide.rte          5.3.0.0  COMMITTED  TaskGuide Runtime Environment
+  sysmgt.websm.apps         5.3.0.10  COMMITTED  Web-based System Manager
+                                                 Applications 
+  sysmgt.websm.diag          5.3.0.0  COMMITTED  Web-based System Manager
+                                                 Diagnostic Applications 
+  sysmgt.websm.framework    5.3.0.20  COMMITTED  Web-based System Manager
+                                                 Client/Server Support
+  sysmgt.websm.icons         5.3.0.0  COMMITTED  Web-based System Manager Icons
+  sysmgt.websm.rte          5.3.0.20  COMMITTED  Web-based System Manager
+                                                 Runtime Environment
+  sysmgt.websm.webaccess    5.3.0.20  COMMITTED  WebSM Web Access Enablement
+  sysmgtlib.framework.core   5.3.0.0  COMMITTED  System Management Service
+                                                 Libraries Common Code
+  sysmgtlib.libraries.apps  5.3.0.10  COMMITTED  System Management Service
+                                                 Libraries Application Code 
+  xlC.aix50.rte             6.0.0.13  COMMITTED  C Set ++ Runtime for AIX 5.0 
+  xlC.cpp                    6.0.0.0  COMMITTED  C for AIX Preprocessor
+  xlC.msg.en_US.cpp          6.0.0.0  COMMITTED  C for AIX Preprocessor
+                                                 Messages--U.S. English
+  xlC.msg.en_US.rte          6.0.0.0  COMMITTED  C Set ++ Runtime
+                                                 Messages--U.S. English 
+  xlC.rte                    6.0.0.0  COMMITTED  C Set ++ Runtime 
+
+Path: /etc/objrepos
+  Tivoli_Management_Agent.client.rte
+                             3.7.1.0  COMMITTED  Management Framework Endpoint
+                                                 Runtime"
+  X11.Dt.ToolTalk            5.3.0.0  COMMITTED  AIX CDE ToolTalk Support 
+  X11.Dt.bitmaps             5.3.0.0  COMMITTED  AIX CDE Bitmaps 
+  X11.Dt.helpmin             5.3.0.0  COMMITTED  AIX CDE Minimum Help Files 
+  X11.Dt.rte                5.3.0.10  COMMITTED  AIX Common Desktop Environment
+                                                 (CDE) 1.0 
+  X11.base.rte              5.3.0.10  COMMITTED  AIXwindows Runtime Environment
+  X11.base.smt              5.3.0.10  COMMITTED  AIXwindows Runtime Shared
+                                                 Memory Transport 
+  X11.loc.en_US.Dt.rte       5.3.0.0  COMMITTED  CDE Locale Configuration -
+                                                 U.S. English
+  bos.64bit                 5.3.0.10  COMMITTED  Base Operating System 64 bit
+                                                 Runtime 
+  bos.acct                  5.3.0.30  COMMITTED  Accounting Services
+  bos.cdmount                5.3.0.0  COMMITTED  CD/DVD Automount Facility
+  bos.diag.com              5.3.0.10  COMMITTED  Common Hardware Diagnostics 
+  bos.diag.rte              5.3.0.20  COMMITTED  Hardware Diagnostics
+  bos.diag.util             5.3.0.10  COMMITTED  Hardware Diagnostics Utilities
+  bos.mh                    5.3.0.10  COMMITTED  Mail Handler 
+  bos.mp                    5.3.0.10  COMMITTED  Base Operating System
+                                                 Multiprocessor Runtime 
+  bos.mp64                  5.3.0.10  COMMITTED  Base Operating System 64-bit
+                                                 Multiprocessor Runtime 
+  bos.net.ewlm.rte          5.3.0.10  COMMITTED  netWLM 
+  bos.net.ipsec.keymgt      5.3.0.20  COMMITTED  IP Security Key Management
+  bos.net.ipsec.rte         5.3.0.10  COMMITTED  IP Security 
+  bos.net.ipsec.websm       5.3.0.10  COMMITTED  IP Security WebSM 
+  bos.net.mobip6.rte        5.3.0.10  COMMITTED  IPv6 Mobility 
+  bos.net.ncs                5.3.0.0  COMMITTED  Network Computing System 1.5.1
+  bos.net.nfs.cachefs       5.3.0.30  COMMITTED  CacheFS File System
+  bos.net.nfs.client        5.3.0.30  COMMITTED  Network File System Client
+  bos.net.nis.client        5.3.0.10  COMMITTED  Network Information Service
+                                                 Client 
+  bos.net.nis.server        5.3.0.10  COMMITTED  Network Information Service
+                                                 Server 
+  bos.net.nisplus           5.3.0.10  COMMITTED  Network Information Services
+                                                 Plus (NIS+) 
+  bos.net.ppp               5.3.0.10  COMMITTED  Async Point to Point Protocol 
+  bos.net.snapp              5.3.0.0  COMMITTED  System Networking Analysis and
+                                                 Performance Pilot 
+  bos.net.tcp.client        5.3.0.10  COMMITTED  TCP/IP Client Support 
+  bos.net.tcp.server        5.3.0.10  COMMITTED  TCP/IP Server 
+  bos.net.uucp               5.3.0.0  COMMITTED  Unix to Unix Copy Program 
+  bos.perf.diag_tool         5.3.0.0  COMMITTED  Performance Diagnostic Tool 
+  bos.perf.libperfstat      5.3.0.10  COMMITTED  Performance Statistics Library
+                                                 Interface 
+  bos.perf.perfstat         5.3.0.30  COMMITTED  Performance Statistics
+                                                 Interface
+  bos.perf.tools            5.3.0.10  COMMITTED  Base Performance Tools 
+  bos.perf.tune             5.3.0.10  COMMITTED  Performance Tuning Support 
+  bos.pmapi.pmsvcs          5.3.0.30  COMMITTED  Performance Monitor API Kernel
+                                                 Extension
+  bos.rte                   5.3.0.10  COMMITTED  Base Operating System Runtime
+  bos.rte.Dt                 5.3.0.0  COMMITTED  Desktop Integrator
+  bos.rte.SRC               5.3.0.10  COMMITTED  System Resource Controller
+  bos.rte.aio               5.3.0.10  COMMITTED  Asynchronous I/O Extension
+  bos.rte.archive           5.3.0.20  COMMITTED  Archive Commands
+  bos.rte.boot              5.3.0.30  COMMITTED  Boot Commands
+  bos.rte.commands          5.3.0.10  COMMITTED  Commands
+  bos.rte.control           5.3.0.10  COMMITTED  System Control Commands
+  bos.rte.cron              5.3.0.10  COMMITTED  Batch Operations
+  bos.rte.devices           5.3.0.10  COMMITTED  Base Device Drivers
+  bos.rte.diag              5.3.0.10  COMMITTED  Diagnostics
+  bos.rte.filesystem        5.3.0.31  COMMITTED  Filesystem Administration
+  bos.rte.jfscomp            5.3.0.0  COMMITTED  JFS Compression
+  bos.rte.lvm               5.3.0.10  COMMITTED  Logical Volume Manager
+  bos.rte.printers          5.3.0.10  COMMITTED  Front End Printer Support
+  bos.rte.security          5.3.0.30  COMMITTED  Base Security Function
+  bos.rte.serv_aid          5.3.0.30  COMMITTED  Error Log Service Aids
+  bos.rte.shell             5.3.0.10  COMMITTED  Shells (bsh, ksh, csh)
+  bos.rte.tty               5.3.0.10  COMMITTED  Base TTY Support and Commands
+  bos.suma                  5.3.0.10  COMMITTED  Service Update Management
+                                                 Assistant (SUMA) 
+  bos.sysmgt.loginlic        5.3.0.0  COMMITTED  License Management 
+  bos.sysmgt.nim.client     5.3.0.10  COMMITTED  Network Install Manager -
+                                                 Client Tools 
+  bos.sysmgt.serv_aid       5.3.0.30  COMMITTED  Software Error Logging and
+                                                 Dump Service Aids
+  bos.sysmgt.sysbr          5.3.0.10  COMMITTED  System Backup and BOS Install
+                                                 Utilities 
+  bos.sysmgt.trace          5.3.0.30  COMMITTED  Software Trace Service Aids
+  cluster.es.client.rte      5.2.0.0  COMMITTED  ES Client Runtime
+  cluster.es.clvm.rte        5.2.0.0  COMMITTED  ES for AIX Concurrent Access
+  cluster.es.cspoc.rte       5.2.0.0  COMMITTED  ES CSPOC Runtime Commands
+  cluster.es.server.diag     5.2.0.0  COMMITTED  ES Server Diags
+  cluster.es.server.events   5.2.0.0  COMMITTED  ES Server Events
+  cluster.es.server.rte      5.2.0.5  COMMITTED  ES Base Server Runtime
+                                      EFIXLOCKED
+  cluster.es.server.utils    5.2.0.0  COMMITTED  ES Server Utilities
+  csm.client                 1.4.1.0  COMMITTED  Cluster Systems Management
+                                                 Client
+  csm.core                   1.4.1.0  COMMITTED  Cluster Systems Management
+                                                 Core
+  csm.diagnostics           1.4.0.10  COMMITTED  Cluster Systems Management
+                                                 Probe Manager / Diagnostics
+  csm.dsh                   1.4.0.10  COMMITTED  Cluster Systems Management Dsh
+  devices.artic960.diag      5.3.0.0  COMMITTED  IBM ARTIC960 Adapter
+                                                 Diagnostics 
+  devices.artic960.rte      5.3.0.10  COMMITTED  IBM ARTIC960 Runtime Support 
+  devices.artic960.ucode     5.3.0.0  COMMITTED  IBM ARTIC960 Adapter Software 
+  devices.chrp.base.ServiceRM
+                             1.3.0.0  COMMITTED  RSCT Service Resource Manager
+  devices.chrp.base.diag    5.3.0.10  COMMITTED  RISC CHRP Base System Device
+                                                 Diagnostics 
+  devices.chrp.base.rte     5.3.0.31  COMMITTED  RISC PC Base System Device
+                                                 Software (CHRP)
+  devices.chrp.pci.rte      5.3.0.10  COMMITTED  PCI Bus Software (CHRP) 
+  devices.chrp.vdevice.rte  5.3.0.10  COMMITTED  Virtual I/O Bus Support 
+  devices.common.IBM.atm.rte
+                            5.3.0.10  COMMITTED  Common ATM Software 
+  devices.common.IBM.cx.rte  5.3.0.0  COMMITTED  CX Common Adapter Software
+  devices.common.IBM.ethernet.rte
+                            5.3.0.20  COMMITTED  Common Ethernet Software
+  devices.common.IBM.fc.hba-api
+                            5.3.0.10  COMMITTED  Common HBA API Library 
+  devices.common.IBM.fc.rte
+                            5.3.0.10  COMMITTED  Common IBM FC Software 
+  devices.common.IBM.hdlc.sdlc
+                             5.3.0.0  COMMITTED  SDLC COMIO Device Driver
+                                                 Emulation 
+  devices.common.IBM.ide.rte
+                            5.3.0.10  COMMITTED  Common IDE I/O Controller
+                                                 Software 
+  devices.common.IBM.iscsi.rte
+                            5.3.0.10  COMMITTED  Common iSCSI Files 
+  devices.common.IBM.ktm_std.rte
+                             5.3.0.0  COMMITTED  Common Keyboard, Tablet, and
+                                                 Mouse Software
+  devices.common.IBM.scsi.rte
+                            5.3.0.10  COMMITTED  Common SCSI I/O Controller
+                                                 Software 
+  devices.common.IBM.ssa.diag
+                             5.3.0.0  COMMITTED  SSA Common Adapter Diagnostics
+  devices.common.IBM.ssa.rte
+                            5.3.0.10  COMMITTED  Common SSA Adapter Software 
+  devices.common.IBM.usb.rte
+                            5.3.0.10  COMMITTED  USB System Software 
+  devices.fcp.disk.array.rte
+                            5.3.0.20  COMMITTED  FC SCSI RAIDiant Array Device
+                                                 Support Software
+  devices.fcp.disk.rte      5.3.0.10  COMMITTED  FC SCSI CD-ROM, Disk,
+                                                 Read/Write Optical Device
+                                                 Software 
+  devices.fcp.tape.rte      5.3.0.10  COMMITTED  FC SCSI Tape Device Software 
+  devices.graphics.com      5.3.0.10  COMMITTED  Graphics Adapter Common
+                                                 Software 
+  devices.ide.cdrom.rte     5.3.0.10  COMMITTED  IDE CDROM Device Software 
+  devices.ide.disk.rte      5.3.0.10  COMMITTED  IDE Disk Device Software 
+  devices.isa_sio.chrp.ecp.rte
+                            5.3.0.10  COMMITTED  CHRP IEEE1284 Parallel Port
+                                                 Adapter Software 
+  devices.isa_sio.pnpPNP.501.rte
+                             5.3.0.0  COMMITTED  CHRP Serial Adapter Software
+                                                 (pnpPNP.501)
+  devices.iscsi_sw.rte      5.3.0.10  COMMITTED  iSCSI Software Device Driver 
+  devices.pci.13100560.rte   5.3.0.0  COMMITTED  PCI Audio Adapter (13100560)
+                                                 Runtime Software
+  devices.pci.14100401.rte   5.3.0.0  COMMITTED  Gigabit Ethernet-SX PCI
+                                                 Adapter Software 
+  devices.pci.14101800.rte   5.3.0.0  COMMITTED  IBM PCI Tokenring Adapter
+                                                 Software 
+  devices.pci.14101b02.rte   5.3.0.0  COMMITTED  GXT6500P Graphics Adapter
+                                                 Software 
+  devices.pci.14101c02.rte   5.3.0.0  COMMITTED  GXT4500P Graphics Adapter
+                                                 Software 
+  devices.pci.14102e00.diag
+                            5.3.0.10  COMMITTED  IBM PCI SCSI RAID Adapter
+                                                 Diagnostics Support 
+  devices.pci.14102e00.rte  5.3.0.10  COMMITTED  IBM PCI SCSI RAID Adapter
+                                                 Device Software Support 
+  devices.pci.14103302.rte  5.3.0.10  COMMITTED  GXT135P Graphics Adapter
+                                                 Software 
+  devices.pci.14103c00.com   5.3.0.0  COMMITTED  GXT250P/GXT255P Graphics
+                                                 Adapter Common Software
+  devices.pci.14103e00.rte   5.3.0.0  COMMITTED  IBM PCI Token-Ring Adapter
+                                                 Software 
+  devices.pci.14104500.diag  5.3.0.0  COMMITTED  SSA Adapter (14104500)
+                                                 Diagnostics
+  devices.pci.14104500.rte   5.3.0.0  COMMITTED  SSA Adapter (14104500)
+                                                 Software
+  devices.pci.14104e00.rte   5.3.0.0  COMMITTED  PCI ATM Adapter (14104e00)
+                                                 Software
+  devices.pci.14104f00.rte   5.3.0.0  COMMITTED  PCI ATM Adapter (14104f00)
+                                                 Software
+  devices.pci.14105000.rte   5.3.0.0  COMMITTED  PCI ATM Adapter (14105000)
+                                                 Software
+  devices.pci.14105300.rte   5.3.0.0  COMMITTED  IBM PCI ATM 25MBPS Adapter
+                                                 Software
+  devices.pci.14105e01.rte   5.3.0.0  COMMITTED  622Mbps ATM PCI Adapter
+                                                 Software 
+  devices.pci.14106602.diag
+                            5.3.0.10  COMMITTED  PCI-X Dual Channel SCSI
+                                                 Adapter Diagnostics 
+  devices.pci.14106802.rte   5.3.0.0  COMMITTED  Gigabit Ethernet-SX PCI-X
+                                                 Adapter Software
+  devices.pci.14106902.rte  5.3.0.10  COMMITTED  10/100/1000 Base-TX PCI-X
+                                                 Adapter Software 
+  devices.pci.14106e01.rte   5.3.0.0  COMMITTED  GXT4000P Graphics Adapter
+                                                 Software 
+  devices.pci.14107001.rte   5.3.0.0  COMMITTED  GXT6000P Graphics Adapter
+                                                 Software 
+  devices.pci.14107802.diag  5.3.0.0  COMMITTED  PCI-X Dual Channel Ultra320
+                                                 SCSI RAID Adapter Diagnostics 
+  devices.pci.14107802.rte  5.3.0.10  COMMITTED  PCI-X Dual Channel Ultra320
+                                                 SCSI RAID Adapter Software 
+  devices.pci.14107c00.rte   5.3.0.0  COMMITTED  PCI ATM Adapter (14107c00)
+                                                 Software 
+  devices.pci.14107d01.rte   5.3.0.0  COMMITTED  GXT300P Graphics Adapter
+                                                 Software 
+  devices.pci.14108802.rte   5.3.0.0  COMMITTED  2-Port Gigabit Ethernet-SX
+                                                 PCI-X Adapter Software
+  devices.pci.14108902.rte   5.3.0.0  COMMITTED  2-Port 10/100/1000 Base-TX
+                                                 PCI-X Adapter Software
+  devices.pci.14108c00.rte  5.3.0.10  COMMITTED  ARTIC960Hx 4-Port Selectable
+                                                 PCI Adapter Runtime Software 
+  devices.pci.14109100.diag  5.3.0.0  COMMITTED  SSA Adapter (14109100)
+                                                 Diagnostics
+  devices.pci.14109100.rte   5.3.0.0  COMMITTED  SSA Adapter (14109100)
+                                                 Software
+  devices.pci.14109f00.rte   5.3.0.0  COMMITTED  IBM 4758 PCI Cryptographic
+                                                 Coprocessor
+  devices.pci.1410b800.rte   5.3.0.0  COMMITTED  GXT2000P Graphics Adapter
+                                                 Software 
+  devices.pci.1410bb02.rte  5.3.0.10  COMMITTED  10 Gigabit-LR Ethernet PCI-X
+                                                 Adapter Software 
+  devices.pci.1410d002.com   5.3.0.0  COMMITTED  Common PCI iSCSI TOE Adapter
+                                                 Device Software 
+  devices.pci.1410d002.rte   5.3.0.0  COMMITTED  1000 Base-TX PCI-X iSCSI TOE
+                                                 Adapter Device Software 
+  devices.pci.1410e601.rte   5.3.0.0  COMMITTED  IBM Crypto Accelerator Adapter
+                                                 Software 
+  devices.pci.1410ff01.rte  5.3.0.10  COMMITTED  10/100 Mbps Ethernet PCI
+                                                 Adapter II Software 
+  devices.pci.22100020.rte   5.3.0.0  COMMITTED  IBM PCI Ethernet Adapter
+                                                 Software 
+  devices.pci.22106474.rte  5.3.0.10  COMMITTED  USB Host Controller (22106474)
+                                                 Software 
+  devices.pci.23100020.rte  5.3.0.10  COMMITTED  IBM PCI 10/100 Ethernet
+                                                 Adapter Software 
+  devices.pci.2b102005.rte   5.3.0.0  COMMITTED  GXT130P Graphics Adapter
+                                                 Software
+  devices.pci.33103500.rte  5.3.0.10  COMMITTED  USB Host Controller (33103500)
+                                                 Software 
+  devices.pci.331121b9.com   5.3.0.0  COMMITTED  IBM PCI 2-Port Multiprotocol
+                                                 Common Software 
+  devices.pci.331121b9.rte  5.3.0.10  COMMITTED  IBM PCI 2-Port Multiprotocol
+                                                 Device Driver 
+  devices.pci.4f111100.rte   5.3.0.0  COMMITTED  PCI 8-Port Asynchronous
+                                                 Adapter Software 
+  devices.pci.4f111b00.rte   5.3.0.0  COMMITTED  PCI 128-Port Asynchronous
+                                                 Adapter Software
+  devices.pci.4f11c800.rte   5.3.0.0  COMMITTED  2-Port Asynchronous EIA-232
+                                                 PCI Adapter Software 
+  devices.pci.77101223.com  5.3.0.10  COMMITTED  PCI FC Adapter (77101223)
+                                                 Common Software 
+  devices.pci.99172704.rte  5.3.0.10  COMMITTED  USB Host Controller (99172704)
+                                                 Software 
+  devices.pci.ad100501.rte  5.3.0.10  COMMITTED  IDE Adapter Driver for Winbond
+                                                 553F Chip Software 
+  devices.pci.c1110358.rte  5.3.0.10  COMMITTED  USB Host Controller (c1110358)
+                                                 Software 
+  devices.pci.df1000f7.com  5.3.0.21  COMMITTED  Common PCI FC Adapter Device
+                                                 Software
+  devices.pci.df1000f7.diag
+                            5.3.0.10  COMMITTED  PCI FC Adapter Device
+                                                 Diagnostics 
+  devices.pci.df1000f7.rte   5.3.0.0  COMMITTED  PCI FC Adapter Device Software
+  devices.pci.e414a816.rte  5.3.0.10  COMMITTED  Gigabit Ethernet-SX Adapter
+                                                 Software 
+  devices.pci.ibmccm.rte     5.3.0.0  COMMITTED  Common Character Mode Graphics
+                                                 Adapter Software
+  devices.scsi.safte.rte     5.3.0.0  COMMITTED  SCSI Accessed Fault-Tolerant
+                                                 Enclosure Device Software
+  devices.scsi.scarray.rte   5.3.0.0  COMMITTED  7135 RAIDiant Array DA Device
+                                                 Software Support
+  devices.scsi.ses.rte      5.3.0.10  COMMITTED  SCSI Enclosure Device Software
+  devices.serial.gio.rte     5.3.0.0  COMMITTED  Serial Graphics Input Adapter
+                                                 Software 
+  devices.ssa.IBM_raid.rte   5.3.0.0  COMMITTED  SSA Raid Manager Software
+  devices.ssa.disk.rte      5.3.0.10  COMMITTED  SSA DASD Software 
+  devices.ssa.tm.rte         5.3.0.0  COMMITTED  Target Mode SSA Support
+  devices.tty.rte            5.3.0.0  COMMITTED  TTY Device Driver Support
+                                                 Software
+  devices.usbif.030101.rte  5.3.0.10  COMMITTED  USB Keyboard Client Driver 
+  devices.usbif.030102.rte   5.3.0.0  COMMITTED  USB Mouse Client Driver
+  devices.vdevice.IBM.l-lan.rte
+                            5.3.0.10  COMMITTED  Virtual I/O Ethernet Software 
+  devices.vdevice.IBM.v-scsi.rte
+                            5.3.0.10  COMMITTED  Virtual SCSI Client Support 
+  devices.vdevice.hvterm1.rte
+                            5.3.0.10  COMMITTED  Virtual Terminal Devices 
+  ifor_ls.base.cli          5.3.0.10  COMMITTED  License Use Management Runtime
+                                                 Code 
+  invscout.com               2.2.0.0  COMMITTED  Inventory Scout Microcode
+                                                 Catalog
+  invscout.ldb               2.2.0.2  COMMITTED  Inventory Scout Logic Database
+  invscout.rte               2.2.0.4  COMMITTED  Inventory Scout Runtime
+  perfagent.tools           5.3.0.30  COMMITTED  Local Performance Analysis &
+                                                 Control Commands
+  printers.rte              5.3.0.10  COMMITTED  Printer Backend 
+  rpm.rte                   3.0.5.36  COMMITTED  RPM Package Manager
+  rsct.basic.rte             2.4.3.0  COMMITTED  RSCT Basic Function
+  rsct.compat.basic.rte      2.4.1.0  COMMITTED  RSCT Event Management Basic
+                                                 Function
+  rsct.core.auditrm          2.4.3.0  COMMITTED  RSCT Audit Log Resource
+                                                 Manager
+  rsct.core.errm             2.4.3.0  COMMITTED  RSCT Event Response Resource
+                                                 Manager
+  rsct.core.fsrm             2.4.3.0  COMMITTED  RSCT File System Resource
+                                                 Manager
+  rsct.core.hostrm           2.4.3.0  COMMITTED  RSCT Host Resource Manager
+  rsct.core.lprm             2.4.3.0  COMMITTED  RSCT Least Privilege Resource
+                                                 Manager
+  rsct.core.rmc              2.4.3.0  COMMITTED  RSCT Resource Monitoring and
+                                                 Control
+  rsct.core.sec              2.4.3.0  COMMITTED  RSCT Security
+  rsct.core.sensorrm         2.4.3.0  COMMITTED  RSCT Sensor Resource Manager
+  rsct.core.sr               2.4.3.0  COMMITTED  RSCT Registry
+  rsct.core.utils            2.4.3.0  COMMITTED  RSCT Utilities
+  sysmgt.websm.apps         5.3.0.10  COMMITTED  Web-based System Manager
+                                                 Applications 
+  sysmgt.websm.framework    5.3.0.10  COMMITTED  Web-based System Manager
+                                                 Client/Server Support 
+  sysmgt.websm.rte          5.3.0.10  COMMITTED  Web-based System Manager
+                                                 Runtime Environment 
+
+Path: /usr/share/lib/objrepos
+  bos.adt.data               5.3.0.0  COMMITTED  Base Application Development
+                                                 Toolkit Data
+  bos.data                   5.3.0.0  COMMITTED  Base Operating System Data
+  bos.terminfo.ansi.data     5.3.0.0  COMMITTED  Amer National Stds Institute
+                                                 Terminal Defs
+  bos.terminfo.com.data      5.3.0.0  COMMITTED  Common Terminal Definitions
+  bos.terminfo.dec.data      5.3.0.0  COMMITTED  Digital Equipment Corp.
+                                                 Terminal Definitions
+  bos.terminfo.ibm.data      5.3.0.0  COMMITTED  IBM Terminal Definitions
+  bos.terminfo.pc.data       5.3.0.0  COMMITTED  Personal Computer Terminal
+                                                 Definitions
+  bos.terminfo.print.data    5.3.0.0  COMMITTED  Generic Line Printer Terminal
+                                                 Definitions
+  bos.terminfo.televideo.data
+                             5.3.0.0  COMMITTED  Televideo Terminal Definitions
+  bos.terminfo.wyse.data     5.3.0.0  COMMITTED  Wyse Terminal Definitions
+  bos.txt.spell.data         5.3.0.0  COMMITTED  Writer's Tools Data
+  bos.txt.tfs.data           5.3.0.0  COMMITTED  Text Formatting Services Data
+  devices.common.IBM.modemcfg.data
+                             5.3.0.0  COMMITTED  Sample Service Processor Modem
+                                                 Configuration Files
+################################################################################
+
+Date : Mon Apr 16 10:28:53 MEST 2007
+
+training-1# lslpp -e
+
+ID  STATE LABEL      INSTALL TIME       ABSTRACT
+=== ===== ========== ================== ======================================
+1    S    iy73556    11/24/05 03:59:55  MIB updates delayed                 
+
+STATE codes:
+ S = STABLE
+ M = MOUNTED
+ U = UNMOUNTED
+ Q = REBOOT REQUIRED
+ B = BROKEN
+ I = INSTALLING
+ R = REMOVING
+ T = TESTED
+################################################################################
+
+Date : Mon Apr 16 10:28:53 MEST 2007
+
+training-1# lslpp -E
+====================================================================
+		   Installed License Agreements
+====================================================================
+
+The installed software listed below contains license agreements
+which have been accepted.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+Fileset:  bos.rte
+Product ID:  
+Description:  
+Agreement File:  /usr/swlag/en_US/BOS.la
+Date:  Thu Nov 24 11:45:57 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  devices.pci.14107802.ucode
+Product ID:  5765-G0300
+Description:  PCI-X Dual Channel Ultra320 SCSI RAID Adapter Microcode 
+Agreement File:  /usr/swlag/%L/devices.pci.14107802.ucode.la
+Date:  Thu Nov 24 11:45:57 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  devices.pci.14106602.ucode
+Product ID:  5765-G0300
+Description:  PCI-X Dual Channel SCSI Adapter Microcode 
+Agreement File:  /usr/swlag/%L/devices.pci.14106602.ucode.la
+Date:  Thu Nov 24 11:45:57 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  rpm.rte
+Product ID:  
+Description:  RPM Package Manager
+Agreement File:  /usr/swlag/%L/rpm.rte.la
+Date:  Thu Nov 24 11:45:57 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  bos.net.ncs
+Product ID:  
+Description:  Network Computing System 1.5.1 
+Agreement File:  /usr/swlag/%L/NCS.la
+Date:  Thu Nov 24 11:45:57 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  ifor_ls.base.cli
+Product ID:  
+Description:  License Use Management Runtime Code 
+Agreement File:  /usr/swlag/%L/LUM.la
+Date:  Thu Nov 24 11:45:57 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  Java14.sdk
+Product ID:  5648-C9802
+Description:  Java SDK 32-bit 
+Agreement File:  /usr/swlag/%L/Java14.la
+Date:  Thu Nov 24 11:45:57 MEST 2005
+Machine ID:  00CC82DF4C00
+
+File:  cdrecord
+Product ID:  cdrecord
+Description:  
+Agreement File:  /usr/swlag/en_US/as_is.txt
+Date:  Thu Nov 24 11:45:57 MEST 2005
+Machine ID:  00CC82DF4C00
+
+File:  mkisofs
+Product ID:  mkisofs
+Description:  
+Agreement File:  /usr/swlag/en_US/as_is.txt
+Date:  Thu Nov 24 11:45:57 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.cspoc.rte
+Product ID:  
+Description:  ES CSPOC Runtime Commands
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:16 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.cspoc.dsh
+Product ID:  5765-F6200
+Description:  ES CSPOC dsh
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:15 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.cspoc.cmds
+Product ID:  5765-F6200
+Description:  ES CSPOC Commands
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:15 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.server.cfgast
+Product ID:  5765-F6200
+Description:  ES Two-Node Configuration Assistant
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:49 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.client.wsm
+Product ID:  5765-F6200
+Description:  Web based Smit
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:49 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.client.utils
+Product ID:  5765-F6200
+Description:  ES Client Utilities
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:49 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.client.rte
+Product ID:  
+Description:  ES Client Runtime
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:55 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.client.lib
+Product ID:  5765-F6200
+Description:  ES Client Libraries
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:49 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.server.rte
+Product ID:  
+Description:  ES Base Server Runtime
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:55 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.server.utils
+Product ID:  
+Description:  ES Server Utilities
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:55 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.server.events
+Product ID:  
+Description:  ES Server Events
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:55 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.server.diag
+Product ID:  
+Description:  ES Server Diags
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:55 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.adt.es.java.demo.monitor
+Product ID:  5765-F6200
+Description:  ES Web Based Monitor Demo
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:59 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.adt.es.client.samples.libcl
+Product ID:  5765-F6200
+Description:  ES Client LIBCL Samples
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:59 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.adt.es.client.samples.clstat
+Product ID:  5765-F6200
+Description:  ES Client Clstat Samples
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:59 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.adt.es.client.samples.clinfo
+Product ID:  5765-F6200
+Description:  ES Client CLINFO Samples
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:59 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.adt.es.client.include
+Product ID:  5765-F6200
+Description:  ES Client Include Files
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:55:59 MEST 2005
+Machine ID:  00CC82DF4C00
+
+Fileset:  cluster.es.clvm.rte
+Product ID:  
+Description:  ES for AIX Concurrent Access
+Agreement File:  /usr/swlag/%L/cluster_v52.la
+Date:  Thu Nov 24 12:56:04 MEST 2005
+Machine ID:  00CC82DF4C00
+
+################################################################################
+
+Date : Mon Apr 16 10:28:53 MEST 2007
+
+training-1# lppchk -v

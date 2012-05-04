@@ -1,0 +1,52 @@
+***** Checking System Health of p615_bk *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+---> Alert: /usr file system usage = 84%
+---> Alert: /oradata file system usage = 90%
+
+Checking system Load
+Ok: Current system load is 0.67
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking root's TSM processes
+OK: root's tsm is running
+
+Checking oracle's DB processes
+OK: oracle's orabak is running
+
+Checking zombie processes
+---> Alert: Zombie processes running
+    root  3934 32434   4                  0:00 <defunct>
+    root 30044 32434   0                  0:00 <defunct>
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  242001 A   mdsejb 30882 63964   0  60 20 1c32b 108848        * 17:35:59      -  1:00 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdsejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A  bossejb 33144 63154   0  60 20 21bf5 223844        * 17:19:46      - 14:14 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bossejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A   mdsweb 47256 45836   0  60 20 1c14b 144192        * 17:30:42      -  1:20 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A  bossweb 78464 33938   0  60 20 fbe2 217752        * 17:18:19      -  1:38 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bosswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+
+Checking swap space
+OK: Swap space usage is 15%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+---> Alert: Kernel-open file usage 93% exceeded 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+
+Checking Network Connectivity
+OK: all NE's are reachable
+
+Checking ftp connection
+OK: all ftp connections are ok
+

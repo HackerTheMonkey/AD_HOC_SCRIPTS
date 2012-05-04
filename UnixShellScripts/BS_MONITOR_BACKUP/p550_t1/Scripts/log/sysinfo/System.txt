@@ -1,0 +1,158 @@
+################################################################################
+
+Date : Mon Apr 16 10:28:23 MEST 2007
+
+training-1# uname -a
+AIX training-1 3 5 00CC35AC4C00
+################################################################################
+
+Date : Mon Apr 16 10:28:23 MEST 2007
+
+training-1# hostid
+0x7f000001
+################################################################################
+
+Date : Mon Apr 16 10:28:23 MEST 2007
+
+training-1# oslevel -r
+5300-02
+################################################################################
+
+Date : Mon Apr 16 10:28:27 MEST 2007
+
+training-1: Kernel bits
+32
+################################################################################
+
+Date : Mon Apr 16 10:28:27 MEST 2007
+
+training-1# bootlist -m normal -o
+hdisk0 blv=hd5
+hdisk1 blv=hd5
+################################################################################
+
+Date : Mon Apr 16 10:28:28 MEST 2007
+
+training-1# lsps -a
+Page Space      Physical Volume   Volume Group    Size %Used Active  Auto  Type
+swaplv          hdisk2            cdrvg         6144MB    18   yes   yes    lv
+hd6             hdisk0            rootvg        1024MB    99   yes   yes    lv
+################################################################################
+
+Date : Mon Apr 16 10:28:30 MEST 2007
+
+training-1: Memory
+12058624
+################################################################################
+
+Date : Mon Apr 16 10:28:30 MEST 2007
+
+training-1# prtconf
+System Model: IBM,9113-550
+Machine Serial Number: 10C35AC
+Processor Type: PowerPC_POWER5
+Number Of Processors: 4
+Processor Clock Speed: 1502 MHz
+CPU Type: 64-bit
+Kernel Type: 32-bit
+LPAR Info: 1 10-C35AC
+Memory Size: 11776 MB
+Good Memory Size: 11776 MB
+Platform Firmware level: Not Available
+Firmware Version: IBM,SF235_185
+Console Login: enable
+Auto Restart: true
+Full Core: true
+ 
+Network Information
+	Host Name: training-1
+	IP Address: 192.168.117.120
+	Sub Netmask: 255.255.255.0
+	Gateway: 192.168.117.241
+	Name Server: 
+	Domain Name: 
+ 
+Paging Space Information
+	Total Paging Space: 7168MB
+	Percent Used: 30%
+ 
+Volume Groups Information
+============================================================================== 
+rootvg:
+PV_NAME           PV STATE          TOTAL PPs   FREE PPs    FREE DISTRIBUTION
+hdisk1            active            546         15          00..00..00..00..15
+hdisk0            active            546         310         109..00..00..92..109
+============================================================================== 
+ 
+cdrvg:
+PV_NAME           PV STATE          TOTAL PPs   FREE PPs    FREE DISTRIBUTION
+hdisk2            active            1357        524         240..00..00..12..272
+hdisk5            active            814         726         163..75..162..163..163
+============================================================================== 
+ 
+INSTALLED RESOURCE LIST
+
+The following resources are installed on the machine.
++/- = Added or deleted from Resource List.
+*   = Diagnostic support not available.
+	
+  Model Architecture: chrp
+  Model Implementation: Multiple Processor, PCI bus
+	
++ sys0                                                                          System Object
++ sysplanar0                                                                    System Planar
+* vio0                                                                          Virtual I/O Bus
+* vsa1             U787B.001.DNW93F8-P1-T2                                      LPAR Virtual Serial Adapter
+* vty1             U787B.001.DNW93F8-P1-T2-L0                                   Asynchronous Terminal
+* vsa0             U787B.001.DNW93F8-P1-T1                                      LPAR Virtual Serial Adapter
+* vty0             U787B.001.DNW93F8-P1-T1-L0                                   Asynchronous Terminal
+* pci1             U787B.001.DNW93F8-P1                                         PCI Bus
+* pci9             U787B.001.DNW93F8-P1                                         PCI Bus
++ fcs1             U787B.001.DNW93F8-P1-C1-T1                                   FC Adapter
+* fcnet1           U787B.001.DNW93F8-P1-C1-T1                                   Fibre Channel Network Protocol Device
+* fscsi1           U787B.001.DNW93F8-P1-C1-T1                                   FC SCSI I/O Controller Protocol Device
+* dac1             U787B.001.DNW93F8-P1-C1-T1-W200800A0B821B278                 1722-600 (600) Disk Array Controller
+* pci7             U787B.001.DNW93F8-P1                                         PCI Bus
++ ent2             U787B.001.DNW93F8-P1-T9                                      2-Port 10/100/1000 Base-TX PCI-X Adapter (14108902)
++ ent3             U787B.001.DNW93F8-P1-T10                                     2-Port 10/100/1000 Base-TX PCI-X Adapter (14108902)
+* pci8             U787B.001.DNW93F8-P1                                         PCI Bus
++ sisscsia0        U787B.001.DNW93F8-P1                                         PCI-X Dual Channel Ultra320 SCSI Adapter
++ scsi0            U787B.001.DNW93F8-P1-T14                                     PCI-X Dual Channel Ultra320 SCSI Adapter bus
++ rmt0             U787B.001.DNW93F8-P1-T14-L1-L0                               LVD SCSI 4mm Tape Drive (36000 MB)
++ hdisk0           U787B.001.DNW93F8-P1-T14-L5-L0                               16 Bit LVD SCSI Disk Drive (73400 MB)
++ hdisk1           U787B.001.DNW93F8-P1-T14-L8-L0                               16 Bit LVD SCSI Disk Drive (73400 MB)
++ ses0             U787B.001.DNW93F8-P1-T14-L15-L0                              SCSI Enclosure Services Device
++ scsi1            U787B.001.DNW93F8-P1-T15                                     PCI-X Dual Channel Ultra320 SCSI Adapter bus
+* pci10            U787B.001.DNW93F8-P1                                         PCI Bus
+* pci11            U787B.001.DNW93F8-P1-C2                                      PCI Bus
++ lai0             U787B.001.DNW93F8-P1-C2-T1                                   GXT135P Graphics Adapter
+* pci0             U787B.001.DNW93F8-P1                                         PCI Bus
+* pci4             U787B.001.DNW93F8-P1                                         PCI Bus
++ ent0             U787B.001.DNW93F8-P1-C3-T1                                   2-Port 10/100/1000 Base-TX PCI-X Adapter (14108902)
++ ent1             U787B.001.DNW93F8-P1-C3-T2                                   2-Port 10/100/1000 Base-TX PCI-X Adapter (14108902)
+* pci2             U787B.001.DNW93F8-P1                                         PCI Bus
++ usbhc0           U787B.001.DNW93F8-P1                                         USB Host Controller (33103500)
++ usbhc1           U787B.001.DNW93F8-P1                                         USB Host Controller (33103500)
+* pci3             U787B.001.DNW93F8-P1                                         PCI Bus
+* ide0             U787B.001.DNW93F8-P1-T16                                     ATA/IDE Controller Device
++ cd0              U787B.001.DNW93F8-P4-D2                                      IDE DVD-ROM Drive
+* pci5             U787B.001.DNW93F8-P1                                         PCI Bus
++ fcs0             U787B.001.DNW93F8-P1-C4-T1                                   FC Adapter
+* fcnet0           U787B.001.DNW93F8-P1-C4-T1                                   Fibre Channel Network Protocol Device
+* fscsi0           U787B.001.DNW93F8-P1-C4-T1                                   FC SCSI I/O Controller Protocol Device
+* dac0             U787B.001.DNW93F8-P1-C4-T1-W200900A0B821B278                 1722-600 (600) Disk Array Controller
+* pci6             U787B.001.DNW93F8-P1                                         PCI Bus
++ sa0              U787B.001.DNW93F8-P1-C5-T1                                   IBM 8-Port EIA-232/RS-422A (PCI) Adapter
++ tty0             U787B.001.DNW93F8-P1-C5-T1-L0                                Asynchronous Terminal
++ L2cache0                                                                      L2 Cache
++ mem0                                                                          Memory
++ proc0                                                                         Processor
++ proc2                                                                         Processor
++ proc4                                                                         Processor
++ proc6                                                                         Processor
+* kbd0             U787B.001.DNW93F8-P1-T8-L1                                   USB keyboard
+* mouse0           U787B.001.DNW93F8-P1-T8-L1                                   USB mouse
++ hdisk3           U787B.001.DNW93F8-P1-C4-T1-W200900A0B821B278-L1000000000000  1722-600 (600) Disk Array Device
++ hdisk4           U787B.001.DNW93F8-P1-C4-T1-W200900A0B821B278-L1000000000000  1722-600 (600) Disk Array Device
++ hdisk5           U787B.001.DNW93F8-P1-C4-T1-W200900A0B821B278-L1000000000000  1722-600 (600) Disk Array Device
++ hdisk2           U787B.001.DNW93F8-P1-C4-T1-W200900A0B821B278-L0              1722-600 (600) Disk Array Device

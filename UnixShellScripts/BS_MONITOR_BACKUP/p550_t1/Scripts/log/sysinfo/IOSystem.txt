@@ -1,0 +1,149 @@
+################################################################################
+
+Date : Mon Apr 16 10:28:52 MEST 2007
+
+training-1# lsdev
+L2cache0   Available               L2 Cache
+aio0       Available               Asynchronous I/O (Legacy)
+cd0        Available 03-08-00      IDE DVD-ROM Drive
+cdrvg      Defined                 Volume group
+dac0       Available 05-08-02      1722-600 (600) Disk Array Controller
+dac1       Available 09-08-02      1722-600 (600) Disk Array Controller
+dar0       Available               1722-600 (600) Disk Array Router
+en0        Available 04-08         Standard Ethernet Network Interface
+en1        Defined   04-09         Standard Ethernet Network Interface
+en2        Defined   07-08         Standard Ethernet Network Interface
+en3        Defined   07-09         Standard Ethernet Network Interface
+ent0       Available 04-08         2-Port 10/100/1000 Base-TX PCI-X Adapter (14108902)
+ent1       Available 04-09         2-Port 10/100/1000 Base-TX PCI-X Adapter (14108902)
+ent2       Available 07-08         2-Port 10/100/1000 Base-TX PCI-X Adapter (14108902)
+ent3       Available 07-09         2-Port 10/100/1000 Base-TX PCI-X Adapter (14108902)
+et0        Defined   04-08         IEEE 802.3 Ethernet Network Interface
+et1        Defined   04-09         IEEE 802.3 Ethernet Network Interface
+et2        Defined   07-08         IEEE 802.3 Ethernet Network Interface
+et3        Defined   07-09         IEEE 802.3 Ethernet Network Interface
+fcnet0     Defined   05-08-01      Fibre Channel Network Protocol Device
+fcnet1     Defined   09-08-01      Fibre Channel Network Protocol Device
+fcs0       Available 05-08         FC Adapter
+fcs1       Available 09-08         FC Adapter
+fscsi0     Available 05-08-02      FC SCSI I/O Controller Protocol Device
+fscsi1     Available 09-08-02      FC SCSI I/O Controller Protocol Device
+fwdump     Defined                 Logical volume
+gxme0      Available               Graphics Data Transfer Assist Subsystem
+hd1        Defined                 Logical volume
+hd2        Defined                 Logical volume
+hd3        Defined                 Logical volume
+hd4        Defined                 Logical volume
+hd5        Defined                 Logical volume
+hd6        Defined                 Logical volume
+hd8        Defined                 Logical volume
+hd10opt    Defined                 Logical volume
+hd9var     Defined                 Logical volume
+hdisk0     Available 08-08-00-5,0  16 Bit LVD SCSI Disk Drive
+hdisk1     Available 08-08-00-8,0  16 Bit LVD SCSI Disk Drive
+hdisk2     Available 09-08-02      1722-600 (600) Disk Array Device
+hdisk3     Defined   05-08-02      1722-600 (600) Disk Array Device
+hdisk4     Defined   05-08-02      1722-600 (600) Disk Array Device
+hdisk5     Available 05-08-02      1722-600 (600) Disk Array Device
+ide0       Available 03-08         ATA/IDE Controller Device
+inet0      Available               Internet Network Extension
+iscsi0     Available               iSCSI Protocol Device
+kbd0       Available 1.1           USB keyboard
+lai0       Available 0B-00         GXT135P Graphics Adapter
+lft0       Available               Low Function Terminal Subsystem
+lg_dumplv  Defined                 Logical volume
+lo0        Available               Loopback Network Interface
+loglv00    Defined                 Logical volume
+loglv01    Defined                 Logical volume
+lv00       Defined                 Logical volume
+lv01       Defined                 Logical volume
+lvdd       Available               LVM Device Driver
+mem0       Available               Memory
+mouse0     Available 1.1           USB mouse
+oralv01    Available               Logical volume
+oralv_log  Available               Logical volume
+pci0       Available               PCI Bus
+pci1       Available               PCI Bus
+pci2       Available 00-12         PCI Bus
+pci3       Available 00-13         PCI Bus
+pci4       Available 00-10         PCI Bus
+pci5       Available 00-14         PCI Bus
+pci6       Available 00-16         PCI Bus
+pci7       Available 01-12         PCI Bus
+pci8       Available 01-14         PCI Bus
+pci9       Available 01-10         PCI Bus
+pci10      Available 01-16         PCI Bus
+pci11      Available 0A-08         PCI Bus
+posix_aio0 Defined                 Posix Asynchronous I/O
+proc0      Available 00-00         Processor
+proc2      Available 00-02         Processor
+proc4      Available 00-04         Processor
+proc6      Available 00-06         Processor
+pty0       Available               Asynchronous Pseudo-Terminal
+rcm0       Available               Rendering Context Manager Subsystem
+rmt0       Available 08-08-00-1,0  LVD SCSI 4mm Tape Drive
+rootvg     Defined                 Volume group
+sa0        Available 06-08         IBM 8-Port EIA-232/RS-422A (PCI) Adapter
+scsi0      Available 08-08-00      PCI-X Dual Channel Ultra320 SCSI Adapter bus
+scsi1      Available 08-08-01      PCI-X Dual Channel Ultra320 SCSI Adapter bus
+ses0       Available 08-08-00-15,0 SCSI Enclosure Services Device
+sisscsia0  Available 08-08         PCI-X Dual Channel Ultra320 SCSI Adapter
+swaplv     Available               Logical volume
+sys0       Available               System Object
+sysplanar0 Available               System Planar
+tty0       Available 06-08-01-00   Asynchronous Terminal
+usb0       Available               USB System Software
+usbhc0     Available 02-08         USB Host Controller (33103500)
+usbhc1     Available 02-09         USB Host Controller (33103500)
+vio0       Available               Virtual I/O Bus
+vsa0       Available               LPAR Virtual Serial Adapter
+vsa1       Available               LPAR Virtual Serial Adapter
+vty0       Available               Asynchronous Terminal
+vty1       Available               Asynchronous Terminal
+################################################################################
+
+Date : Mon Apr 16 10:28:52 MEST 2007
+
+training-1# lsdev -Cc processor
+proc0 Available 00-00 Processor
+proc2 Available 00-02 Processor
+proc4 Available 00-04 Processor
+proc6 Available 00-06 Processor
+################################################################################
+
+Date : Mon Apr 16 10:28:52 MEST 2007
+
+training-1# lsdev -Cc disk
+hdisk0 Available 08-08-00-5,0 16 Bit LVD SCSI Disk Drive
+hdisk1 Available 08-08-00-8,0 16 Bit LVD SCSI Disk Drive
+hdisk2 Available 09-08-02     1722-600 (600) Disk Array Device
+hdisk3 Defined   05-08-02     1722-600 (600) Disk Array Device
+hdisk4 Defined   05-08-02     1722-600 (600) Disk Array Device
+hdisk5 Available 05-08-02     1722-600 (600) Disk Array Device
+################################################################################
+
+Date : Mon Apr 16 10:28:52 MEST 2007
+
+training-1# lsdev -Cc tape
+rmt0 Available 08-08-00-1,0 LVD SCSI 4mm Tape Drive
+################################################################################
+
+Date : Mon Apr 16 10:28:52 MEST 2007
+
+training-1# lsdev -Cc if
+en0 Available 04-08 Standard Ethernet Network Interface
+en1 Defined   04-09 Standard Ethernet Network Interface
+en2 Defined   07-08 Standard Ethernet Network Interface
+en3 Defined   07-09 Standard Ethernet Network Interface
+et0 Defined   04-08 IEEE 802.3 Ethernet Network Interface
+et1 Defined   04-09 IEEE 802.3 Ethernet Network Interface
+et2 Defined   07-08 IEEE 802.3 Ethernet Network Interface
+et3 Defined   07-09 IEEE 802.3 Ethernet Network Interface
+lo0 Available       Loopback Network Interface
+################################################################################
+
+Date : Mon Apr 16 10:28:52 MEST 2007
+
+training-1# lsdev -Ct efcndd
+fcnet0 Defined 05-08-01 Fibre Channel Network Protocol Device
+fcnet1 Defined 09-08-01 Fibre Channel Network Protocol Device

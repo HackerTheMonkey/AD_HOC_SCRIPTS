@@ -1,0 +1,7 @@
+owner=billing
+procs="cmdmgr synccdr synctopup"
+check_proc Billing "$procs" $owner
+
+owner=prm
+procs="boss_report prmsep roam sep"
+check_proc PRM "$procs" $owner

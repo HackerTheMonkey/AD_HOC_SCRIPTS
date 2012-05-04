@@ -1,0 +1,7 @@
+owner=root
+procs="tsm"
+check_proc TSM "$procs" $owner
+
+owner=oracle
+procs="orabak"
+check_proc DB "$procs" $owner

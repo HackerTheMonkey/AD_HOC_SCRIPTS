@@ -1,0 +1,19 @@
+owner=medcdr
+procs="Run_Proc_ cls_proc knl_proc om_proc"
+check_proc CDR "$procs" $owner
+
+owner=medcdr
+procs="co_proc"
+check_proc CDR "$procs" $owner 26
+
+owner=medcdr
+procs="pretreat"
+check_proc Pretreatment "$procs" $owner 17
+
+owner=medcdr
+procs="java"
+check_proc ASN "$procs" $owner
+
+owner=medser
+procs="java"
+check_proc Med-Ser "$procs" $owner

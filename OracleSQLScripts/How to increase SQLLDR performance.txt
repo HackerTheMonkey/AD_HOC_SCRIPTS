@@ -1,0 +1,9 @@
+Ways to increase Data load performance in SQLLDR
+
+1- Use direct path load by setting the DIRECT=TRUE in the sqlldr command line parameters
+
+2- disable indexes and constraints
+
+3- Use unrecoverable.  The unrecoverable option (unrecoverable load data) disables the writing of the data to the redo logs.  
+     This option is available for direct path loads only, this option is a control file parameter which should be inserted before the LOAD DATA statement
+	

@@ -1,0 +1,36 @@
+***** Checking System Health of P570_DB2 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.08
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking oracle's DB processes
+OK: oracle's boss2 tnslsnr are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+OK: Each process uses less than 100000 page of memory
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+---> Alert: Kernel-open file usage 98% exceeded 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+

@@ -1,0 +1,19 @@
+owner=oracle
+procs=bosstest
+check_proc DB "$procs" $owner
+
+owner=bossejb
+procs="WebLogic java"
+check_proc Web "$procs" $owner
+
+owner=bossweb
+procs="WebLogic java"
+check_proc Web "$procs" $owner
+
+owner=mdsejb
+procs="WebLogic java"
+check_proc Web "$procs" $owner
+
+owner=mdsweb
+procs="WebLogic java"
+check_proc Web "$procs" $owner

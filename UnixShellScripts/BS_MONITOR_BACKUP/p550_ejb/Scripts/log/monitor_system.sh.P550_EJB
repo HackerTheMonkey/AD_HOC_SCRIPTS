@@ -1,0 +1,41 @@
+***** Checking System Health of P550_EJB *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.03
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking bossejb's WebServer processes
+OK: bossejb's WebLogic java are running
+
+Checking mdsejb's WebServer processes
+OK: mdsejb's WebLogic java are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  242001 A  bossejb 245818 184376   0  60 20 43f4c400 227684        * 08:12:32      -  3:14 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bossejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  242001 A   mdsejb 147938 196726   0  60 20 739ca400 103688        * 08:15:31      -  0:29 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdsejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+

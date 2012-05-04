@@ -1,0 +1,808 @@
+
+
+##############################################################################
+Connectivity Check, Billing System - Network Elements
+##############################################################################
+######                                           #####
+#     #     #    #       #                      #     #   #   #   ####
+#     #     #    #       #                      #          # #   #
+######      #    #       #                       #####      #     ####
+#     #     #    #       #        ###                 #     #         #   ###
+#     #     #    #       #        ###           #     #     #    #    #   ###
+######      #    ######  ######   ###            #####      #     ####    ###
+
+##############################################################################
+
+
+
+#####################################################
+Pinging Suly G9 iGWB 1 ......
+PING 192.168.117.253: (192.168.117.253): 56 data bytes
+64 bytes from 192.168.117.253: icmp_seq=0 ttl=128 time=0 ms
+64 bytes from 192.168.117.253: icmp_seq=1 ttl=128 time=0 ms
+64 bytes from 192.168.117.253: icmp_seq=2 ttl=128 time=0 ms
+64 bytes from 192.168.117.253: icmp_seq=3 ttl=128 time=0 ms
+64 bytes from 192.168.117.253: icmp_seq=4 ttl=128 time=0 ms
+64 bytes from 192.168.117.253: icmp_seq=5 ttl=128 time=0 ms
+64 bytes from 192.168.117.253: icmp_seq=6 ttl=128 time=0 ms
+64 bytes from 192.168.117.253: icmp_seq=7 ttl=128 time=0 ms
+64 bytes from 192.168.117.253: icmp_seq=8 ttl=128 time=0 ms
+64 bytes from 192.168.117.253: icmp_seq=9 ttl=128 time=0 ms
+
+----192.168.117.253 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 0/0/0 ms
+
+#####################################################
+Pinging Suly G9 iGWB 1 ......
+PING 192.168.117.254: (192.168.117.254): 56 data bytes
+
+----192.168.117.254 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Pinging Mosul G9 iGWB 1 ......
+PING 192.168.70.14: (192.168.70.14): 56 data bytes
+64 bytes from 192.168.70.14: icmp_seq=0 ttl=122 time=7 ms
+64 bytes from 192.168.70.14: icmp_seq=1 ttl=122 time=7 ms
+64 bytes from 192.168.70.14: icmp_seq=2 ttl=122 time=7 ms
+64 bytes from 192.168.70.14: icmp_seq=3 ttl=122 time=7 ms
+64 bytes from 192.168.70.14: icmp_seq=4 ttl=122 time=7 ms
+64 bytes from 192.168.70.14: icmp_seq=5 ttl=122 time=6 ms
+64 bytes from 192.168.70.14: icmp_seq=6 ttl=122 time=6 ms
+64 bytes from 192.168.70.14: icmp_seq=7 ttl=122 time=9 ms
+64 bytes from 192.168.70.14: icmp_seq=8 ttl=122 time=9 ms
+64 bytes from 192.168.70.14: icmp_seq=9 ttl=122 time=9 ms
+
+----192.168.70.14 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 6/7/9 ms
+
+#####################################################
+Mosul G9 iGWB 2 ......
+PING 192.168.70.15: (192.168.70.15): 56 data bytes
+64 bytes from 192.168.70.15: icmp_seq=0 ttl=122 time=9 ms
+64 bytes from 192.168.70.15: icmp_seq=1 ttl=122 time=20 ms
+64 bytes from 192.168.70.15: icmp_seq=2 ttl=122 time=8 ms
+64 bytes from 192.168.70.15: icmp_seq=3 ttl=122 time=8 ms
+64 bytes from 192.168.70.15: icmp_seq=4 ttl=122 time=8 ms
+64 bytes from 192.168.70.15: icmp_seq=5 ttl=122 time=8 ms
+64 bytes from 192.168.70.15: icmp_seq=6 ttl=122 time=8 ms
+64 bytes from 192.168.70.15: icmp_seq=7 ttl=122 time=8 ms
+64 bytes from 192.168.70.15: icmp_seq=8 ttl=122 time=8 ms
+64 bytes from 192.168.70.15: icmp_seq=9 ttl=122 time=8 ms
+
+----192.168.70.15 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 8/9/20 ms
+
+#####################################################
+Bag G9 iGWB 1 ......
+PING 192.168.50.14: (192.168.50.14): 56 data bytes
+64 bytes from 192.168.50.14: icmp_seq=0 ttl=120 time=13 ms
+64 bytes from 192.168.50.14: icmp_seq=1 ttl=120 time=10 ms
+64 bytes from 192.168.50.14: icmp_seq=2 ttl=120 time=11 ms
+64 bytes from 192.168.50.14: icmp_seq=3 ttl=120 time=12 ms
+64 bytes from 192.168.50.14: icmp_seq=4 ttl=120 time=12 ms
+64 bytes from 192.168.50.14: icmp_seq=5 ttl=120 time=11 ms
+64 bytes from 192.168.50.14: icmp_seq=6 ttl=120 time=11 ms
+64 bytes from 192.168.50.14: icmp_seq=7 ttl=120 time=11 ms
+64 bytes from 192.168.50.14: icmp_seq=8 ttl=120 time=12 ms
+64 bytes from 192.168.50.14: icmp_seq=9 ttl=120 time=11 ms
+
+----192.168.50.14 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 10/11/13 ms
+
+#####################################################
+Bag G9 iGWB 2 ......
+PING 192.168.50.15: (192.168.50.15): 56 data bytes
+64 bytes from 192.168.50.15: icmp_seq=0 ttl=120 time=12 ms
+64 bytes from 192.168.50.15: icmp_seq=1 ttl=120 time=11 ms
+64 bytes from 192.168.50.15: icmp_seq=2 ttl=120 time=19 ms
+64 bytes from 192.168.50.15: icmp_seq=3 ttl=120 time=11 ms
+64 bytes from 192.168.50.15: icmp_seq=4 ttl=120 time=11 ms
+64 bytes from 192.168.50.15: icmp_seq=5 ttl=120 time=11 ms
+64 bytes from 192.168.50.15: icmp_seq=6 ttl=120 time=11 ms
+64 bytes from 192.168.50.15: icmp_seq=7 ttl=120 time=11 ms
+64 bytes from 192.168.50.15: icmp_seq=8 ttl=120 time=11 ms
+64 bytes from 192.168.50.15: icmp_seq=9 ttl=120 time=11 ms
+
+----192.168.50.15 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 11/11/19 ms
+
+#####################################################
+Mosul G6 1 ......
+PING 192.168.8.14: (192.168.8.14): 56 data bytes
+64 bytes from 192.168.8.14: icmp_seq=0 ttl=123 time=7 ms
+64 bytes from 192.168.8.14: icmp_seq=1 ttl=123 time=7 ms
+64 bytes from 192.168.8.14: icmp_seq=2 ttl=123 time=7 ms
+64 bytes from 192.168.8.14: icmp_seq=3 ttl=123 time=6 ms
+64 bytes from 192.168.8.14: icmp_seq=4 ttl=123 time=6 ms
+64 bytes from 192.168.8.14: icmp_seq=5 ttl=123 time=6 ms
+64 bytes from 192.168.8.14: icmp_seq=6 ttl=123 time=6 ms
+64 bytes from 192.168.8.14: icmp_seq=7 ttl=123 time=6 ms
+64 bytes from 192.168.8.14: icmp_seq=8 ttl=123 time=6 ms
+64 bytes from 192.168.8.14: icmp_seq=9 ttl=123 time=6 ms
+
+----192.168.8.14 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 6/6/7 ms
+
+#####################################################
+Mosul G6 2 ......
+PING 192.168.8.15: (192.168.8.15): 56 data bytes
+64 bytes from 192.168.8.15: icmp_seq=0 ttl=123 time=8 ms
+64 bytes from 192.168.8.15: icmp_seq=1 ttl=123 time=7 ms
+64 bytes from 192.168.8.15: icmp_seq=2 ttl=123 time=7 ms
+64 bytes from 192.168.8.15: icmp_seq=3 ttl=123 time=7 ms
+64 bytes from 192.168.8.15: icmp_seq=4 ttl=123 time=7 ms
+64 bytes from 192.168.8.15: icmp_seq=5 ttl=123 time=7 ms
+64 bytes from 192.168.8.15: icmp_seq=6 ttl=123 time=7 ms
+64 bytes from 192.168.8.15: icmp_seq=7 ttl=123 time=7 ms
+64 bytes from 192.168.8.15: icmp_seq=8 ttl=123 time=7 ms
+64 bytes from 192.168.8.15: icmp_seq=9 ttl=123 time=7 ms
+
+----192.168.8.15 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 7/7/8 ms
+
+#####################################################
+Kirkuk G6 1 ......
+PING 192.168.90.17: (192.168.90.17): 56 data bytes
+64 bytes from 192.168.90.17: icmp_seq=0 ttl=124 time=6 ms
+64 bytes from 192.168.90.17: icmp_seq=1 ttl=124 time=4 ms
+64 bytes from 192.168.90.17: icmp_seq=2 ttl=124 time=4 ms
+64 bytes from 192.168.90.17: icmp_seq=3 ttl=124 time=4 ms
+64 bytes from 192.168.90.17: icmp_seq=4 ttl=124 time=4 ms
+64 bytes from 192.168.90.17: icmp_seq=5 ttl=124 time=4 ms
+64 bytes from 192.168.90.17: icmp_seq=6 ttl=124 time=4 ms
+64 bytes from 192.168.90.17: icmp_seq=7 ttl=124 time=4 ms
+64 bytes from 192.168.90.17: icmp_seq=8 ttl=124 time=4 ms
+64 bytes from 192.168.90.17: icmp_seq=9 ttl=124 time=4 ms
+
+----192.168.90.17 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 4/4/6 ms
+
+#####################################################
+Kirkuk G6 2 ......
+PING 192.168.90.18: (192.168.90.18): 56 data bytes
+64 bytes from 192.168.90.18: icmp_seq=0 ttl=124 time=5 ms
+64 bytes from 192.168.90.18: icmp_seq=1 ttl=124 time=4 ms
+64 bytes from 192.168.90.18: icmp_seq=2 ttl=124 time=4 ms
+64 bytes from 192.168.90.18: icmp_seq=3 ttl=124 time=4 ms
+64 bytes from 192.168.90.18: icmp_seq=4 ttl=124 time=4 ms
+64 bytes from 192.168.90.18: icmp_seq=5 ttl=124 time=4 ms
+64 bytes from 192.168.90.18: icmp_seq=6 ttl=124 time=4 ms
+64 bytes from 192.168.90.18: icmp_seq=7 ttl=124 time=4 ms
+64 bytes from 192.168.90.18: icmp_seq=8 ttl=124 time=4 ms
+64 bytes from 192.168.90.18: icmp_seq=9 ttl=124 time=4 ms
+
+----192.168.90.18 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 4/4/5 ms
+
+#####################################################
+Baghdad G6 1 ......
+PING 192.168.0.2: (192.168.0.2): 56 data bytes
+64 bytes from 192.168.0.2: icmp_seq=0 ttl=121 time=7 ms
+64 bytes from 192.168.0.2: icmp_seq=1 ttl=121 time=7 ms
+64 bytes from 192.168.0.2: icmp_seq=2 ttl=121 time=7 ms
+64 bytes from 192.168.0.2: icmp_seq=3 ttl=121 time=7 ms
+64 bytes from 192.168.0.2: icmp_seq=4 ttl=121 time=7 ms
+64 bytes from 192.168.0.2: icmp_seq=5 ttl=121 time=7 ms
+64 bytes from 192.168.0.2: icmp_seq=6 ttl=121 time=7 ms
+64 bytes from 192.168.0.2: icmp_seq=7 ttl=121 time=7 ms
+64 bytes from 192.168.0.2: icmp_seq=8 ttl=121 time=7 ms
+64 bytes from 192.168.0.2: icmp_seq=9 ttl=121 time=9 ms
+
+----192.168.0.2 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 7/7/9 ms
+
+#####################################################
+Baghdad G6 2 ......
+PING 192.168.0.4: (192.168.0.4): 56 data bytes
+64 bytes from 192.168.0.4: icmp_seq=0 ttl=121 time=9 ms
+64 bytes from 192.168.0.4: icmp_seq=1 ttl=121 time=9 ms
+64 bytes from 192.168.0.4: icmp_seq=2 ttl=121 time=9 ms
+64 bytes from 192.168.0.4: icmp_seq=3 ttl=121 time=9 ms
+64 bytes from 192.168.0.4: icmp_seq=4 ttl=121 time=9 ms
+64 bytes from 192.168.0.4: icmp_seq=5 ttl=121 time=9 ms
+64 bytes from 192.168.0.4: icmp_seq=6 ttl=121 time=9 ms
+64 bytes from 192.168.0.4: icmp_seq=7 ttl=121 time=9 ms
+64 bytes from 192.168.0.4: icmp_seq=8 ttl=121 time=9 ms
+64 bytes from 192.168.0.4: icmp_seq=9 ttl=121 time=8 ms
+
+----192.168.0.4 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 8/8/9 ms
+
+#####################################################
+Basra G6 iGWB 1 ......
+PING 192.168.16.13: (192.168.16.13): 56 data bytes
+64 bytes from 192.168.16.13: icmp_seq=0 ttl=122 time=527 ms
+64 bytes from 192.168.16.13: icmp_seq=1 ttl=122 time=526 ms
+64 bytes from 192.168.16.13: icmp_seq=3 ttl=122 time=526 ms
+64 bytes from 192.168.16.13: icmp_seq=4 ttl=122 time=526 ms
+64 bytes from 192.168.16.13: icmp_seq=5 ttl=122 time=526 ms
+64 bytes from 192.168.16.13: icmp_seq=6 ttl=122 time=526 ms
+64 bytes from 192.168.16.13: icmp_seq=7 ttl=122 time=526 ms
+64 bytes from 192.168.16.13: icmp_seq=8 ttl=122 time=531 ms
+64 bytes from 192.168.16.13: icmp_seq=9 ttl=122 time=526 ms
+
+----192.168.16.13 PING Statistics----
+10 packets transmitted, 9 packets received, 10% packet loss
+round-trip min/avg/max = 526/526/531 ms
+
+#####################################################
+Basra G6 iGWB 2 ......
+PING 192.168.16.14: (192.168.16.14): 56 data bytes
+64 bytes from 192.168.16.14: icmp_seq=0 ttl=122 time=526 ms
+64 bytes from 192.168.16.14: icmp_seq=1 ttl=122 time=526 ms
+64 bytes from 192.168.16.14: icmp_seq=2 ttl=122 time=526 ms
+64 bytes from 192.168.16.14: icmp_seq=3 ttl=122 time=526 ms
+64 bytes from 192.168.16.14: icmp_seq=4 ttl=122 time=526 ms
+64 bytes from 192.168.16.14: icmp_seq=5 ttl=122 time=526 ms
+64 bytes from 192.168.16.14: icmp_seq=6 ttl=122 time=526 ms
+64 bytes from 192.168.16.14: icmp_seq=7 ttl=122 time=526 ms
+
+----192.168.16.14 PING Statistics----
+10 packets transmitted, 8 packets received, 20% packet loss
+round-trip min/avg/max = 526/526/526 ms
+
+#####################################################
+Suly G6 iGWB 1 ......
+PING 192.168.100.14: (192.168.100.14): 56 data bytes
+64 bytes from 192.168.100.14: icmp_seq=0 ttl=124 time=38 ms
+64 bytes from 192.168.100.14: icmp_seq=2 ttl=124 time=44 ms
+64 bytes from 192.168.100.14: icmp_seq=4 ttl=124 time=34 ms
+64 bytes from 192.168.100.14: icmp_seq=5 ttl=124 time=54 ms
+64 bytes from 192.168.100.14: icmp_seq=6 ttl=124 time=17 ms
+64 bytes from 192.168.100.14: icmp_seq=7 ttl=124 time=3 ms
+64 bytes from 192.168.100.14: icmp_seq=8 ttl=124 time=29 ms
+64 bytes from 192.168.100.14: icmp_seq=9 ttl=124 time=36 ms
+
+----192.168.100.14 PING Statistics----
+10 packets transmitted, 8 packets received, 20% packet loss
+round-trip min/avg/max = 3/31/54 ms
+
+#####################################################
+Suly G6 iGWB 2 ......
+PING 192.168.100.15: (192.168.100.15): 56 data bytes
+64 bytes from 192.168.100.15: icmp_seq=0 ttl=124 time=22 ms
+64 bytes from 192.168.100.15: icmp_seq=1 ttl=124 time=53 ms
+64 bytes from 192.168.100.15: icmp_seq=3 ttl=124 time=22 ms
+64 bytes from 192.168.100.15: icmp_seq=4 ttl=124 time=11 ms
+64 bytes from 192.168.100.15: icmp_seq=5 ttl=124 time=5 ms
+64 bytes from 192.168.100.15: icmp_seq=6 ttl=124 time=5 ms
+64 bytes from 192.168.100.15: icmp_seq=7 ttl=124 time=35 ms
+64 bytes from 192.168.100.15: icmp_seq=8 ttl=124 time=20 ms
+64 bytes from 192.168.100.15: icmp_seq=9 ttl=124 time=25 ms
+
+----192.168.100.15 PING Statistics----
+10 packets transmitted, 9 packets received, 10% packet loss
+round-trip min/avg/max = 5/22/53 ms
+
+#####################################################
+Suly SMSC FTP ......
+PING 10.75.105.48: (10.75.105.48): 56 data bytes
+64 bytes from 10.75.105.48: icmp_seq=0 ttl=125 time=0 ms
+64 bytes from 10.75.105.48: icmp_seq=1 ttl=125 time=0 ms
+64 bytes from 10.75.105.48: icmp_seq=2 ttl=125 time=0 ms
+64 bytes from 10.75.105.48: icmp_seq=3 ttl=125 time=0 ms
+64 bytes from 10.75.105.48: icmp_seq=4 ttl=125 time=0 ms
+64 bytes from 10.75.105.48: icmp_seq=5 ttl=125 time=0 ms
+64 bytes from 10.75.105.48: icmp_seq=6 ttl=125 time=0 ms
+64 bytes from 10.75.105.48: icmp_seq=7 ttl=125 time=0 ms
+64 bytes from 10.75.105.48: icmp_seq=8 ttl=125 time=0 ms
+64 bytes from 10.75.105.48: icmp_seq=9 ttl=125 time=0 ms
+
+----10.75.105.48 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 0/0/0 ms
+
+#####################################################
+Mosul SMSC FTP 1 ......
+PING 10.75.8.33: (10.75.8.33): 56 data bytes
+64 bytes from 10.75.8.33: icmp_seq=0 ttl=124 time=6 ms
+64 bytes from 10.75.8.33: icmp_seq=1 ttl=124 time=6 ms
+64 bytes from 10.75.8.33: icmp_seq=2 ttl=124 time=6 ms
+64 bytes from 10.75.8.33: icmp_seq=3 ttl=124 time=6 ms
+64 bytes from 10.75.8.33: icmp_seq=4 ttl=124 time=6 ms
+64 bytes from 10.75.8.33: icmp_seq=5 ttl=124 time=6 ms
+64 bytes from 10.75.8.33: icmp_seq=6 ttl=124 time=6 ms
+64 bytes from 10.75.8.33: icmp_seq=7 ttl=124 time=6 ms
+64 bytes from 10.75.8.33: icmp_seq=8 ttl=124 time=6 ms
+64 bytes from 10.75.8.33: icmp_seq=9 ttl=124 time=6 ms
+
+----10.75.8.33 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 6/6/6 ms
+
+#####################################################
+Mosul SMSC FTP 2 ......
+PING 10.75.8.34: (10.75.8.34): 56 data bytes
+64 bytes from 10.75.8.34: icmp_seq=0 ttl=124 time=66 ms
+64 bytes from 10.75.8.34: icmp_seq=1 ttl=124 time=6 ms
+64 bytes from 10.75.8.34: icmp_seq=2 ttl=124 time=52 ms
+64 bytes from 10.75.8.34: icmp_seq=3 ttl=124 time=33 ms
+64 bytes from 10.75.8.34: icmp_seq=4 ttl=124 time=47 ms
+64 bytes from 10.75.8.34: icmp_seq=5 ttl=124 time=16 ms
+64 bytes from 10.75.8.34: icmp_seq=6 ttl=124 time=38 ms
+64 bytes from 10.75.8.34: icmp_seq=7 ttl=124 time=34 ms
+64 bytes from 10.75.8.34: icmp_seq=8 ttl=124 time=6 ms
+64 bytes from 10.75.8.34: icmp_seq=9 ttl=124 time=30 ms
+
+----10.75.8.34 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 6/32/66 ms
+
+#####################################################
+Basra SMSC FTP 1 ......
+PING 10.75.16.21: (10.75.16.21): 56 data bytes
+64 bytes from 10.75.16.21: icmp_seq=0 ttl=124 time=525 ms
+64 bytes from 10.75.16.21: icmp_seq=2 ttl=124 time=524 ms
+64 bytes from 10.75.16.21: icmp_seq=3 ttl=124 time=524 ms
+64 bytes from 10.75.16.21: icmp_seq=4 ttl=124 time=524 ms
+64 bytes from 10.75.16.21: icmp_seq=5 ttl=124 time=524 ms
+64 bytes from 10.75.16.21: icmp_seq=6 ttl=124 time=524 ms
+64 bytes from 10.75.16.21: icmp_seq=7 ttl=124 time=524 ms
+64 bytes from 10.75.16.21: icmp_seq=8 ttl=124 time=524 ms
+64 bytes from 10.75.16.21: icmp_seq=9 ttl=124 time=524 ms
+
+----10.75.16.21 PING Statistics----
+10 packets transmitted, 9 packets received, 10% packet loss
+round-trip min/avg/max = 524/524/525 ms
+
+#####################################################
+Basra SMSC FTP 2 ......
+PING 10.75.16.22: (10.75.16.22): 56 data bytes
+64 bytes from 10.75.16.22: icmp_seq=0 ttl=124 time=525 ms
+64 bytes from 10.75.16.22: icmp_seq=1 ttl=124 time=524 ms
+64 bytes from 10.75.16.22: icmp_seq=2 ttl=124 time=525 ms
+64 bytes from 10.75.16.22: icmp_seq=3 ttl=124 time=525 ms
+64 bytes from 10.75.16.22: icmp_seq=4 ttl=124 time=524 ms
+64 bytes from 10.75.16.22: icmp_seq=5 ttl=124 time=524 ms
+64 bytes from 10.75.16.22: icmp_seq=6 ttl=124 time=524 ms
+64 bytes from 10.75.16.22: icmp_seq=7 ttl=124 time=524 ms
+64 bytes from 10.75.16.22: icmp_seq=8 ttl=124 time=525 ms
+64 bytes from 10.75.16.22: icmp_seq=9 ttl=124 time=524 ms
+
+----10.75.16.22 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 524/524/525 ms
+
+#####################################################
+Kirkuk SMSC FTP 1 ......
+PING 10.73.100.33: (10.73.100.33): 56 data bytes
+
+----10.73.100.33 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Kirkuk SMSC FTP 2 ......
+PING 10.73.100.34: (10.73.100.34): 56 data bytes
+
+----10.73.100.34 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Bag SMSC FTP 1 ......
+PING 10.75.0.21: (10.75.0.21): 56 data bytes
+64 bytes from 10.75.0.21: icmp_seq=0 ttl=123 time=10 ms
+64 bytes from 10.75.0.21: icmp_seq=1 ttl=123 time=9 ms
+64 bytes from 10.75.0.21: icmp_seq=2 ttl=123 time=9 ms
+64 bytes from 10.75.0.21: icmp_seq=3 ttl=123 time=9 ms
+64 bytes from 10.75.0.21: icmp_seq=4 ttl=123 time=9 ms
+64 bytes from 10.75.0.21: icmp_seq=5 ttl=123 time=8 ms
+64 bytes from 10.75.0.21: icmp_seq=6 ttl=123 time=8 ms
+64 bytes from 10.75.0.21: icmp_seq=7 ttl=123 time=8 ms
+64 bytes from 10.75.0.21: icmp_seq=8 ttl=123 time=8 ms
+64 bytes from 10.75.0.21: icmp_seq=9 ttl=123 time=8 ms
+
+----10.75.0.21 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 8/8/10 ms
+
+#####################################################
+Bag SMSC FTP 2 ......
+PING 10.75.0.22: (10.75.0.22): 56 data bytes
+64 bytes from 10.75.0.22: icmp_seq=0 ttl=123 time=8 ms
+64 bytes from 10.75.0.22: icmp_seq=1 ttl=123 time=8 ms
+64 bytes from 10.75.0.22: icmp_seq=2 ttl=123 time=8 ms
+64 bytes from 10.75.0.22: icmp_seq=3 ttl=123 time=8 ms
+64 bytes from 10.75.0.22: icmp_seq=4 ttl=123 time=8 ms
+64 bytes from 10.75.0.22: icmp_seq=5 ttl=123 time=8 ms
+64 bytes from 10.75.0.22: icmp_seq=6 ttl=123 time=8 ms
+64 bytes from 10.75.0.22: icmp_seq=7 ttl=123 time=8 ms
+64 bytes from 10.75.0.22: icmp_seq=8 ttl=123 time=8 ms
+64 bytes from 10.75.0.22: icmp_seq=9 ttl=123 time=8 ms
+
+----10.75.0.22 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 8/8/8 ms
+
+#####################################################
+Suly Infox ......
+PING 10.75.100.66: (10.75.100.66): 56 data bytes
+64 bytes from 10.75.100.66: icmp_seq=0 ttl=124 time=4 ms
+64 bytes from 10.75.100.66: icmp_seq=1 ttl=124 time=4 ms
+64 bytes from 10.75.100.66: icmp_seq=2 ttl=124 time=4 ms
+64 bytes from 10.75.100.66: icmp_seq=3 ttl=124 time=4 ms
+64 bytes from 10.75.100.66: icmp_seq=4 ttl=124 time=4 ms
+64 bytes from 10.75.100.66: icmp_seq=5 ttl=124 time=4 ms
+64 bytes from 10.75.100.66: icmp_seq=6 ttl=124 time=4 ms
+64 bytes from 10.75.100.66: icmp_seq=7 ttl=124 time=4 ms
+64 bytes from 10.75.100.66: icmp_seq=8 ttl=124 time=4 ms
+64 bytes from 10.75.100.66: icmp_seq=9 ttl=124 time=4 ms
+
+----10.75.100.66 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 4/4/4 ms
+
+#####################################################
+Roamit Server ......
+PING 192.168.165.22: (192.168.165.22): 56 data bytes
+64 bytes from 192.168.165.22: icmp_seq=0 ttl=124 time=1 ms
+64 bytes from 192.168.165.22: icmp_seq=1 ttl=124 time=1 ms
+64 bytes from 192.168.165.22: icmp_seq=2 ttl=124 time=1 ms
+64 bytes from 192.168.165.22: icmp_seq=3 ttl=124 time=1 ms
+64 bytes from 192.168.165.22: icmp_seq=4 ttl=124 time=1 ms
+64 bytes from 192.168.165.22: icmp_seq=5 ttl=124 time=1 ms
+64 bytes from 192.168.165.22: icmp_seq=6 ttl=124 time=1 ms
+64 bytes from 192.168.165.22: icmp_seq=7 ttl=124 time=1 ms
+64 bytes from 192.168.165.22: icmp_seq=8 ttl=124 time=1 ms
+64 bytes from 192.168.165.22: icmp_seq=9 ttl=124 time=1 ms
+
+----192.168.165.22 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 1/1/1 ms
+
+#####################################################
+Suly CG ......
+PING 10.30.10.237: (10.30.10.237): 56 data bytes
+64 bytes from 10.30.10.237: icmp_seq=0 ttl=250 time=3 ms
+64 bytes from 10.30.10.237: icmp_seq=1 ttl=251 time=3 ms
+64 bytes from 10.30.10.237: icmp_seq=2 ttl=251 time=2 ms
+64 bytes from 10.30.10.237: icmp_seq=3 ttl=251 time=2 ms
+64 bytes from 10.30.10.237: icmp_seq=4 ttl=251 time=2 ms
+64 bytes from 10.30.10.237: icmp_seq=5 ttl=251 time=4 ms
+64 bytes from 10.30.10.237: icmp_seq=6 ttl=251 time=4 ms
+64 bytes from 10.30.10.237: icmp_seq=7 ttl=251 time=4 ms
+64 bytes from 10.30.10.237: icmp_seq=8 ttl=251 time=4 ms
+64 bytes from 10.30.10.237: icmp_seq=9 ttl=251 time=4 ms
+
+----10.30.10.237 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 2/3/4 ms
+
+#####################################################
+Bag SMSC MML ......
+PING 10.75.0.20: (10.75.0.20): 56 data bytes
+64 bytes from 10.75.0.20: icmp_seq=0 ttl=123 time=8 ms
+64 bytes from 10.75.0.20: icmp_seq=1 ttl=123 time=8 ms
+64 bytes from 10.75.0.20: icmp_seq=2 ttl=123 time=7 ms
+64 bytes from 10.75.0.20: icmp_seq=3 ttl=123 time=7 ms
+64 bytes from 10.75.0.20: icmp_seq=4 ttl=123 time=7 ms
+64 bytes from 10.75.0.20: icmp_seq=5 ttl=123 time=7 ms
+64 bytes from 10.75.0.20: icmp_seq=6 ttl=123 time=7 ms
+64 bytes from 10.75.0.20: icmp_seq=7 ttl=123 time=7 ms
+64 bytes from 10.75.0.20: icmp_seq=8 ttl=123 time=7 ms
+64 bytes from 10.75.0.20: icmp_seq=9 ttl=123 time=7 ms
+
+----10.75.0.20 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 7/7/8 ms
+
+#####################################################
+Basra SMSC MML ......
+PING 10.75.16.20: (10.75.16.20): 56 data bytes
+64 bytes from 10.75.16.20: icmp_seq=0 ttl=124 time=525 ms
+64 bytes from 10.75.16.20: icmp_seq=1 ttl=124 time=525 ms
+64 bytes from 10.75.16.20: icmp_seq=2 ttl=124 time=525 ms
+64 bytes from 10.75.16.20: icmp_seq=3 ttl=124 time=528 ms
+64 bytes from 10.75.16.20: icmp_seq=4 ttl=124 time=525 ms
+64 bytes from 10.75.16.20: icmp_seq=5 ttl=124 time=525 ms
+64 bytes from 10.75.16.20: icmp_seq=6 ttl=124 time=525 ms
+64 bytes from 10.75.16.20: icmp_seq=7 ttl=124 time=525 ms
+64 bytes from 10.75.16.20: icmp_seq=8 ttl=124 time=525 ms
+64 bytes from 10.75.16.20: icmp_seq=9 ttl=124 time=529 ms
+
+----10.75.16.20 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 525/525/529 ms
+
+#####################################################
+Kirkuk SMSC MML ......
+PING 10.73.100.27: (10.73.100.27): 56 data bytes
+
+----10.73.100.27 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Kirkuk SMSC MML ......
+PING 10.73.100.27: (10.73.100.27): 56 data bytes
+
+----10.73.100.27 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Mosul SMSC MML ......
+PING 10.75.8.27: (10.75.8.27): 56 data bytes
+64 bytes from 10.75.8.27: icmp_seq=0 ttl=124 time=6 ms
+64 bytes from 10.75.8.27: icmp_seq=1 ttl=124 time=6 ms
+64 bytes from 10.75.8.27: icmp_seq=2 ttl=124 time=6 ms
+64 bytes from 10.75.8.27: icmp_seq=3 ttl=124 time=6 ms
+64 bytes from 10.75.8.27: icmp_seq=4 ttl=124 time=6 ms
+64 bytes from 10.75.8.27: icmp_seq=5 ttl=124 time=6 ms
+64 bytes from 10.75.8.27: icmp_seq=6 ttl=124 time=6 ms
+64 bytes from 10.75.8.27: icmp_seq=7 ttl=124 time=6 ms
+64 bytes from 10.75.8.27: icmp_seq=8 ttl=124 time=6 ms
+64 bytes from 10.75.8.27: icmp_seq=9 ttl=124 time=6 ms
+
+----10.75.8.27 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 6/6/6 ms
+
+#####################################################
+Suly SMSC ......
+PING 10.75.105.27: (10.75.105.27): 56 data bytes
+64 bytes from 10.75.105.27: icmp_seq=0 ttl=125 time=1 ms
+64 bytes from 10.75.105.27: icmp_seq=1 ttl=125 time=0 ms
+64 bytes from 10.75.105.27: icmp_seq=2 ttl=125 time=0 ms
+64 bytes from 10.75.105.27: icmp_seq=3 ttl=125 time=0 ms
+64 bytes from 10.75.105.27: icmp_seq=4 ttl=125 time=0 ms
+64 bytes from 10.75.105.27: icmp_seq=5 ttl=125 time=0 ms
+64 bytes from 10.75.105.27: icmp_seq=6 ttl=125 time=0 ms
+64 bytes from 10.75.105.27: icmp_seq=7 ttl=125 time=0 ms
+64 bytes from 10.75.105.27: icmp_seq=8 ttl=125 time=0 ms
+64 bytes from 10.75.105.27: icmp_seq=9 ttl=125 time=0 ms
+
+----10.75.105.27 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 0/0/1 ms
+
+#####################################################
+Erbil VMS ......
+PING 10.76.16.50: (10.76.16.50): 56 data bytes
+
+----10.76.16.50 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Basra VMS ......
+PING 10.75.16.40: (10.75.16.40): 56 data bytes
+64 bytes from 10.75.16.40: icmp_seq=0 ttl=251 time=525 ms
+64 bytes from 10.75.16.40: icmp_seq=1 ttl=251 time=525 ms
+64 bytes from 10.75.16.40: icmp_seq=2 ttl=251 time=525 ms
+64 bytes from 10.75.16.40: icmp_seq=3 ttl=251 time=525 ms
+64 bytes from 10.75.16.40: icmp_seq=4 ttl=251 time=525 ms
+64 bytes from 10.75.16.40: icmp_seq=5 ttl=251 time=525 ms
+64 bytes from 10.75.16.40: icmp_seq=6 ttl=251 time=525 ms
+64 bytes from 10.75.16.40: icmp_seq=7 ttl=251 time=525 ms
+64 bytes from 10.75.16.40: icmp_seq=8 ttl=251 time=525 ms
+64 bytes from 10.75.16.40: icmp_seq=9 ttl=251 time=525 ms
+
+----10.75.16.40 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 525/525/525 ms
+
+#####################################################
+Bag VMS ......
+PING 10.75.0.8: (10.75.0.8): 56 data bytes
+64 bytes from 10.75.0.8: icmp_seq=0 ttl=58 time=16 ms
+64 bytes from 10.75.0.8: icmp_seq=1 ttl=58 time=9 ms
+64 bytes from 10.75.0.8: icmp_seq=2 ttl=58 time=9 ms
+64 bytes from 10.75.0.8: icmp_seq=3 ttl=58 time=9 ms
+64 bytes from 10.75.0.8: icmp_seq=4 ttl=58 time=16 ms
+64 bytes from 10.75.0.8: icmp_seq=5 ttl=58 time=9 ms
+64 bytes from 10.75.0.8: icmp_seq=6 ttl=58 time=16 ms
+64 bytes from 10.75.0.8: icmp_seq=7 ttl=58 time=16 ms
+64 bytes from 10.75.0.8: icmp_seq=8 ttl=58 time=8 ms
+64 bytes from 10.75.0.8: icmp_seq=9 ttl=58 time=8 ms
+
+----10.75.0.8 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 8/11/16 ms
+
+#####################################################
+Kirkuk VMS ......
+PING 10.73.100.50: (10.73.100.50): 56 data bytes
+
+----10.73.100.50 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Mosul VMS ......
+PING 10.75.8.50: (10.75.8.50): 56 data bytes
+64 bytes from 10.75.8.50: icmp_seq=0 ttl=59 time=7 ms
+64 bytes from 10.75.8.50: icmp_seq=1 ttl=59 time=6 ms
+64 bytes from 10.75.8.50: icmp_seq=2 ttl=59 time=6 ms
+64 bytes from 10.75.8.50: icmp_seq=3 ttl=59 time=6 ms
+64 bytes from 10.75.8.50: icmp_seq=4 ttl=59 time=6 ms
+64 bytes from 10.75.8.50: icmp_seq=5 ttl=59 time=6 ms
+64 bytes from 10.75.8.50: icmp_seq=6 ttl=59 time=6 ms
+64 bytes from 10.75.8.50: icmp_seq=7 ttl=59 time=6 ms
+64 bytes from 10.75.8.50: icmp_seq=8 ttl=59 time=7 ms
+64 bytes from 10.75.8.50: icmp_seq=9 ttl=59 time=6 ms
+
+----10.75.8.50 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 6/6/7 ms
+
+#####################################################
+Suly VMS ......
+PING 10.75.105.50: (10.75.105.50): 56 data bytes
+64 bytes from 10.75.105.50: icmp_seq=0 ttl=60 time=1 ms
+64 bytes from 10.75.105.50: icmp_seq=1 ttl=60 time=1 ms
+64 bytes from 10.75.105.50: icmp_seq=2 ttl=60 time=1 ms
+64 bytes from 10.75.105.50: icmp_seq=3 ttl=60 time=1 ms
+64 bytes from 10.75.105.50: icmp_seq=4 ttl=60 time=1 ms
+64 bytes from 10.75.105.50: icmp_seq=5 ttl=60 time=1 ms
+64 bytes from 10.75.105.50: icmp_seq=6 ttl=60 time=1 ms
+64 bytes from 10.75.105.50: icmp_seq=7 ttl=60 time=1 ms
+64 bytes from 10.75.105.50: icmp_seq=8 ttl=60 time=1 ms
+64 bytes from 10.75.105.50: icmp_seq=9 ttl=60 time=1 ms
+
+----10.75.105.50 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 1/1/1 ms
+
+#####################################################
+Suly SMP ......
+PING 10.76.100.24: (10.76.100.24): 56 data bytes
+64 bytes from 10.76.100.24: icmp_seq=0 ttl=251 time=22 ms
+64 bytes from 10.76.100.24: icmp_seq=1 ttl=252 time=48 ms
+64 bytes from 10.76.100.24: icmp_seq=2 ttl=252 time=27 ms
+64 bytes from 10.76.100.24: icmp_seq=3 ttl=252 time=4 ms
+64 bytes from 10.76.100.24: icmp_seq=4 ttl=252 time=4 ms
+64 bytes from 10.76.100.24: icmp_seq=5 ttl=252 time=65 ms
+64 bytes from 10.76.100.24: icmp_seq=6 ttl=252 time=8 ms
+64 bytes from 10.76.100.24: icmp_seq=7 ttl=252 time=31 ms
+64 bytes from 10.76.100.24: icmp_seq=8 ttl=252 time=3 ms
+64 bytes from 10.76.100.24: icmp_seq=9 ttl=252 time=31 ms
+
+----10.76.100.24 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 3/24/65 ms
+
+#####################################################
+Iraq WIN pps ......
+PING 10.71.109.140: (10.71.109.140): 56 data bytes
+
+----10.71.109.140 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Kir 2G AUC & HLR ......
+PING 192.168.90.20: (192.168.90.20): 56 data bytes
+64 bytes from 192.168.90.20: icmp_seq=4 ttl=251 time=5 ms
+64 bytes from 192.168.90.20: icmp_seq=5 ttl=251 time=4 ms
+64 bytes from 192.168.90.20: icmp_seq=6 ttl=251 time=4 ms
+64 bytes from 192.168.90.20: icmp_seq=7 ttl=251 time=4 ms
+64 bytes from 192.168.90.20: icmp_seq=8 ttl=251 time=4 ms
+64 bytes from 192.168.90.20: icmp_seq=9 ttl=251 time=4 ms
+
+----192.168.90.20 PING Statistics----
+10 packets transmitted, 6 packets received, 40% packet loss
+round-trip min/avg/max = 4/4/5 ms
+
+#####################################################
+Mosul 2G AUC ......
+PING 192.168.30.25: (192.168.30.25): 56 data bytes
+
+----192.168.30.25 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Suly 2G AUC ......
+PING 192.168.100.6: (192.168.100.6): 56 data bytes
+
+----192.168.100.6 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Bag 2G AUC & HLR ......
+PING 192.168.0.20: (192.168.0.20): 56 data bytes
+64 bytes from 192.168.0.20: icmp_seq=0 ttl=248 time=7 ms
+64 bytes from 192.168.0.20: icmp_seq=1 ttl=248 time=7 ms
+64 bytes from 192.168.0.20: icmp_seq=2 ttl=248 time=7 ms
+64 bytes from 192.168.0.20: icmp_seq=3 ttl=248 time=7 ms
+64 bytes from 192.168.0.20: icmp_seq=4 ttl=248 time=9 ms
+64 bytes from 192.168.0.20: icmp_seq=5 ttl=248 time=9 ms
+64 bytes from 192.168.0.20: icmp_seq=6 ttl=248 time=9 ms
+64 bytes from 192.168.0.20: icmp_seq=7 ttl=248 time=9 ms
+64 bytes from 192.168.0.20: icmp_seq=8 ttl=248 time=9 ms
+64 bytes from 192.168.0.20: icmp_seq=9 ttl=248 time=8 ms
+
+----192.168.0.20 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 7/8/9 ms
+
+#####################################################
+Basra 2G AUC & HLR ......
+PING 192.168.16.20: (192.168.16.20): 56 data bytes
+64 bytes from 192.168.16.20: icmp_seq=0 ttl=249 time=538 ms
+64 bytes from 192.168.16.20: icmp_seq=1 ttl=249 time=526 ms
+64 bytes from 192.168.16.20: icmp_seq=2 ttl=249 time=526 ms
+64 bytes from 192.168.16.20: icmp_seq=3 ttl=249 time=526 ms
+64 bytes from 192.168.16.20: icmp_seq=4 ttl=249 time=526 ms
+64 bytes from 192.168.16.20: icmp_seq=5 ttl=249 time=526 ms
+64 bytes from 192.168.16.20: icmp_seq=6 ttl=249 time=526 ms
+64 bytes from 192.168.16.20: icmp_seq=7 ttl=249 time=526 ms
+64 bytes from 192.168.16.20: icmp_seq=8 ttl=249 time=526 ms
+64 bytes from 192.168.16.20: icmp_seq=9 ttl=249 time=526 ms
+
+----192.168.16.20 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 526/527/538 ms
+
+#####################################################
+Suly 3G AUC & HLR ......
+PING 192.168.105.11: (192.168.105.11): 56 data bytes
+64 bytes from 192.168.105.11: icmp_seq=0 ttl=125 time=1 ms
+64 bytes from 192.168.105.11: icmp_seq=1 ttl=126 time=0 ms
+64 bytes from 192.168.105.11: icmp_seq=2 ttl=126 time=0 ms
+64 bytes from 192.168.105.11: icmp_seq=3 ttl=126 time=0 ms
+64 bytes from 192.168.105.11: icmp_seq=4 ttl=126 time=0 ms
+64 bytes from 192.168.105.11: icmp_seq=5 ttl=126 time=0 ms
+64 bytes from 192.168.105.11: icmp_seq=6 ttl=126 time=0 ms
+64 bytes from 192.168.105.11: icmp_seq=7 ttl=126 time=0 ms
+64 bytes from 192.168.105.11: icmp_seq=8 ttl=126 time=0 ms
+64 bytes from 192.168.105.11: icmp_seq=9 ttl=126 time=0 ms
+
+----192.168.105.11 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 0/0/1 ms
+
+#####################################################
+Erbil 2G HLR ......
+PING 192.168.10.5: (192.168.10.5): 56 data bytes
+
+----192.168.10.5 PING Statistics----
+10 packets transmitted, 0 packets received, 100% packet loss
+
+#####################################################
+Bag 3G HLR ......
+PING 192.168.50.11: (192.168.50.11): 56 data bytes
+64 bytes from 192.168.50.11: icmp_seq=0 ttl=120 time=13 ms
+64 bytes from 192.168.50.11: icmp_seq=1 ttl=120 time=10 ms
+64 bytes from 192.168.50.11: icmp_seq=2 ttl=120 time=11 ms
+64 bytes from 192.168.50.11: icmp_seq=3 ttl=120 time=11 ms
+64 bytes from 192.168.50.11: icmp_seq=4 ttl=120 time=11 ms
+64 bytes from 192.168.50.11: icmp_seq=5 ttl=120 time=10 ms
+64 bytes from 192.168.50.11: icmp_seq=6 ttl=120 time=10 ms
+64 bytes from 192.168.50.11: icmp_seq=7 ttl=120 time=10 ms
+64 bytes from 192.168.50.11: icmp_seq=8 ttl=120 time=10 ms
+64 bytes from 192.168.50.11: icmp_seq=9 ttl=120 time=11 ms
+
+----192.168.50.11 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 10/10/13 ms
+
+#####################################################
+Mosul 3G HLR ......
+PING 192.168.70.11: (192.168.70.11): 56 data bytes
+64 bytes from 192.168.70.11: icmp_seq=0 ttl=122 time=9 ms
+64 bytes from 192.168.70.11: icmp_seq=1 ttl=122 time=7 ms
+64 bytes from 192.168.70.11: icmp_seq=2 ttl=122 time=9 ms
+64 bytes from 192.168.70.11: icmp_seq=3 ttl=122 time=8 ms
+64 bytes from 192.168.70.11: icmp_seq=4 ttl=122 time=8 ms
+64 bytes from 192.168.70.11: icmp_seq=5 ttl=122 time=8 ms
+64 bytes from 192.168.70.11: icmp_seq=6 ttl=122 time=8 ms
+64 bytes from 192.168.70.11: icmp_seq=7 ttl=122 time=8 ms
+64 bytes from 192.168.70.11: icmp_seq=8 ttl=122 time=8 ms
+64 bytes from 192.168.70.11: icmp_seq=9 ttl=122 time=8 ms
+
+----192.168.70.11 PING Statistics----
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 7/8/9 ms
+
+#####################################################
+
+
+#####################################################
+Sending the Test results via email.......

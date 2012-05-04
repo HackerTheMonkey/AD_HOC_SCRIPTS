@@ -1,0 +1,32 @@
+
+1- drop the rman user account from the backup server
+
+	drop user rman cascade;
+	
+2- drop the rman tablespace along with the datafiles
+
+	drop tablespace rman including contents and datafiles;
+	
+3- create a new tablespace for the rman catalog
+	
+	 create tablespace rman_catalog datafile '/oradata/cat_01.dbf' size 50M;
+	 alter tablespace rman_catalog add datafile '/oradata/cat_02.sbf' size 50M;
+	 
+4- create the rman user schema
+
+	create user rman identified by rman
+	default tablespace rman_catalog
+	temporary tablespace temp
+	quota unlimited on rman_catalog;
+	
+5- grant the required privilages to the rman user:
+
+	grant connect,resource,recovery_catalog_owner to rman;
+	
+6- from the backup server connect to the rman schema
+
+	 rman target="sys/syspasswd@boss1" catalog="rman/rman@orabak"
+	 create catalog
+	 register database
+	 
+7- then after that you can prepare tha rman configurations and run the full backup script	 			 

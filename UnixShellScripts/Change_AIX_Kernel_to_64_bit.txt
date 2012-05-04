@@ -1,0 +1,5 @@
+#to change the unix kernel from 32 bit kernel to a 64 bit kernel
+ln -sf /usr/lib/boot/unix_mp /unix
+ln -sf /usr/lib/boot/unix_mp /usr/lib/boot/unix
+ bosboot -ad /dev/ipldevice
+shutdown -r

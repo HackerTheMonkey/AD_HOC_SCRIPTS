@@ -1,0 +1,12 @@
+p650_db1
+p650_db2
+P570_DB1
+P570_DB2
+P570_APP1
+P570_APP2
+P550_WEB
+P550_EJB
+p630_app1
+p630_app2
+training-1
+training-2

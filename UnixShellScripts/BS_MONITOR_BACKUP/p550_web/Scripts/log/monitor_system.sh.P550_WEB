@@ -1,0 +1,40 @@
+***** Checking System Health of P550_WEB *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+OK: filesystem usages are all OK
+
+Checking system Load
+Ok: Current system load is 0.01
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking bossweb's WebServer processes
+OK: bossweb's WebLogic java are running
+
+Checking mdsweb's WebServer processes
+OK: mdsweb's WebLogic java are running
+
+Checking zombie processes
+OK: No zombie process running
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  242001 A  bossweb 139298 233648   0  60 20 f567c400 220652        * 08:09:38      -  2:59 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bosswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+
+Checking swap space
+OK: Swap space usage is 1%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+

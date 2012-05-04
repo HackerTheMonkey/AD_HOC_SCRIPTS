@@ -1,0 +1,3 @@
+owner=oracle
+procs="boss2 tnslsnr"
+check_proc DB "$procs" $owner

@@ -1,0 +1,153 @@
+################################################################################
+
+Date : Mon Apr 16 10:28:54 MEST 2007
+
+training-1# ps -ef
+     UID   PID  PPID   C    STIME    TTY  TIME CMD
+    root     1     0   0   Mar 03      -  2:16 /etc/init 
+    root  6186 10926   0   Mar 03      -  0:05 /usr/sbin/rsct/bin/rmcd -a IBM.LPCommands -r 
+    root  6758     1   0   Mar 03      - 618:21 /usr/sbin/syncd 10 
+    root  7368     1   0   Mar 03   lft0  0:00 /usr/sbin/getty /dev/lft0 
+    root  7572     1   0   Mar 03   vty0  0:00 /usr/sbin/getty /dev/console 
+    root  8970 43020   0 10:28:23  pts/1  0:00 /bin/sh sysinfo.sh 
+    root  9580     1   0   Mar 03      -  0:00 /usr/lib/errdemon 
+    root 10138 10926   0   Mar 03      -  0:02 /usr/dt/bin/dtlogin 
+    root 10578     1   0   Mar 03      -  0:00 /usr/ccs/bin/shlap 
+    root 10926     1   0   Mar 03      -  0:00 /usr/sbin/srcmstr 
+    root 11092 10926   0   Mar 03      -  0:02 /usr/sbin/syslogd 
+    root 11612 10926   0   Mar 03      -  0:00 /usr/sbin/portmap 
+    root 13020     1   0   Mar 03      -  0:08 /usr/sbin/cron 
+    root 13192     1   0   Mar 03      -  0:00 /usr/sbin/uprintfd 
+    root 13474     1   0   Mar 03      -  0:00 rpc.ttdbserver 100083 1 
+    root 13794 14562   0   Apr 12      -  0:03 /usr/dt/bin/dtsession 
+    root 13976 10926   0   Mar 03      -  0:00 /usr/sbin/rsct/bin/IBM.ERrmd 
+    root 14224 10138   0   Mar 03      -  4:57 /usr/lpp/X11/bin/X -D /usr/lib/X11//rgb -T -force :0 -auth /var/dt/A:0-K3jVEa 
+    root 14562 10138   0   Mar 03      -  0:00 dtlogin <:0>        
+  oracle 14688     1   0   Apr 13      -  7:29 oraclebosstest (LOCAL=NO) 
+    root 15224 10926   0   Mar 03      -  5:21 /usr/es/sbin/cluster/clcomd -d 
+    root 15484 10926   0   Mar 03      -  0:00 /usr/sbin/rsct/bin/IBM.AuditRMd 
+  oracle 15806     1   0   Apr 04      -  0:00 ora_reco_bosstest 
+    root 15998 10926   0   Mar 03      -  0:38 /usr/sbin/rsct/bin/IBM.CSMAgentRMd 
+    root 16512 10926   0   Mar 03      -  0:00 /usr/sbin/rsct/bin/IBM.ServiceRMd 
+  oracle 16806     1   0   Apr 14      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 16908     1   0 17:25:04      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 17714 42568  35 16:57:22      - 224:24 oraclebosstest (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq))) 
+  oracle 18238     1   0 17:28:25      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 19874     1   0 10:22:35      -  0:45 oraclebosstest (LOCAL=NO) 
+  oracle 20636     1   0   Apr 04      -  0:03 oraclebosstest (LOCAL=NO) 
+  oracle 39574     1   0   Apr 04      -  0:39 ora_smon_bosstest 
+  oracle 39860     1   0 17:26:44      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 39972     1   0   Apr 04      -  2:36 ora_ckpt_bosstest 
+  oracle 40678     1   0   Apr 04      -  0:11 /opt/oracle/product/9.2/bin/tnslsnr LISTENER -inherit 
+    root 40718 54466   0 08:32:08      -  0:00 rlogind 
+  oracle 40964     1   0 17:28:25      -  0:00 oraclebosstest (LOCAL=NO) 
+ bossejb 41350     1   0   Apr 04      -  0:00 /bin/sh ./startManagedWebLogic.sh 
+ bossejb 41978 41350   0   Apr 04      -  9:48 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=orderserver -Dweblogic.management.username= -Dweblogic.management.password= -Dweblogic.management.server=http://localhost:7001 -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  oracle 42088     1   0   Apr 05      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 42448     1   0 16:57:18      -  0:00 sqlplus 
+  oracle 42568     1   0 16:57:22      -  0:00 sqlplus 
+  oracle 42954 42448  29 16:57:18      - 236:44 oraclebosstest (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq))) 
+    root 43020 40718   0 08:32:08  pts/1  0:00 -ksh 
+  oracle 43408     1   0 17:25:25      -  0:00 oraclebosstest (LOCAL=NO) 
+ bossweb 43730     1   0   Apr 04      -  0:00 /bin/sh ./startWebLogic.sh 
+  oracle 43854     1   0   Apr 13      -  7:27 oraclebosstest (LOCAL=NO) 
+  mdsejb 44182     1   0   Apr 04      -  0:00 /bin/sh ./startWebLogic.sh 
+    root 44750 62798   0   Apr 12      -  0:00 /usr/dt/bin/dtexec -open 0 -ttprocid 2.167Xnb 01 69256 1342177289 1 1 0 192.168.117.120 4_101_1 /usr/dt/bin/dtterm 
+  oracle 44832     1   0 17:26:23      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 45228 80608  28 16:57:25      - 233:56 oraclebosstest (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq))) 
+  oracle 45554     1   0 17:27:35      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 45760     1   0 10:01:03      -  0:06 oraclebosstest (LOCAL=NO) 
+  oracle 46052     1   0 17:25:55      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 46238     1   0 10:27:16      -  0:08 oraclebosstest (LOCAL=NO) 
+  oracle 46520     1   0   Apr 13      -  7:21 oraclebosstest (LOCAL=NO) 
+    root 47086 44750   0   Apr 12      -  0:52 /usr/dt/bin/dtterm 
+  oracle 47172     1   0   Apr 04      -  0:22 oraclebosstest (LOCAL=NO) 
+    root 47476 54466   0 08:16:22      -  0:00 rlogind 
+  oracle 47688     1   0   Apr 04      -  0:02 oraclebosstest (LOCAL=NO) 
+  oracle 48068     1   0 17:26:06      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 48224 57396   0 10:21:49  pts/3  0:00 -ksh 
+  oracle 48596     1   3 10:25:12      -  0:07 oraclebosstest (LOCAL=NO) 
+  oracle 48706     1   0 17:27:26      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 48986     1   0 10:23:37      -  0:02 oraclebosstest (LOCAL=NO) 
+  oracle 49340     1   0 17:27:15      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 49918     1   0 17:25:25      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 49968     1   0   Apr 04      -  0:01 oraclebosstest (LOCAL=NO) 
+  oracle 50292     1   0 17:27:04      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 51014     1   0 17:28:44      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 51504     1   0   Apr 04      -  3:26 ora_pmon_bosstest 
+  oracle 51924     1   0 17:26:55      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 52068     1   0   Apr 04      -  0:00 oraclebosstest (LOCAL=NO) 
+    root 52284  8970   0 10:28:54  pts/1  0:00 /bin/sh sysinfo.sh 
+  oracle 52948     1   1   Apr 13      -  7:27 oraclebosstest (LOCAL=NO) 
+  oracle 53008     1   0   Apr 04      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 53452     1   0 17:27:55      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 53756     1   0 17:24:58      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 53820     1   0   Apr 13      -  7:23 oraclebosstest (LOCAL=NO) 
+  oracle 54142     1   0 17:26:44      -  0:00 oraclebosstest (LOCAL=NO) 
+    root 54466 10926   0   Mar 10      -  0:09 /usr/sbin/inetd 
+  oracle 54660     1   0   Apr 12      -  0:08 oraclebosstest (LOCAL=NO) 
+  oracle 54936     1   0   Apr 13      -  7:26 oraclebosstest (LOCAL=NO) 
+    root 55424 56030   1                  0:00 <defunct>
+ bossweb 55690 43730   0   Apr 04      - 26:39 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bosswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+    root 56030 10926   0   Apr 12      -  5:49 /usr/java14/.private142/jre/bin/java -Xquickstart -Xmx512m -Xms16m -Xmine4m -DMessageLang=en_US -Ddisplay=training-1:0.0 -DWINDOWID= -DWEBSM_ALL_PERMISSIONS_FOR_SECURE=true com.ibm.websm.refresh.WSMRefreshServer 
+  oracle 56502     1   0   Apr 04      - 12:05 ora_lgwr_bosstest 
+  oracle 56732     1   0   Apr 13      -  7:30 oraclebosstest (LOCAL=NO) 
+  oracle 56996     1   0 10:22:17      -  0:02 oraclebosstest (LOCAL=NO) 
+  oracle 57182     1   0   Apr 13      -  4:38 oraclebosstest (LOCAL=NO) 
+    root 57396 54466   0 10:21:49      -  0:00 telnetd -a 
+  oracle 57832     1   0 17:28:55      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 58114     1   0 17:27:26      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 58600     1   0   Apr 04      -  0:00 oraclebosstest (LOCAL=NO) 
+  mdsweb 58828     1   0   Apr 04      -  0:00 /bin/sh ./startWebLogic.sh 
+  oracle 59884     1   0 17:27:05      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 60164     1   0   Apr 04      -  0:22 oraclebosstest (LOCAL=NO) 
+  oracle 60496     1   0 17:28:05      -  0:00 oraclebosstest (LOCAL=NO) 
+ bossejb 60704 63146   0   Apr 04      - 128:18 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bossejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  oracle 61042     1   0 17:28:15      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 61396     1   1   Apr 04      - 13:10 ora_dbw0_bosstest 
+  oracle 61918     1   0   Apr 04      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 62030     1   0   Apr 05      -  0:14 oraclebosstest (LOCAL=NO) 
+    root 62226 13794   0   Apr 14      -  0:00 /usr/dt/bin/dtexec -open 0 -ttprocid 1.167Xnb 01 69256 1342177289 1 1 0 192.168.117.120 4_946_1 /usr/dt/bin/dtscreen -mode blank 
+  oracle 62534     1   0   Apr 11      -  0:03 oraclebosstest (LOCAL=NO) 
+    root 62798 13794   0   Apr 12      -  0:13 dtwm 
+ bossejb 63146     1   0   Apr 04      -  0:00 /bin/sh ./startWebLogic.sh 
+  oracle 63418     1   0 16:23:15      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 63640     1   0   Apr 12      -  1:50 oraclebosstest (LOCAL=NO) 
+  mdsweb 64468 58828   0   Apr 04      -  3:24 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  oracle 64928     1   0 17:28:05      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 65098     1   0 09:28:05      -  0:13 oraclebosstest (LOCAL=NO) 
+  oracle 65792     1   0   Apr 13      -  7:27 oraclebosstest (LOCAL=NO) 
+  oracle 66174     1   0 17:24:55      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 66340     1   0   Apr 04      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 67068     1   0 17:24:35      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 67152     1   0 10:25:24      -  0:00 oraclebosstest (LOCAL=NO) 
+    root 67436 47086   0   Apr 12  pts/2  0:00 /usr/bin/ksh 
+  oracle 67626     1   0 17:29:05      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 68054     1   0 17:27:45      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 68336     1   0 10:22:05      -  0:00 oraclebosstest (LOCAL=NO) 
+    root 69256     1   0   Apr 12      -  0:00 /usr/dt/bin/ttsession -s 
+  oracle 69470     1   0 17:28:44      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 69686     1   0   Apr 13      -  7:27 oraclebosstest (LOCAL=NO) 
+  oracle 70450     1   0 17:29:06      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 70980     1  62 10:28:35      -  0:04 oraclebosstest (LOCAL=NO) 
+    root 74196 52284   1 10:28:54  pts/1  0:00 ps -ef 
+    root 74874 10926   0 08:18:22      -  0:00 /usr/sbin/qdaemon 
+    root 75010 67436   0   Apr 12  pts/2  0:40 ping 192.168.117.10 
+    root 75830 80194   0 08:35:42  pts/0  0:00 vi sysinfo.sh 
+  oracle 77218     1   0 17:26:06      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 77862     1   0 17:01:19      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 78562     1   0 17:24:58      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 78870     1   0 17:25:15      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 79158     1   0 17:28:35      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 79398     1   0 17:26:23      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 79774     1   0 17:25:04      -  0:00 oraclebosstest (LOCAL=NO) 
+    root 79962 62226   0   Apr 14      -  0:02 /usr/dt/bin/dtscreen 
+    root 80194 47476   0 08:16:22  pts/0  0:00 -ksh 
+  oracle 80608     1   0 16:57:25      -  0:00 sqlplus 
+  oracle 80934     1   0 10:25:38      -  0:00 oraclebosstest (LOCAL=NO) 
+  oracle 81308     1   0 17:27:44      -  0:00 oraclebosstest (LOCAL=NO) 
+    root 81418 54466   0   Mar 28      -  0:00 rpc.ttdbserver 100083 1 
+  mdsejb 81688 44182   0   Apr 04      -  3:08 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdsejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  oracle 84682     1   0 17:26:15      -  0:04 oraclebosstest (LOCAL=NO) 
+  oracle 86952     1   0   Apr 04      -  1:02 ora_cjq0_bosstest 
+  oracle 87168     1   0 17:26:35      -  0:04 oraclebosstest (LOCAL=NO) 

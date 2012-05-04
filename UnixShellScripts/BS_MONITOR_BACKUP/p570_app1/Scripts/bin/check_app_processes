@@ -1,0 +1,3 @@
+owner=rating
+procs="billingcycleproc chargingproc custload inf_bb sep"
+check_proc Rating "$procs" $owner

@@ -1,0 +1,3 @@
+owner=medser
+procs="startmds java"
+check_proc DB "$procs" $owner

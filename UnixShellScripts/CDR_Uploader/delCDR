@@ -1,0 +1,11 @@
+ftp_user="administrator"
+ftp_password="@cdr&cdr"
+ftp_server="$1"
+folder="$2"
+file="$3"
+ftp -n -i ${ftp_server}<<END
+user ${ftp_user} ${ftp_password}
+cd $folder
+delete $file
+cd ..
+END

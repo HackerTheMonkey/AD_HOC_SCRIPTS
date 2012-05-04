@@ -1,0 +1,50 @@
+***** Checking System Health of training-2 *****
+
+Checking volume groups
+OK: All volume groups are OK
+
+Checking file systems
+---> Alert: /bossapp1 file system usage = 90%
+
+Checking system Load
+---> Alert: Current system load is  2.86
+
+Checking root's System processes
+OK: root's inetd cron qdaemon syslogd are running
+
+Checking medser's DB processes
+OK: medser's startmds java are running
+
+Checking zombie processes
+---> Alert: Zombie processes running
+    root 41950     1   0                  0:00 <defunct>
+    root 50130     1   0                  0:00 <defunct>
+
+Checking memory of each process
+---> Alert: Processes with more than 100000 page of memory
+  240001 A   medcdr  7312     1  87  60 20 1bafbb 117460        *   Apr 25      - 68:26 pretreat 12 
+  240001 A   medcdr 28656     1   0  60 20 18b0b8 242736        *   Apr 25      - 502:11 pretreat 10 
+  240001 A      prm 30806     1   0  60 20 16ca56 389676 37021f18   Apr 23      -  0:19 /bossapp1/prm/bin/roam 1000 1 0 0 
+  242001 A   medcdr 32314 46922   0  68 24 1ac85a 303340        *   Apr 25      - 372:28 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9BAGdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CS_CDR_203.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  242001 A   medcdr 32744 33842   0  68 24 cc84c 121720        *   Apr 25      -  0:11 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9MOSdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CS_CDR_203.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  242001 A   medcdr 33232 34800   0  68 24 16c8b6 123560        *   Apr 25      -  0:12 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9SULdecode:../RuntimeLib/AsnConvert.jar:../RuntimeLib/TAP0310.jar:../RuntimeLib/FileView.jar:../RuntimeLib/asn1rt.jar:../RuntimeLib/R4_Org.jar:../RuntimeLib/R4_Fin.jar:../RuntimeLib/TAP0310_Decode.jar:../RuntimeLib/CS_CDR_203.jar com.huawei.mediation.AsnParse.CAsnAdpFrame 
+  240001 A   medcdr 40780     1   0  60 20 ac52a 320160        *   Apr 25      - 411:16 pretreat 14 
+  240001 A      prm 48524     1   0  60 20 dca4d 389684 3854a6d8   Apr 23      -  0:10 /bossapp1/prm/bin/roam 1 1 0 0 
+   40001 A  billing 49548     1 120 120 20 70607 1851548            Apr 16      - 12432:37 synctopup 
+   40001 A  billing 51604     1   0  60 20 d05cd 874928 385639d8   Apr 16      - 734:02 synccdr -t 01 
+  240001 A   medcdr 53106     1  98  60 20 6c766 279772        *   Apr 25      - 65:08 pretreat 6 
+  242001 A   medser 53670 52650   0  60 20 170537 175716        *   Apr 16      - 120:08 java -Xms128m -Xmx384m -classpath ./lib/log4j-1.2.8.jar:./lib/commons-collections-3.1.jar:./lib/ojdbc14.jar:./lib/mediation.jar:./lib/BossLib.jar:./lib/BossUILib.jar:./lib/IcsLib.jar:./lib/ProductInt.jar:./lib/InvLib.jar:./lib/EJBModule.jar:./lib/MailIndb.jar:./lib/MailMgr.jar:./lib/SysmgrEJBModule.jar:./lib/SysmgrLib.jar:./lib/weblogic.jar:./lib/webservices.jar:./lib/ARLib.jar:./lib/medibean.jar:./config com.huawei.oss.mdsback.engine.MDSEngine 
+
+Checking swap space
+OK: Swap space usage is 2%
+
+Checking for kernel process tables and open file tables
+OK: Kernel-process usage below 80%
+OK: Kernel-open file usage below 80%
+
+Checking print queue
+OK: Print queue is empty
+
+Checking mail queue
+OK: Mail queue is empty
+

@@ -1,0 +1,394 @@
+###################################################################################################################################
+############################################# Daily Check Procedure for P630_App1##################################################
+###################################################################################################################################
+
+
+-------------------------------
+
+Checking the disk space usage
+
+Filesystem    MB blocks      Used      Free %Used    Iused    Ifree %Iused Mounted on
+/dev/hd4        1024.00    360.20    663.80   36%     3131   521157     1% /
+/dev/hd2        2048.00   1464.45    583.55   72%    36677   487611     7% /usr
+/dev/hd9var     1024.00    321.26    702.74   32%     4420   257724     2% /var
+/dev/hd3        2048.00     73.46   1974.54    4%      340   523948     1% /tmp
+/dev/hd1        1024.00     32.70    991.30    4%       23   262121     1% /home
+/proc                 -         -         -    -         -        -     -  /proc
+/dev/hd10opt    6144.00   3084.47   3059.53   51%    35336  1537528     3% /opt
+/dev/lv00     250112.00 213592.34  36519.66   86%   756462 15250706     5% /bossapp1
+
+-------------------------------
+Checking the percentage use of Swap Space
+
+Total Paging Space   Percent Used
+      18432MB              31%
+------------------------------
+Checking the CDR Collection Processes
+the number of running collection processes is 27
+------------------------------
+  medcdr 42962 86708   0   Jul 10      - 46:14 ./knl_proc 
+  medcdr 50750 42962   2   Jul 10      - 40:30 ./co_proc 15 
+  medcdr 64308 42962   0   Jul 10      - 10:13 ./co_proc 6 
+  medcdr 66422 42962   0   Jul 10      - 18:43 ./co_proc 10 
+  medcdr 66774 42962   0   Jul 10      - 12:19 ./co_proc 13 
+  medcdr 69430 42962   0   Jul 10      - 18:05 ./co_proc 11 
+  medcdr 73154 42962   0   Jul 10      - 11:06 ./co_proc 9 
+  medcdr 73738 42962   0   Jul 10      - 10:52 ./co_proc 7 
+  medcdr 74526 42962   0   Jul 10      - 10:40 ./co_proc 2 
+  medcdr 75814 42962   0   Jul 10      -  9:27 ./co_proc 5 
+  medcdr 76662 42962   0   Jul 10      - 15:14 ./co_proc 12 
+  medcdr 77288 42962   1   Jul 10      - 17:48 ./co_proc 3 
+  medcdr 78014 42962   0   Jul 10      - 27:53 ./co_proc 14 
+  medcdr 78378 42962   0   Jul 10      - 14:55 ./co_proc 1 
+  medcdr 78684 42962   0   Jul 10      -  9:48 ./co_proc 8 
+  medcdr 79362 42962   0   Jul 10      - 13:45 ./co_proc 23 
+  medcdr 80822 42962   0   Jul 10      - 18:02 ./co_proc 21 
+  medcdr 81804 42962   0   Jul 10      - 16:13 ./co_proc 19 
+  medcdr 82790 42962   0   Jul 10      - 11:05 ./co_proc 16 
+  medcdr 84220 42962   0   Jul 10      - 16:24 ./co_proc 20 
+  medcdr 84990 42962   0   Jul 10      - 10:13 ./co_proc 4 
+  medcdr 85480 42962   0   Jul 10      - 13:04 ./co_proc 22 
+  medcdr 85822 42962   0   Jul 10      - 27:14 ./co_proc 17 
+  medcdr 86336 42962   0   Jul 10      - 10:34 ./co_proc 24 
+  medcdr 86708     1   0   Jul 10      -  9:25 cls_proc 
+  medcdr 86956 42962   1   Jul 10      - 778:56 ./om_proc 
+  medcdr 87868 42962   0   Jul 10      - 10:32 ./co_proc 18 
+------------------------------
+Checking the CDR Pretreat Processes
+the number of running pretreat processes is 14
+------------------------------
+  medcdr 56158     1  51   Jul 10      - 174:15 pretreat 12 
+  medcdr 58054     1   0   Jul 10      - 546:11 pretreat 10 
+  medcdr 58364     1  92   Jul 10      - 2510:21 pretreat 9 
+  medcdr 59428     1   0   Jul 10      - 513:29 pretreat 11 
+  medcdr 63210     1   0   Jul 10      - 159:12 pretreat 14 
+  medcdr 67974     1   0   Jul 10      - 897:22 pretreat 6 
+  medcdr 68134     1   0   Jul 10      - 28:39 pretreat 3 
+  medcdr 69278     1   0   Jul 10      - 875:20 pretreat 5 
+  medcdr 69734     1   0   Jul 10      - 58:36 pretreat 4 
+  medcdr 71528     1  86   Jul 10      - 1779:56 pretreat 7 
+  medcdr 79962     1   0   Jul 10      - 59:08 pretreat 13 
+  medcdr 82318     1   0   Jul 10      - 519:46 pretreat 8 
+  medcdr 82976     1  71   Jul 10      - 6706:13 pretreat 2 
+  medcdr 84492     1   0   Jul 10      - 390:06 pretreat 1 
+------------------------------
+check the billing processes
+------------------------------
+ billing 72416     1   0   May 19      - 12:48 cmdmgr 
+ billing 73652     1   0   May 19      - 10:08 synctopup 
+ billing 77644     1   0   Jun 13      -  8:47 synccdr -t 22 
+ billing 83606     1   0   May 30      - 30:07 synccdr -t 01 
+------------------------------
+Checking the MedSer processes
+------------------------------
+  medser 71226 75752   3   Jul 07      - 425:13 java -Xms128m -Xmx384m -classpath ./lib/log4j-1.2.8.jar:./lib/commons-collections-3.1.jar:./lib/ojdbc14.jar:./lib/mediation.jar:./lib/BossLib.jar:./lib/BossUILib.jar:./lib/IcsLib.jar:./lib/ProductInt.jar:./lib/InvLib.jar:./lib/EJBModule.jar:./lib/MailIndb.jar:./lib/MailMgr.jar:./lib/SysmgrEJBModule.jar:./lib/SysmgrLib.jar:./lib/weblogic.jar:./lib/webservices.jar:./lib/ARLib.jar:./lib/medibean.jar:./config com.huawei.oss.mdsback.engine.MDSEngine 
+  medser 75752     1   0   Jul 07      -  0:00 sh -- /bossapp1/medser/MDS_SER_HOME/BACK/startmds.sh 
+------------------------------
+Checking the java processes
+The number of running java processes are 7
+------------------------------
+medcdr   46716  2.5  2.0 143312 110372      - A      Jun 29 2947:04 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../MSCdecode:../
+medcdr   87652  0.7  2.0 126904 109844      - A      Jun 29 782:16 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../G9MOSdecode:.
+medcdr   68534  0.1  2.0 241848 147692      - A      Jun 29 73:27 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ./CGdecode:../Ru
+medcdr   77496  0.0  0.0 165464 14444      - A      Jun 29  9:25 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../Ratingencode:
+medcdr   66230  0.0  0.0 126520 8540      - A      Jun 29  2:09 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ../Tapdecode:../
+medcdr   80580  0.0  0.0 120124 7688      - A      Jun 29  2:00 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ./RapDecode:../R
+medcdr   67346  0.0  0.0 120188 4520      - A      Jun 29  1:45 java -noverify -Xss512k -Xms100m -Xmx256m -classpath ./RapEncode:../R
+------------------------------
+			
+			
+			
+			
+###################################################################################################################################
+############################################# Daily Check Procedure for P630_App2##################################################
+###################################################################################################################################
+
+
+-------------------------------
+
+Checking the disk space usage
+
+Filesystem    MB blocks      Used      Free %Used    Iused    Ifree %Iused Mounted on
+/dev/hd4        1024.00    130.12    893.88   13%     2945   521343     1% /
+/dev/hd2        2048.00   1444.45    603.55   71%    36686   487602     7% /usr
+/dev/hd9var     1024.00    627.55    396.45   62%    37932   224212    15% /var
+/dev/hd3        2048.00     71.88   1976.12    4%      268   524020     1% /tmp
+/dev/hd1        1024.00     40.19    983.81    4%    11254   250890     5% /home
+/proc                 -         -         -    -         -        -     -  /proc
+/dev/hd10opt    6144.00   3083.50   3060.50   51%    35336  1537528     3% /opt
+/dev/lv01     134784.00  25029.29 109754.71   19%  1559531  7066645    19% /bossapp2
+ 2
+-------------------------------
+Checking the percentage use of Swap Space
+ 2
+Total Paging Space   Percent Used
+      12288MB               5%
+------------------------------
+Checking the Rating Processes
+------------------------------
+  rating 18088     1   0 09:32:29      -  1:28 inf_bb 1022 1 0 0 1022 
+  rating 23712     1   0 09:32:29      -  1:34 /bossapp2/rating/bin/sep -n 3 
+  rating 35822     1   5 09:32:29      -  3:51 chargingproc 1002 7 aix RATING01 0 90 0 0 0 2 
+  rating 46530     1   0 09:32:29      -  1:58 inf_bb 1001 1 0 0 1001 
+  rating 60608     1   0 09:32:29      -  0:36 /bossapp2/rating/bin/sep -n 2 
+  daemon 64604     1   0 20:04:00      -  0:00 send-mail -i -x rating 
+  rating 68604     1   0 09:32:24      -  0:00 custload 1 964 load 
+  rating 72486     1   0 09:32:29      -  0:37 /bossapp2/rating/bin/sep -n 1 
+  rating 73896     1   0 09:32:29      -  3:28 billingcycleproc 1002 7 aix DS_1 0 0 0 0 0 3 
+  rating 76030     1   0 09:32:29      -  2:54 chargingproc 1002 7 aix RATING22 0 90 0 0 0 2 
+  rating 77182     1   0 09:32:29      -  0:06 /bossapp2/rating/bin/boss_report 7 3 aix PRMTAPINSTAT 0 
+------------------------------
+Checking the PRM Processes
+------------------------------
+     prm 34460     1   0   Jul 18      -  0:23 /bossapp2/prm/bin/boss_report 7 3 aix PRMTAPINSTAT 0 
+     prm 44376 64304   0 16:27:47      -  0:00 sqlplus -s prm/mmprm@boss 
+  daemon 45196     1   0 20:04:33      -  0:00 send-mail -i -x prm 
+     prm 46684     1   1   Jul 18      -  1:53 /bossapp2/prm/bin/roam 1 1 0 0 
+     prm 64304     1   0 16:27:47      -  0:00 sh -- ./noused_inter2719123.sh 
+     prm 66838     1   0   Jul 18      -  4:55 /bossapp2/prm/bin/prmsep -n 3 
+     prm 71766     1   0   Jul 18      -  8:12 /bossapp2/prm/bin/roam 1000 1 0 0 
+     prm 74356 21530 101 18:31:49      - 70:54 ftpd 
+     prm 75554     1   0   Jul 18      - 705:29 /bossapp2/prm/bin/sep -n 2 
+     prm 76212 21530 100 18:55:09      - 55:40 ftpd 
+     prm 85272 20992   0   Jun 09  pts/5  0:03 -ksh 
+------------------------------
+check the weblogic processes
+------------------------------
+ bossejb 17246 51058   0   Jul 17      -  2:11 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=orderserver -Dweblogic.management.username= -Dweblogic.management.password= -Dweblogic.management.server=http://localhost:7001 -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+ bossweb 27564 20734   0   Jul 17      -  9:45 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bosswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  mdsejb 45406 76600   0   Jul 17      -  1:13 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdsejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+  mdsweb 62698 72012   0   Jul 17      -  1:19 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=mdswebserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+ bossejb 68280 85936   1   Jul 17      - 25:54 /usr/java14/bin/java -Xms32m -Xmx200m -Dweblogic.Name=bossejbserver -Dweblogic.ProductionModeEnabled=true -Djava.security.policy=/opt/bea/weblogic81/server/lib/weblogic.policy weblogic.Server 
+------------------------------
+			
+			
+			
+			
+###################################################################################################################################
+############################################# Daily Check Procedure for p650_db1##################################################
+###################################################################################################################################
+
+
+-------------------------------
+
+Checking the disk space usage
+
+Filesystem    MB blocks      Used      Free %Used    Iused    Ifree %Iused Mounted on
+/dev/hd4         512.00    187.26    324.74   37%     3605   258539     2% /
+/dev/hd2        2048.00   1518.65    529.35   75%    36354   487934     7% /usr
+/dev/hd9var     1024.00    448.62    575.38   44%      913   261231     1% /var
+/dev/hd3        2048.00     92.46   1955.54    5%      220   524068     1% /tmp
+/dev/hd1        1024.00     32.68    991.32    4%       24   262120     1% /home
+/proc                 -         -         -    -         -        -     -  /proc
+/dev/hd10opt     512.00     43.55    468.45    9%      512   130560     1% /opt
+/dev/lvoracle  10240.00   6219.44   4020.56   61%    27888  2593552     2% /opt/oracle
+/dev/lvora91log  67552.00  47111.79  20440.21   70%      127  8650625     1% /ora91log
+/dev/lv00     128000.00  44783.55  83216.45   35%   271138  3824862     7% /bossapp1
+/dev/lv01       6528.00   2121.33   4406.67   33%    50517  1620651     4% /bossapp2
+
+-------------------------------
+Checking the percentage use of Swap Space
+
+Total Paging Space   Percent Used
+      6144MB              42%
+------------------------------
+Checking Oracle Processes
+------------------------------
+  oracle 23244     1   0 19:55:06      -  0:00 ora_p000_boss1 
+  oracle 27046     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 27686     1   0   Apr 01      -  6:29 ora_arc1_boss1 
+  oracle 30640     1   0   Jul 10      -  0:05 oracleboss1 (LOCAL=NO) 
+  oracle 31986     1   0   Jul 17      -  0:01 oracleboss1 (LOCAL=NO) 
+  oracle 33462     1   0   Jul 10      -  1:04 oracleboss1 (LOCAL=NO) 
+  oracle 33778     1   0   Jul 08      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 34258     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 34344     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 35062     1   0   Jul 17      -  0:13 oracleboss1 (LOCAL=NO) 
+  oracle 37076     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 37280     1   0   Apr 01      - 233:02 ora_lck0_boss1 
+  oracle 37496     1   0   Apr 01      -  4:54 ora_arc0_boss1 
+  oracle 37850     1   0   Jul 10      -  0:01 oracleboss1 (LOCAL=NO) 
+  oracle 38810     1   0   Jul 17      -  0:01 oracleboss1 (LOCAL=NO) 
+  oracle 39422     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 41620     1   0   May 19      -  5:15 oracleboss1 (LOCAL=NO) 
+  oracle 41962     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 42874     1   0   Apr 01      - 12:26 ora_cjq0_boss1 
+  oracle 43714     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 43942     1   0   Jul 10      -  0:12 oracleboss1 (LOCAL=NO) 
+  oracle 45288     1   0 19:55:06      -  0:00 ora_p002_boss1 
+  oracle 45664     1   0   Jul 17      -  0:01 oracleboss1 (LOCAL=NO) 
+  oracle 45840     1   0   Jul 10      -  0:02 oracleboss1 (LOCAL=NO) 
+  oracle 47084     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 47854     1   0   Apr 01      -  0:10 ora_reco_boss1 
+  oracle 47884     1   5   Apr 01      - 1699:03 ora_lms0_boss1 
+  oracle 48264     1   0   Jul 17      -  0:03 oracleboss1 (LOCAL=NO) 
+  oracle 48560     1   0   Jul 18      -  0:01 oracleboss1 (LOCAL=NO) 
+  oracle 49230     1   0 19:55:06      -  0:00 ora_p001_boss1 
+  oracle 49464     1   0   Jul 10      -  0:11 oracleboss1 (LOCAL=NO) 
+  oracle 50024     1   0   Jul 07      - 61:14 oracleboss1 (LOCAL=NO) 
+  oracle 50344     1   0   Apr 01      - 178:50 ora_lmon_boss1 
+  oracle 50592     1   0   Apr 01      - 132:23 ora_diag_boss1 
+  oracle 50830     1   0   Jul 17      -  0:56 oracleboss1 (LOCAL=NO) 
+  oracle 51382     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 51636     1   0   Jul 07      - 61:02 oracleboss1 (LOCAL=NO) 
+  oracle 51860     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 52242     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 53220     1   0   Jul 10      -  0:22 oracleboss1 (LOCAL=NO) 
+  oracle 53440     1   0   Jun 13      -  4:12 oracleboss1 (LOCAL=NO) 
+  oracle 54090     1   0   Dec 25      -  9:44 /opt/oracle/jre/1.1.8/bin/aix/native_threads/jre -nojit -DPROGRAM=gsd -class 
+  oracle 54276     1   7   Jul 07      - 60:58 oracleboss1 (LOCAL=NO) 
+  oracle 54620     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 55696     1   0   Apr 01      - 25:40 ora_ckpt_boss1 
+  oracle 55960     1   0   Jul 17      -  0:03 oracleboss1 (LOCAL=NO) 
+  oracle 56362     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 56594     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 56874     1   1   Jul 10      -  1:01 oracleboss1 (LOCAL=NO) 
+  oracle 57160     1   0 18:50:59      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 58074     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 58482     1   0   Apr 01      - 54:14 ora_dbw0_boss1 
+  oracle 59126     1   0   Jul 10      -  0:02 oracleboss1 (LOCAL=NO) 
+  oracle 59350     1   0   Jul 07      - 61:02 oracleboss1 (LOCAL=NO) 
+  oracle 60028     1   0   Jul 17      -  0:18 oracleboss1 (LOCAL=NO) 
+  oracle 60360     1   0   Apr 01      - 216:01 ora_lmd0_boss1 
+  oracle 60442     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 60746     1   0   Apr 01      - 10:32 ora_smon_boss1 
+  oracle 61028     1   0   Jul 07      - 60:51 oracleboss1 (LOCAL=NO) 
+  oracle 61848     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 62020     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 62216     1   0   Jul 17      -  0:02 oracleboss1 (LOCAL=NO) 
+  oracle 62632     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 63882     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 64200     1   0   Jul 10      -  0:05 oracleboss1 (LOCAL=NO) 
+  oracle 64268     1   0   Jul 07      - 61:00 oracleboss1 (LOCAL=NO) 
+  oracle 64752     1   0   Apr 01      - 37:30 ora_lgwr_boss1 
+  oracle 64816     1   0   Apr 01      - 22:55 ora_pmon_boss1 
+  oracle 65608     1   0   Jul 07      - 61:40 oracleboss1 (LOCAL=NO) 
+  oracle 66542     1   0   Jul 10      -  1:03 oracleboss1 (LOCAL=NO) 
+  oracle 66952     1   0 11:56:11      -  0:29 oracleboss1 (LOCAL=NO) 
+  oracle 67100     1   0   Jul 17      -  0:05 oracleboss1 (LOCAL=NO) 
+  oracle 67574     1   0   Jul 10      -  0:03 oracleboss1 (LOCAL=NO) 
+  oracle 67734     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 68106     1   0 19:55:07      -  0:00 ora_p003_boss1 
+  oracle 69580     1   0   Jul 17      -  0:03 oracleboss1 (LOCAL=NO) 
+  oracle 70000     1   0   Jul 17      -  0:12 oracleboss1 (LOCAL=NO) 
+  oracle 70784     1   0 18:49:06      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 70946     1   0   Jul 07      - 60:59 oracleboss1 (LOCAL=NO) 
+  oracle 71864     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 72114     1   0   Jul 17      -  0:02 /opt/oracle/product/9.2/bin/tnslsnr LISTENER -inherit 
+  oracle 72626     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 73228     1   0   Jul 10      -  0:04 oracleboss1 (LOCAL=NO) 
+  oracle 73694     1   0   Jul 07      - 60:55 oracleboss1 (LOCAL=NO) 
+  oracle 74422     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 74742     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 75200     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 75458     1   8   Apr 01      - 1724:09 ora_lms1_boss1 
+  oracle 75758     1   0   Jul 17      -  0:01 oracleboss1 (LOCAL=NO) 
+  oracle 76136     1   0   Jul 17      -  0:01 oracleboss1 (LOCAL=NO) 
+  oracle 76652     1   0 19:55:07      -  0:00 ora_p004_boss1 
+  oracle 77450     1   0   Jul 07      - 61:15 oracleboss1 (LOCAL=NO) 
+  oracle 77806     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 77984     1   0   Jul 17      -  0:22 oracleboss1 (LOCAL=NO) 
+  oracle 78290     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 78378     1   0   Jul 17      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 78628     1   0   Jul 17      -  1:58 oracleboss1 (LOCAL=NO) 
+  oracle 79050     1   0   Jul 10      -  1:01 oracleboss1 (LOCAL=NO) 
+  oracle 79344     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 79492     1   0   Jul 10      -  0:01 oracleboss1 (LOCAL=NO) 
+  oracle 80586     1   0   Jul 10      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 80726     1   0   Jul 10      -  2:20 oracleboss1 (LOCAL=NO) 
+  oracle 81150     1   0   Jul 10      -  1:04 oracleboss1 (LOCAL=NO) 
+  oracle 81612     1   0 08:45:08      -  0:00 oracleboss1 (LOCAL=NO) 
+  oracle 82606     1   0 18:50:35      -  0:00 oracleboss1 (LOCAL=NO) 
+------------------------------
+			
+			
+			
+			
+###################################################################################################################################
+############################################# Daily Check Procedure for p650_db2##################################################
+###################################################################################################################################
+
+
+-------------------------------
+
+Checking the disk space usage
+
+Filesystem    MB blocks      Used      Free %Used    Iused    Ifree %Iused Mounted on
+/dev/hd4         512.00     55.54    456.46   11%     3643   258501     2% /
+/dev/hd2        2048.00   1489.67    558.33   73%    37310   486978     8% /usr
+/dev/hd9var     1024.00     92.43    931.57   10%      711   261433     1% /var
+/dev/hd3        2048.00     90.20   1957.80    5%      131   524157     1% /tmp
+/dev/hd1        1024.00     32.73    991.27    4%       62   262082     1% /home
+/proc                 -         -         -    -         -        -     -  /proc
+/dev/hd10opt     512.00     36.59    475.41    8%      401   130671     1% /opt
+/dev/lvoracle  10240.00   6153.48   4086.52   61%    25158  2596282     1% /opt/oracle
+/dev/lvora92log  67552.00  45340.49  22211.51   68%      152  8650600     1% /ora92log
+
+-------------------------------
+Checking the percentage use of Swap Space
+
+Total Paging Space   Percent Used
+      6144MB               5%
+------------------------------
+Checking Oracle Processes
+------------------------------
+  oracle 30448     1   0   Jul 17      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 36956     1   0   Jul 17      -  0:25 ora_ckpt_boss2 
+  oracle 39420     1   0   Jul 17      -  0:24 ora_lgwr_boss2 
+  oracle 44358     1   0   Jul 17      -  0:04 ora_arc0_boss2 
+  oracle 44710     1   2   Jul 17      - 22:25 ora_lms0_boss2 
+  oracle 47400     1   0   Jul 17      -  0:50 ora_dbw0_boss2 
+  oracle 47900     1   0   Jul 17      -  0:05 ora_arc1_boss2 
+  oracle 48276     1   0   Jul 17      -  3:32 ora_lmd0_boss2 
+  oracle 49288     1   0   Jul 17      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 49948     1   0   Dec 25      - 54:28 /opt/oracle/jre/1.1.8/bin/aix/native_threads/jre -nojit -DPROGRAM=gsd -classpath /opt/oracle/product/9.2/jlib/netcfg.jar:/opt/oracle/product/9.2/JRE/lib/rt.jar:/opt/oracle/product/9.2/jlib/srvm.jar oracle.ops.mgmt.daemon.OPSMDaemon /opt/oracle/product/9.2 
+  oracle 51690     1   0 13:14:20      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 52938     1   0 19:55:08      -  0:00 ora_p002_boss2 
+  oracle 53608     1   8 20:04:39      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 54094     1   0 20:04:39      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 56084     1   0   Jul 17      -  0:20 ora_pmon_boss2 
+  oracle 58802     1   0 19:55:07      -  0:00 ora_p001_boss2 
+  oracle 59930     1  83 16:27:47      - 106:30 oracleboss2 (LOCAL=NO) 
+  oracle 60242     1   0 09:54:39      -  0:02 oracleboss2 (LOCAL=NO) 
+  oracle 61098     1   0 19:55:08      -  0:00 ora_p003_boss2 
+  oracle 61524     1   0 09:32:29      -  0:05 oracleboss2 (LOCAL=NO) 
+  oracle 62672     1   0 10:03:26      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 63064     1   0 02:03:40      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 64252     1   0 03:54:46      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 64812     1   0 19:54:29      -  0:01 oracleboss2 (LOCAL=NO) 
+  oracle 65054     1   0   Jul 18      -  0:50 oracleboss2 (LOCAL=NO) 
+  oracle 65442     1   0 09:32:33      -  0:03 oracleboss2 (LOCAL=NO) 
+  oracle 65992     1   0 09:32:29      -  0:01 oracleboss2 (LOCAL=NO) 
+  oracle 66126     1   0 19:55:07      -  0:00 ora_p000_boss2 
+  oracle 66508     1   0   Jul 18      -  3:14 oracleboss2 (LOCAL=NO) 
+  oracle 66738     1   0   Jul 18      - 26:39 oracleboss2 (LOCAL=NO) 
+  oracle 68334     1   0   Jul 18      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 68374     1   0 19:49:49      -  0:16 oracleboss2 (LOCAL=NO) 
+  oracle 69126     1   0   Jul 18      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 69618     1   0   Jul 17      -  0:09 /opt/oracle/product/9.2/bin/tnslsnr LISTENER -inherit 
+  oracle 70012     1   0 09:32:29      -  0:07 oracleboss2 (LOCAL=NO) 
+  oracle 70364     1   0 09:32:29      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 70596     1   0 09:32:33      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 70930     1   0 19:55:08      -  0:00 ora_p004_boss2 
+  oracle 72226     1   0   Jul 18      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 72884     1   0 09:32:29      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 72978     1   0   Jul 17      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 73318     1   0   Jul 17      -  2:55 ora_lmon_boss2 
+  oracle 73888     1   0   Jul 17      -  2:02 ora_diag_boss2 
+  oracle 74086     1   2   Jul 17      - 22:58 ora_lms1_boss2 
+  oracle 74656     1   0   Jul 18      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 74958     1   0 09:32:29      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 75140     1   0 20:37:39      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 75534     1   0   Jul 17      - 14:01 ora_lck0_boss2 
+  oracle 75876     1   0 09:32:24      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 76370     1   0 10:55:06      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 77258     1   0   Jul 17      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 77962     1   0   Jul 18      -  0:48 oracleboss2 (LOCAL=NO) 
+  oracle 79346     1   0 03:55:08      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 79774     1  43 18:34:08      - 23:00 oracleboss2 (LOCAL=NO) 
+  oracle 79924     1   0   Jul 17      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 80234     1   0 20:04:39      -  0:00 oracleboss2 (LOCAL=NO) 
+  oracle 80842     1   0 09:32:29      -  0:04 oracleboss2 (LOCAL=NO) 
+  oracle 80942     1   0   Jul 17      -  0:00 ora_reco_boss2 
+  oracle 81338     1   0   Jul 17      -  0:08 ora_smon_boss2 
+------------------------------

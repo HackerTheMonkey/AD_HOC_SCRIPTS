@@ -1,0 +1,570 @@
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+  delete from  bill_s_inter where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+	             *
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+999999 rows deleted.
+
+
+Commit complete.
+
+	delete from  bill_s_idd  where to_char( start_time,'yyyymm') <= '200611' and rownum<1000000
+*
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+704957 rows deleted.
+
+
+Commit complete.
+
+	delete from  bill_s_spcp     where billingcycle_code='200611'
+	             *
+ERROR at line 1:
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+
+
+
+Commit complete.
+
+
+Commit complete.
+

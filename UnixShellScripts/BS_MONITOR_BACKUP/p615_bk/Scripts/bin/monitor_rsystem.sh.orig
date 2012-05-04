@@ -1,0 +1,23 @@
+#!/bin/sh
+########################################################################
+# Script name : monitor_rsystem.sh
+# Description : Monitor a remote UNIX system
+# Written by  : Edi Cahyadi  (07/04/2007)
+########################################################################
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $(basename $0) <server>"
+    exit 1
+fi
+
+server=$1
+
+alert_file=/tmp/$server.$$
+script=/Scripts/bin/monitor_system.sh
+ralert_file=/Scripts/log/$(basename $script).$server
+rexec $server $script
+rcp $server:$ralert_file $alert_file
+if [ -s $alert_file ]; then
+    mailx -s "Alerts for $server" SYSADM < $alert_file
+    rm $alert_file
+fi
