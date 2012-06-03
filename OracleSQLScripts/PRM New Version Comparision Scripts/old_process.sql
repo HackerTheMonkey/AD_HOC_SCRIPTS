@@ -1,27 +1,27 @@
 select  *from charging_event_def;
-select  *from processed_event  t where t.source_event_id = 102;
-select *from  process_flow t where t.process_step_id = 102;
-select  *from mapping_rule t where t.rule_id = 150;
-select  *from mapping_list t where t.mapping_id = 180;
-select *from  mapping_rule t where t.rule_id = 149;
-select  *from mapping_list t where t.mapping_id = 181;
-select  *from mapping_rule t where t.rule_id  = 151;
+select  * from processed_event  t where t.source_event_id = 102;
+select * from  process_flow t where t.process_step_id = 102;
+select  * from mapping_rule t where t.rule_id = 150;
+select  * from mapping_list t where t.mapping_id = 180;
+select * from  mapping_rule t where t.rule_id = 149;
+select  * from mapping_list t where t.mapping_id = 181;
+select  * from mapping_rule t where t.rule_id  = 151;
 
 select * from tariff_item;
-select  *from tariff_plan  t where t.tariff_plan_id = 88;
-select  *from tariff_plan_item  t where t.tariff_plan_id = 88;
+select  * from tariff_plan  t where t.tariff_plan_id = 88;
+select  * from tariff_plan_item  t where t.tariff_plan_id = 88;
 select * from tariff_schema t where t.tariff_schema_id = 64;
 select * from tariff_item t where t.tariff_schema_id = 64;
 select * from tariff_rate b where b.ratecode in
 (
 select a.tariff_id from tariff_item a where a.tariff_schema_id in (select tariff_schema_id from tariff_plan_item t where t.tariff_plan_id = 88  ) and a.subtariff_type = 1);
 --national
-select *from tariff_schema t where t.tariff_schema_id = 82;
-select *from tariff_item t where t.tariff_schema_id = 82;
+select * from tariff_schema t where t.tariff_schema_id = 82;
+select * from tariff_item t where t.tariff_schema_id = 82;
 
 --international
-select  *from tariff_schema t where t.tariff_schema_id = 26;
-select *from tariff_item t where t.tariff_schema_id = 26;
+select  * from tariff_schema t where t.tariff_schema_id = 26;
+select * from tariff_item t where t.tariff_schema_id = 26;
 select t.tariff_criteria,upper(substr(a.ratename,25,4))||upper(substr(a.ratename,30)) from tariff_item t, tariff_rate a 
 where t.tariff_schema_id = 26
   and t.tariff_id = a.ratecode;
