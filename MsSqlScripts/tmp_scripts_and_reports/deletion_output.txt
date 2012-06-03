@@ -1,0 +1,15 @@
+delete  [scods-rc]..[ODSservicepackageDelta] where cast(snapshotdate as date) = '2011-10-25' and BillingSubSystemId = '30' and AccountNumber like 'CRU%';
+
+delete  [scods-rc]..[ODSservicepackageSnapshot] where cast(snapshotdate as date) = '2011-10-25' and BillingSubSystemId = '30' and AccountNumber like 'CRU%';
+
+delete  [scods-rc]..[ODSCustomerDelta] where cast(snapshotdate as date) = '2011-10-25' and BillingSubSystemId = '30' and AccountNumber like 'CRU%';
+
+delete  [scods-rc]..[ODSCustomerSnapshot] where cast(snapshotdate as date) = '2011-10-25' and BillingSubSystemId = '30' and AccountNumber like 'CRU%';
+
+(0 row(s) affected)
+
+(69438 row(s) affected)
+
+(0 row(s) affected)
+
+(13958 row(s) affected)

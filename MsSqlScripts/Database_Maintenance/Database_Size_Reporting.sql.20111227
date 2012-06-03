@@ -1,0 +1,97 @@
+use [scods-ct];
+set nocount on;	
+declare @databaseList table(id int identity, databaseName varchar(50));
+declare @iDBsCount int;
+declare @nSQL char(8000);
+begin
+	-- Set the default list of the database to gather statistics for
+	insert into @databaseList (databaseName) values ('[SCODS-CT]');
+	insert into @databaseList (databaseName) values ('[SCODS-RC]');
+	insert into @databaseList (databaseName) values ('[SCODS-EK]');
+	insert into @databaseList (databaseName) values ('[SCLOAD]');
+	insert into @databaseList (databaseName) values ('[SCREPORT]');
+	insert into @databaseList (databaseName) values ('[SCODS]');
+	-- Loop over the databases and generate the reports
+	select @iDBsCount = COUNT(1) from @databaseList;
+	while @iDBsCount > 0
+	begin
+		declare @vCurrentDatabase varchar(50);
+		select @vCurrentDatabase = databaseName from @databaseList where id=@iDBsCount;
+		-- Switch context and get the statistics
+		select @nSQL = 'use ' + @vCurrentDatabase + ';
+		declare @databaseSize dec(15, 3);
+		declare @allocatedPages dec(15, 3);
+		declare @unallocatedPages dec(15, 3);
+		declare @percentageAvailable dec(15, 3);
+		declare @logSize bigint;
+		declare @indexList table(id int identity, tableName varchar(100), indexName varchar(100), fragmentationPercentage varchar(100));
+		-- Get the database size as well as the log size
+		select 
+			@databaseSize = STR(sum(convert(bigint,case when status & 64 = 0 then size else 0 end))),
+			@logSize = STR(sum(convert(bigint,case when status & 64 <> 0 then size else 0 end)))
+		from
+			sys.sysfiles;
+		-- Get the allocated pages
+		select @allocatedPages = sum(a.total_pages) from sys.partitions p join sys.allocation_units a on p.partition_id = a.container_id
+		left join sys.internal_tables it on p.object_id = it.object_id;
+		-- Calculate the percentage of the available space in the DB
+		select @unallocatedPages = @databaseSize - @allocatedPages;
+		-- Calculate the percentage of the available space
+		select @percentageAvailable = (@unallocatedPages / @databaseSize) * 100;						
+		-- Print the report		
+		print ''####################################################### '' + db_name() + '' ########################################################'';
+		print '''';
+		print ''Database Size Report'';
+		print ''----------------------'';
+		print ''DatabaseSize: '' + ltrim(str(@databaseSize * 8 / 1048576, 15, 3)) + ''GB'';
+		print ''LogSize: '' + ltrim(str((@logSize * 8 / 1048576),15,3)) + '' GB'';
+		print ''PercentageAvailable: '' + ltrim(str((@percentageAvailable),15,3)) + ''%'';
+		print '''';
+		print '''';
+		-- Get the index fragmentation information and print them out
+		insert into @indexList
+		select 
+			OBJECT_NAME(t.object_id), 
+			i.name,
+			t.avg_fragmentation_in_percent
+		from 
+			sys.dm_db_index_physical_stats(DB_ID(db_name()), null, null, null, null) t
+		inner join 
+			sys.indexes i 
+		on 
+			t.index_id = i.index_id and 
+			t.object_id = i.object_id
+		where 
+			i.name is not null and 
+			t.avg_fragmentation_in_percent >= 20;
+		
+		-- Loop over the indexes and reorganize them
+		declare @iCount int;
+		select @iCount = COUNT(1) from @indexList;
+		print ''Index Fragmentation Report'';
+		print ''--------------------------'';
+		if @iCount <> 0
+		begin
+		while @iCount > 0	
+			begin			
+				declare @vIndexName varchar(100);
+				declare @vTableName varchar(100);
+				declare @vFragmentationPercentage varchar(100);
+				
+				select @vIndexName = indexName, @vTableName = tableName, @vFragmentationPercentage = fragmentationPercentage 
+				from @indexList where id = @iCount;				
+				
+				print ''TableName: '' + @vTableName + '', IndexName: '' + @vIndexName + '', FragmentationPercentage: '' + @vFragmentationPercentage + ''%'';
+				select @iCount = @iCount - 1;
+			end
+		end
+		else
+			print ''All indexes are perfectly defragmented, i.e. below 20%'';
+		print '''';
+		print '''';
+		';				
+		exec(@nSQL);
+		-- decrement the count
+		select @iDBsCount = @iDBsCount - 1;
+	end;
+end;		
