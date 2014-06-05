@@ -73,6 +73,26 @@ function getDev1PublishIpAddress()
 	' | grep -v "no match" | sed 's/"//g'
 }
 
+function getTest3PublishIpAddress()
+{
+	curl -X GET http://ec2-54-246-169-21.eu-west-1.compute.amazonaws.com/dashboard/index.php/instances/test3 2> /dev/null | jq '.[] as $resultObject | if ($resultObject.name | contains("test3-cq-publisher"))
+	then $resultObject.privateIpAddress
+	else
+		"no match"
+	end
+	' | grep -v "no match" | sed 's/"//g'
+}
+
+function getTest3AuthorIpAddress()
+{
+	curl -X GET http://ec2-54-246-169-21.eu-west-1.compute.amazonaws.com/dashboard/index.php/instances/test3 2> /dev/null | jq '.[] as $resultObject | if ($resultObject.name | contains("test3-cq-publisher"))
+	then $resultObject.privateIpAddress
+	else
+		"no match"
+	end
+	' | grep -v "no match" | sed 's/"//g'
+}
+
 ##############################################################################################################################################
 # CONFIG FORMAT)   {TUNNEL ALIAS NAME}:{REMOTE SERVER IP ADDRESS}:{LOCAL PORT TO FORWARD FROM}:{REMOTE PORT TO FORWARD TO}:{BASTION IP ADDRESS}
 ##############################################################################################################################################
@@ -85,9 +105,12 @@ TEST1_CONFIG="TEST1-PUBLISH-SSH-TUNNEL:$(getTest1PublishIpAddress):1236:22:${TES
 	TEST1-AUTHOR-SSH-TUNNEL:$(getTest1AuthorIpAddress):1237:22:${TEST1_BASTION_IP_ADDRESS}
 	TEST1-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getTest1PublishIpAddress):45032:4503:${TEST1_BASTION_IP_ADDRESS}"
 
+TEST3_CONFIG="TEST3-PUBLISH-SSH-TUNNEL:$(getTest3PublishIpAddress):1238:22:${TEST3_BASTION_IP_ADDRESS}
+	TEST3-AUTHOR-SSH-TUNNEL:$(getTest3AuthorIpAddress):1239:22:${TEST3_BASTION_IP_ADDRESS}"	
+
 CONFIG="	
-	$DEV1_CONFIG
 	$TEST1_CONFIG
+	$DEV1_CONFIG	
 "
 
 ##############################################################################################################################################
@@ -141,7 +164,6 @@ function test1-auth()
 {	
 	ssh -i ~/.ssh/navitas.pem navitas@localhost -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null" -p 1237
 }
-
 
 function test3-pub()
 {	
