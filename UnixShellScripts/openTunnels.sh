@@ -35,49 +35,52 @@ TEST3_BASTION_IP_ADDRESS="54.229.119.168"
 
 function getTest1AuthorIpAddress()
 {
-	curl -X GET http://ec2-54-246-169-21.eu-west-1.compute.amazonaws.com/dashboard/index.php/instances/test1 2> /dev/null | jq .[] | jq 'if .name == "test1-cq-author-i-49995a0a" then
-	  {name: .name, privateIpAddress: .privateIpAddress}
+	curl -X GET http://ec2-54-246-169-21.eu-west-1.compute.amazonaws.com/dashboard/index.php/instances/test1 2> /dev/null | jq '.[] as $resultObject | if ($resultObject.name | contains("test1-cq-author"))
+	then $resultObject.privateIpAddress
 	else
-	"no match"
-	end' | grep -v "no match" | jq '.privateIpAddress' | sed 's/"//g'
+		"no match"
+	end
+	' | grep -v "no match" | sed 's/"//g'
 }
 
 function getTest1PublishIpAddress()
 {
-	curl -X GET http://ec2-54-246-169-21.eu-west-1.compute.amazonaws.com/dashboard/index.php/instances/test1 2> /dev/null | jq .[] | jq 'if .name == "test1-cq-publisher-i-93f93ad0" then
-	  {name: .name, privateIpAddress: .privateIpAddress}
+	curl -X GET http://ec2-54-246-169-21.eu-west-1.compute.amazonaws.com/dashboard/index.php/instances/test1 2> /dev/null | jq '.[] as $resultObject | if ($resultObject.name | contains("test1-cq-publisher"))
+	then $resultObject.privateIpAddress
 	else
-	"no match"
-	end' | grep -v "no match" | jq '.privateIpAddress' | sed 's/"//g'
+		"no match"
+	end
+	' | grep -v "no match" | sed 's/"//g'
 }
 
 function getDev1AuthorIpAddress()
 {
-	curl -X GET http://ec2-54-246-169-21.eu-west-1.compute.amazonaws.com/dashboard/index.php/instances/dev1 2> /dev/null | jq .[] | jq 'if .name == "dev1-cq-author-i-269e5d65" then
-	  {name: .name, privateIpAddress: .privateIpAddress}
+	curl -X GET http://ec2-54-246-169-21.eu-west-1.compute.amazonaws.com/dashboard/index.php/instances/dev1 2> /dev/null | jq '.[] as $resultObject | if ($resultObject.name | contains("dev1-cq-author"))
+	then $resultObject.privateIpAddress
 	else
-	"no match"
-	end' | grep -v "no match" | jq '.privateIpAddress' | sed 's/"//g'
+		"no match"
+	end
+	' | grep -v "no match" | sed 's/"//g'
 }
 
 function getDev1PublishIpAddress()
 {
-	curl -X GET http://ec2-54-246-169-21.eu-west-1.compute.amazonaws.com/dashboard/index.php/instances/dev1 2> /dev/null | jq .[] | jq 'if .name == "dev1-cq-publisher-i-1cea295f" then
-	  {name: .name, privateIpAddress: .privateIpAddress}
+	curl -X GET http://ec2-54-246-169-21.eu-west-1.compute.amazonaws.com/dashboard/index.php/instances/dev1 2> /dev/null | jq '.[] as $resultObject | if ($resultObject.name | contains("dev1-cq-publisher"))
+	then $resultObject.privateIpAddress
 	else
-	"no match"
-	end' | grep -v "no match" | jq '.privateIpAddress' | sed 's/"//g'
+		"no match"
+	end
+	' | grep -v "no match" | sed 's/"//g'
 }
 
 ##############################################################################################################################################
 # CONFIG FORMAT)   {TUNNEL ALIAS NAME}:{REMOTE SERVER IP ADDRESS}:{LOCAL PORT TO FORWARD FROM}:{REMOTE PORT TO FORWARD TO}:{BASTION IP ADDRESS}
 ##############################################################################################################################################
 
-CONFIG="
+CONFIG="	
 	DEV1-PUBLISH-SSH-TUNNEL:$(getDev1PublishIpAddress):1234:22:${DEV1_BASTION_IP_ADDRESS}
 	DEV1-AUTHOR-SSH-TUNNEL:$(getDev1AuthorIpAddress):1235:22:${DEV1_BASTION_IP_ADDRESS}
 	DEV1-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getDev1PublishIpAddress):45031:4503:${DEV1_BASTION_IP_ADDRESS}
-
 	TEST1-PUBLISH-SSH-TUNNEL:$(getTest1PublishIpAddress):1236:22:${TEST1_BASTION_IP_ADDRESS}
 	TEST1-AUTHOR-SSH-TUNNEL:$(getTest1AuthorIpAddress):1237:22:${TEST1_BASTION_IP_ADDRESS}
 	TEST1-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getTest1PublishIpAddress):45032:4503:${TEST1_BASTION_IP_ADDRESS}
@@ -145,3 +148,14 @@ function test3-auth()
 {	
 	ssh -i ~/.ssh/navitas.pem navitas@localhost -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null" -p 1239
 }
+
+
+
+
+
+
+
+
+
+
+
