@@ -77,13 +77,17 @@ function getDev1PublishIpAddress()
 # CONFIG FORMAT)   {TUNNEL ALIAS NAME}:{REMOTE SERVER IP ADDRESS}:{LOCAL PORT TO FORWARD FROM}:{REMOTE PORT TO FORWARD TO}:{BASTION IP ADDRESS}
 ##############################################################################################################################################
 
-CONFIG="	
-	DEV1-PUBLISH-SSH-TUNNEL:$(getDev1PublishIpAddress):1234:22:${DEV1_BASTION_IP_ADDRESS}
+DEV1_CONFIG="DEV1-PUBLISH-SSH-TUNNEL:$(getDev1PublishIpAddress):1234:22:${DEV1_BASTION_IP_ADDRESS}
 	DEV1-AUTHOR-SSH-TUNNEL:$(getDev1AuthorIpAddress):1235:22:${DEV1_BASTION_IP_ADDRESS}
-	DEV1-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getDev1PublishIpAddress):45031:4503:${DEV1_BASTION_IP_ADDRESS}
-	TEST1-PUBLISH-SSH-TUNNEL:$(getTest1PublishIpAddress):1236:22:${TEST1_BASTION_IP_ADDRESS}
+	DEV1-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getDev1PublishIpAddress):45031:4503:${DEV1_BASTION_IP_ADDRESS}"
+
+TEST1_CONFIG="TEST1-PUBLISH-SSH-TUNNEL:$(getTest1PublishIpAddress):1236:22:${TEST1_BASTION_IP_ADDRESS}
 	TEST1-AUTHOR-SSH-TUNNEL:$(getTest1AuthorIpAddress):1237:22:${TEST1_BASTION_IP_ADDRESS}
-	TEST1-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getTest1PublishIpAddress):45032:4503:${TEST1_BASTION_IP_ADDRESS}
+	TEST1-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getTest1PublishIpAddress):45032:4503:${TEST1_BASTION_IP_ADDRESS}"
+
+CONFIG="	
+	$DEV1_CONFIG
+	$TEST1_CONFIG
 "
 
 ##############################################################################################################################################
