@@ -27,11 +27,29 @@ TEST1_BASTION_IP_ADDRESS="46.51.203.89"
 TEST3_BASTION_IP_ADDRESS="54.229.119.168"
 
 
+# Local ports respective to each environment
+
+# Dev1
+DEV1_PUB_LOCAL_PORT=1234
+DEV1_AUTHOR_LOCAL_PORT=1235
+DEV1_OSGI_CONSOLE_LOCAL_PORT=45031
+
+# Test1
+TEST1_PUB_LOCAL_PORT=1236
+TEST1_AUTHOR_LOCAL_PORT=1237
+TEST1_OSGI_CONSOLE_LOCAL_PORT=45022
+
+# Test3
+TEST3_PUB_LOCAL_PORT=1238
+TEST3_AUTHOR_LOCAL_PORT=1239
+TEST3_OSGI_CONSOLE_LOCAL_PORT=45034
+
+
 #########################################################################################################################################
 # DEFINE FUNCTIONS HERE
 #########################################################################################################################################
 
-# Get the IP addresses for all the environments from Amazon
+# Get the IP addresses for all the environments from Amazon AWS
 
 function getTest1AuthorIpAddress()
 {
@@ -94,31 +112,13 @@ function getTest3AuthorIpAddress()
 }
 
 ##############################################################################################################################################
-# CONFIG FORMAT)   {TUNNEL ALIAS NAME}:{REMOTE SERVER IP ADDRESS}:{LOCAL PORT TO FORWARD FROM}:{REMOTE PORT TO FORWARD TO}:{BASTION IP ADDRESS}
-##############################################################################################################################################
-
-DEV1_CONFIG="DEV1-PUBLISH-SSH-TUNNEL:$(getDev1PublishIpAddress):1234:22:${DEV1_BASTION_IP_ADDRESS}
-	DEV1-AUTHOR-SSH-TUNNEL:$(getDev1AuthorIpAddress):1235:22:${DEV1_BASTION_IP_ADDRESS}
-	DEV1-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getDev1PublishIpAddress):45031:4503:${DEV1_BASTION_IP_ADDRESS}"
-
-TEST1_CONFIG="TEST1-PUBLISH-SSH-TUNNEL:$(getTest1PublishIpAddress):1236:22:${TEST1_BASTION_IP_ADDRESS}
-	TEST1-AUTHOR-SSH-TUNNEL:$(getTest1AuthorIpAddress):1237:22:${TEST1_BASTION_IP_ADDRESS}
-	TEST1-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getTest1PublishIpAddress):45032:4503:${TEST1_BASTION_IP_ADDRESS}"
-
-TEST3_CONFIG="TEST3-PUBLISH-SSH-TUNNEL:$(getTest3PublishIpAddress):1238:22:${TEST3_BASTION_IP_ADDRESS}
-	TEST3-AUTHOR-SSH-TUNNEL:$(getTest3AuthorIpAddress):1239:22:${TEST3_BASTION_IP_ADDRESS}
-	TEST3-AUTHOR-OSGI-CONSOLE-TUNNEL:$(getTest3PublishIpAddress):45034:4502:${TEST3_BASTION_IP_ADDRESS}"	
-
-CONFIG="	
-	$TEST3_CONFIG	
-"
-
-##############################################################################################################################################
 # The remainder of the functions definitions.
 ##############################################################################################################################################
 
 function openAllTunnels()
-{	
+{			
+
+	buildConfig $1
 
 	for configLine in $CONFIG
 	do 
@@ -138,6 +138,39 @@ function openAllTunnels()
 			echo "Executed command: openTunnel ${CERTIFICATE_PATH} ${BASTION_IP_ADDRESS} ${LOCAL_PORT} ${REMOTE_SERVER_IP_ADDRESS} ${REMOTE_PORT}"
 		fi
 	done	
+}
+
+function buildConfig()
+{
+
+	##############################################################################################################################################
+	# CONFIG FORMAT)   {TUNNEL ALIAS NAME}:{REMOTE SERVER IP ADDRESS}:{LOCAL PORT TO FORWARD FROM}:{REMOTE PORT TO FORWARD TO}:{BASTION IP ADDRESS}
+	##############################################################################################################################################
+
+	DEV1_CONFIG="DEV1-PUBLISH-SSH-TUNNEL:$(getDev1PublishIpAddress):${DEV1_PUB_LOCAL_PORT}:22:${DEV1_BASTION_IP_ADDRESS}
+		DEV1-AUTHOR-SSH-TUNNEL:$(getDev1AuthorIpAddress):${DEV1_AUTHOR_LOCAL_PORT}:22:${DEV1_BASTION_IP_ADDRESS}
+		DEV1-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getDev1PublishIpAddress):${DEV1_OSGI_CONSOLE_LOCAL_PORT}:4503:${DEV1_BASTION_IP_ADDRESS}"
+
+	TEST1_CONFIG="TEST1-PUBLISH-SSH-TUNNEL:$(getTest1PublishIpAddress):${TEST1_PUB_LOCAL_PORT}:22:${TEST1_BASTION_IP_ADDRESS}
+		TEST1-AUTHOR-SSH-TUNNEL:$(getTest1AuthorIpAddress):${TEST1_AUTHOR_LOCAL_PORT}:22:${TEST1_BASTION_IP_ADDRESS}
+		TEST1-AUTHOR-DIRECT-TUNNEL:$(getTest1AuthorIpAddress):${TEST1_OSGI_CONSOLE_LOCAL_PORT}:4502:${TEST1_BASTION_IP_ADDRESS}"
+	
+	TEST3_CONFIG="TEST3-PUBLISH-SSH-TUNNEL:$(getTest3PublishIpAddress):${TEST3_PUB_LOCAL_PORT}:22:${TEST3_BASTION_IP_ADDRESS}
+		TEST3-AUTHOR-SSH-TUNNEL:$(getTest3AuthorIpAddress):${TEST3_AUTHOR_LOCAL_PORT}:22:${TEST3_BASTION_IP_ADDRESS}
+		TEST3-PUBLISH-OSGI-CONSOLE-TUNNEL:$(getTest3PublishIpAddress):${TEST3_OSGI_CONSOLE_LOCAL_PORT}:4503:${TEST3_BASTION_IP_ADDRESS}"	
+
+
+	if [ ! -z "$1" ]
+		then
+		
+		case $1 in 
+			"dev1") export CONFIG=${DEV1_CONFIG};;
+			"test1") export CONFIG=${TEST1_CONFIG};;
+			"test3") export CONFIG=${TEST3_CONFIG};;
+			*) export CONFIG=${TEST1_CONFIG};;
+		esac
+
+	fi
 }
 
 function openTunnel()
